@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyber Risk Assessment Platform
 
-## Getting Started
+A web-based assessment tool that helps individuals and small businesses understand their cyber risk exposure and get actionable recommendations — without jargon or fear-driven upselling.
 
-First, run the development server:
+## 📌 What This Does
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Simple Risk Assessment**: Answer plain-language questions about your digital habits and security practices
+- **Clear Scoring**: Get an overall risk score with category breakdowns (accounts, devices, backups, awareness)
+- **Actionable Recommendations**: Receive prioritized, effort-vs-impact guidance on what matters most
+- **Incident Guidance**: Understand what to do if something happens — and common mistakes to avoid
+- **Shareable Reports**: Generate human-readable summaries you can download or print
+
+## 🚀 Quick Start
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) 18+ or [Bun](https://bun.sh/)
+
+### Installation
+
+1. **Clone and install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+3. **Open your browser:** Navigate to [http://localhost:3000](http://localhost:3000)
+
+The app will auto-update as you edit files.
+
+## 🛑 Shutting Down
+
+- **Development server**: `Ctrl+C` in the terminal
+- No database cleanup needed (assessment data is client-side only)
+
+## 🔧 Development Guide
+
+### Project Structure
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── page.tsx            # Home landing page
+│   ├── assessment/         # Assessment flow
+│   │   ├── page.tsx
+│   │   └── result/
+│   └── layout.tsx          # Root layout
+├── components/
+│   ├── assessment/         # Assessment UI components
+│   ├── layout/             # Header/navigation
+│   └── ui/                 # Reusable UI components
+└── lib/
+    ├── config.ts           # App configuration
+    └── assessment/
+        ├── types.ts        # TypeScript types
+        ├── questions.ts    # Assessment questions
+        └── scoring.ts      # Scoring logic
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Common Tasks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Build for production
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+#### Run linting
+```bash
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+#### Add/Update Assessment Questions
+Edit [src/lib/assessment/questions.ts](src/lib/assessment/questions.ts) to modify the questionnaire content.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Modify Scoring Logic
+Update [src/lib/assessment/scoring.ts](src/lib/assessment/scoring.ts) to change how risk categories are calculated.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Edit UI Components
+Components are located in `src/components/`. Key files:
+- [Assessment flow](src/app/assessment/AssessmentFlow.tsx)
+- [Results view](src/app/assessment/result/ResultsView.tsx)
 
-## Deploy on Vercel
+### Tech Stack
+- **Framework**: [Next.js 16](https://nextjs.org/) (React 19)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Language**: [TypeScript 5](https://www.typescriptlang.org/)
+- **Linting**: [ESLint 9](https://eslint.org/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📚 Learn More
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs) — features and API reference
+- [Next.js Tutorial](https://nextjs.org/learn) — interactive walkthrough
+- [React Documentation](https://react.dev) — component patterns
+
+## 📦 Production Deployment
+
+Deploy on [Vercel](https://vercel.com) (recommended for Next.js):
+
+```bash
+# Push to GitHub
+git push origin main
+
+# Deploy automatically from Vercel dashboard
+```
+
+For other hosting:
+1. Build: `npm run build`
+2. Deploy the `.next` folder and `public` files
+
+## 📋 Assessment Data Privacy
+
+- All assessments run locally in the browser
+- No data is sent to external servers
+- Results can be downloaded/printed for personal records
+
+## 🤝 Contributing
+
+[Add contribution guidelines if applicable]
+
+## 📄 License
+
+[Add license information if applicable]
