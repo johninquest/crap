@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { AssessmentResult } from "@/lib/assessment/types";
 import { RiskBadge } from "@/components/ui/RiskBadge";
 import { Button } from "@/components/ui/Button";
+import { BRAND } from "@/lib/config";
 
 const MODULE_ICONS: Record<string, string> = {
   accounts: "🔑",
@@ -32,7 +33,7 @@ export function ResultsView() {
   const [result, setResult] = useState<AssessmentResult | null>(null);
 
   useEffect(() => {
-    const stored = sessionStorage.getItem("clearrisk_result");
+    const stored = sessionStorage.getItem(BRAND.storageKey);
     if (!stored) {
       router.replace("/assessment");
       return;

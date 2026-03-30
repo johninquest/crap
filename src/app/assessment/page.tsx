@@ -1,8 +1,9 @@
 import { Header } from "@/components/layout/Header";
 import { AssessmentFlow } from "./AssessmentFlow";
+import { BRAND } from "@/lib/config";
 
 export const metadata = {
-  title: "Free Cyber Risk Check – ClearRisk",
+  title: `Free Cyber Risk Check – ${BRAND.name}`,
   description: "Answer 10 plain-language questions and get a clear picture of your cyber risk in under 5 minutes.",
 };
 

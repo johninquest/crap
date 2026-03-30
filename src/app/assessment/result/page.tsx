@@ -1,8 +1,9 @@
 import { Header } from "@/components/layout/Header";
 import { ResultsView } from "./ResultsView";
+import { BRAND } from "@/lib/config";
 
 export const metadata = {
-  title: "Your Results – ClearRisk",
+  title: `Your Results – ${BRAND.name}`,
   description: "Your personalised cyber risk score and recommended next steps.",
 };
 

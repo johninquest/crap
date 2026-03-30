@@ -1,0 +1,10 @@
+export const BRAND = {
+  namePrefix: "Cybr",
+  nameSuffix: "Clr",
+  get name() {
+    return this.namePrefix + this.nameSuffix;
+  },
+  tagline:
+    "A quick, clear check to understand your cyber risk — and what actually matters right now. No jargon, no scare tactics.",
+  storageKey: "cyberclar_result",
+} as const;

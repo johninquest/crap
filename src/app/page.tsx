@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/Button";
+import { BRAND } from "@/lib/config";
 
 const PILLARS = [
   {
@@ -116,7 +117,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-[#E5E7EB] py-6 text-center text-sm text-[#6B7280]">
-        ClearRisk — A decision and clarity tool, not a security product.
+        {BRAND.name} — A decision and clarity tool, not a security product.
       </footer>
     </>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { BRAND } from "@/lib/config";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,9 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ClearRisk – Understand Your Cyber Risk",
-  description:
-    "A quick, clear check to understand your cyber risk — and what actually matters right now. No jargon, no scare tactics.",
+  title: `${BRAND.name} – Understand Your Cyber Risk`,
+  description: BRAND.tagline,
 };
 
 export default function RootLayout({

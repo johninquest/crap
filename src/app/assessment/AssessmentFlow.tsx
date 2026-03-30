@@ -7,6 +7,7 @@ import { calculateResult } from "@/lib/assessment/scoring";
 import { QuestionCard } from "@/components/assessment/QuestionCard";
 import { ProgressBar } from "@/components/assessment/ProgressBar";
 import type { Answer } from "@/lib/assessment/types";
+import { BRAND } from "@/lib/config";
 
 export function AssessmentFlow() {
   const router = useRouter();
@@ -31,7 +32,7 @@ export function AssessmentFlow() {
     if (isLast) {
       const result = calculateResult(answers);
       // Store result in sessionStorage for the result page to read
-      sessionStorage.setItem("clearrisk_result", JSON.stringify(result));
+      sessionStorage.setItem(BRAND.storageKey, JSON.stringify(result));
       router.push("/assessment/result");
     } else {
       setCurrentIndex((i) => i + 1);

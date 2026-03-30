@@ -136,7 +136,7 @@ Professional tone
 ### Core Emotional Drivers
 - Fear of the unknown
 - Desire for reassurance
-Avoidance of embarrassment or regret
+- Avoidance of embarrassment or regret
 
 ### Positioning
 "A quick, clear check to understand your cyber risk — and what actually matters right now."
