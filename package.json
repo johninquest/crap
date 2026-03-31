@@ -1,6 +1,6 @@
 {
-  "name": "temp-scaffold",
-  "version": "0.1.0",
+  "name": "crap",
+  "version": "0.3.30",
   "private": true,
   "scripts": {
     "dev": "next dev",
