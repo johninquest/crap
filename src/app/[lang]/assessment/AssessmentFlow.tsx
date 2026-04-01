@@ -2,23 +2,35 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { questions } from "@/lib/assessment/questions";
 import { calculateResult } from "@/lib/assessment/scoring";
 import { QuestionCard } from "@/components/assessment/QuestionCard";
 import { ProgressBar } from "@/components/assessment/ProgressBar";
-import type { Answer } from "@/lib/assessment/types";
+import type { Answer, Question } from "@/lib/assessment/types";
+import type { Dictionary } from "@/lib/types/dictionary";
 import { BRAND } from "@/lib/config";
+import { trackEvent } from "@/lib/analytics";
 
-export function AssessmentFlow() {
+interface AssessmentFlowProps {
+  lang: string;
+  localizedQuestions: Question[];
+  dict: Dictionary;
+}
+
+export function AssessmentFlow({ lang, localizedQuestions, dict }: AssessmentFlowProps) {
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
+  const [started, setStarted] = useState(false);
 
-  const question = questions[currentIndex];
-  const isLast = currentIndex === questions.length - 1;
+  const question = localizedQuestions[currentIndex];
+  const isLast = currentIndex === localizedQuestions.length - 1;
 
   function handleSelect(answer: Answer) {
+    if (!started) {
+      setStarted(true);
+      trackEvent("assessment_started", { lang });
+    }
     setSelectedOptionId(answer.optionId);
     setAnswers((prev) => {
       const without = prev.filter((a) => a.questionId !== answer.questionId);
@@ -30,14 +42,13 @@ export function AssessmentFlow() {
     if (!selectedOptionId) return;
 
     if (isLast) {
-      const result = calculateResult(answers);
-      // Store result in sessionStorage for the result page to read
+      const result = calculateResult(answers, dict);
       sessionStorage.setItem(BRAND.storageKey, JSON.stringify(result));
-      router.push("/assessment/result");
+      trackEvent("assessment_completed", { lang });
+      router.push(`/${lang}/assessment/result`);
     } else {
       setCurrentIndex((i) => i + 1);
-      // Pre-fill if the user is going back-and-forth
-      const nextQ = questions[currentIndex + 1];
+      const nextQ = localizedQuestions[currentIndex + 1];
       const existing = answers.find((a) => a.questionId === nextQ.id);
       setSelectedOptionId(existing?.optionId ?? null);
     }
@@ -45,7 +56,12 @@ export function AssessmentFlow() {
 
   return (
     <div className="space-y-8">
-      <ProgressBar current={currentIndex + 1} total={questions.length} />
+      <ProgressBar
+        current={currentIndex + 1}
+        total={localizedQuestions.length}
+        labelQuestionOf={dict.assessment.questionOf}
+        labelPctComplete={dict.assessment.pctComplete}
+      />
       <QuestionCard
         key={question.id}
         question={question}
@@ -53,6 +69,9 @@ export function AssessmentFlow() {
         onSelect={handleSelect}
         onNext={handleNext}
         isLast={isLast}
+        labelChooseAnswer={dict.assessment.chooseAnswer}
+        labelSeeResults={dict.assessment.seeResults}
+        labelNextQuestion={dict.assessment.nextQuestion}
       />
     </div>
   );

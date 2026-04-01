@@ -1,16 +1,23 @@
 interface ProgressBarProps {
   current: number;
   total: number;
+  labelQuestionOf: string;
+  labelPctComplete: string;
 }
 
-export function ProgressBar({ current, total }: ProgressBarProps) {
+export function ProgressBar({ current, total, labelQuestionOf, labelPctComplete }: ProgressBarProps) {
   const pct = Math.round((current / total) * 100);
+
+  const questionLabel = labelQuestionOf
+    .replace("{current}", String(current))
+    .replace("{total}", String(total));
+  const pctLabel = labelPctComplete.replace("{pct}", String(pct));
 
   return (
     <div className="space-y-1">
       <div className="flex justify-between items-center text-sm text-[#6B7280]">
-        <span>Question {current} of {total}</span>
-        <span>{pct}% complete</span>
+        <span>{questionLabel}</span>
+        <span>{pctLabel}</span>
       </div>
       <div className="h-2 bg-[#E5E7EB] rounded-full overflow-hidden">
         <div

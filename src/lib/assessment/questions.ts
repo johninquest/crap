@@ -1,5 +1,99 @@
 import type { Question } from "./types";
+import type { QuestionDict } from "@/lib/types/dictionary";
 
+// Base structure (IDs, modules, riskScores) — locale-independent
+const BASE_QUESTIONS: Array<{
+  id: string;
+  module: Question["module"];
+  options: Array<{ id: string; riskScore: 0 | 1 | 2 }>;
+}> = [
+  // ── Accounts ──────────────────────────────────────────────────────────────
+  {
+    id: "acc-1", module: "accounts",
+    options: [
+      { id: "acc-1-a", riskScore: 0 },
+      { id: "acc-1-b", riskScore: 1 },
+      { id: "acc-1-c", riskScore: 2 },
+    ],
+  },
+  {
+    id: "acc-2", module: "accounts",
+    options: [
+      { id: "acc-2-a", riskScore: 0 },
+      { id: "acc-2-b", riskScore: 1 },
+      { id: "acc-2-c", riskScore: 2 },
+    ],
+  },
+  {
+    id: "acc-3", module: "accounts",
+    options: [
+      { id: "acc-3-a", riskScore: 0 },
+      { id: "acc-3-b", riskScore: 1 },
+      { id: "acc-3-c", riskScore: 2 },
+    ],
+  },
+  // ── Devices ───────────────────────────────────────────────────────────────
+  {
+    id: "dev-1", module: "devices",
+    options: [
+      { id: "dev-1-a", riskScore: 0 },
+      { id: "dev-1-b", riskScore: 1 },
+      { id: "dev-1-c", riskScore: 2 },
+    ],
+  },
+  {
+    id: "dev-2", module: "devices",
+    options: [
+      { id: "dev-2-a", riskScore: 0 },
+      { id: "dev-2-b", riskScore: 1 },
+      { id: "dev-2-c", riskScore: 2 },
+    ],
+  },
+  {
+    id: "dev-3", module: "devices",
+    options: [
+      { id: "dev-3-a", riskScore: 0 },
+      { id: "dev-3-b", riskScore: 1 },
+      { id: "dev-3-c", riskScore: 2 },
+    ],
+  },
+  // ── Backups ───────────────────────────────────────────────────────────────
+  {
+    id: "bak-1", module: "backups",
+    options: [
+      { id: "bak-1-a", riskScore: 0 },
+      { id: "bak-1-b", riskScore: 1 },
+      { id: "bak-1-c", riskScore: 2 },
+    ],
+  },
+  {
+    id: "bak-2", module: "backups",
+    options: [
+      { id: "bak-2-a", riskScore: 0 },
+      { id: "bak-2-b", riskScore: 1 },
+      { id: "bak-2-c", riskScore: 2 },
+    ],
+  },
+  // ── Behavior ──────────────────────────────────────────────────────────────
+  {
+    id: "beh-1", module: "behavior",
+    options: [
+      { id: "beh-1-a", riskScore: 0 },
+      { id: "beh-1-b", riskScore: 1 },
+      { id: "beh-1-c", riskScore: 2 },
+    ],
+  },
+  {
+    id: "beh-2", module: "behavior",
+    options: [
+      { id: "beh-2-a", riskScore: 0 },
+      { id: "beh-2-b", riskScore: 1 },
+      { id: "beh-2-c", riskScore: 2 },
+    ],
+  },
+];
+
+// Kept for backwards compatibility with scoring.ts (structural data only)
 export const questions: Question[] = [
   // ── Accounts ────────────────────────────────────────────────────────────
   {
@@ -114,3 +208,22 @@ export const questions: Question[] = [
     ],
   },
 ];
+
+export function getLocalizedQuestions(
+  dictQuestions: Record<string, QuestionDict>
+): Question[] {
+  return BASE_QUESTIONS.map((bq) => {
+    const dq = dictQuestions[bq.id];
+    return {
+      id: bq.id,
+      module: bq.module,
+      text: dq.text,
+      hint: dq.hint,
+      options: bq.options.map((opt) => ({
+        id: opt.id,
+        label: dq.options[opt.id] ?? opt.id,
+        riskScore: opt.riskScore,
+      })),
+    };
+  });
+}

@@ -9,6 +9,9 @@ interface QuestionCardProps {
   onSelect: (answer: Answer) => void;
   onNext: () => void;
   isLast: boolean;
+  labelChooseAnswer: string;
+  labelSeeResults: string;
+  labelNextQuestion: string;
 }
 
 export function QuestionCard({
@@ -17,6 +20,9 @@ export function QuestionCard({
   onSelect,
   onNext,
   isLast,
+  labelChooseAnswer,
+  labelSeeResults,
+  labelNextQuestion,
 }: QuestionCardProps) {
   return (
     <div className="space-y-6">
@@ -32,7 +38,7 @@ export function QuestionCard({
 
       {/* Options */}
       <fieldset className="space-y-3">
-        <legend className="sr-only">Choose your answer</legend>
+        <legend className="sr-only">{labelChooseAnswer}</legend>
         {question.options.map((opt) => {
           const isSelected = selectedOptionId === opt.id;
           return (
@@ -82,7 +88,7 @@ export function QuestionCard({
           fullWidth
           size="lg"
         >
-          {isLast ? "See My Results" : "Next Question →"}
+          {isLast ? labelSeeResults : labelNextQuestion}
         </Button>
       </div>
     </div>

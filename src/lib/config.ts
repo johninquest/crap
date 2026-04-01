@@ -1,6 +1,6 @@
 export const BRAND = {
   namePrefix: "Cyber",
-  nameSuffix: "Oort",
+  nameSuffix: "Chk",
   get name() {
     return this.namePrefix + this.nameSuffix;
   },

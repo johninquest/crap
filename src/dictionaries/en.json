@@ -1,0 +1,230 @@
+{
+  "common": {
+    "riskLow": "Low Risk",
+    "riskMedium": "Medium Risk",
+    "riskHigh": "High Risk",
+    "langSwitch": "DE"
+  },
+  "header": {
+    "startCheck": "Start Free Check →"
+  },
+  "home": {
+    "badge": "Free · No account needed · 5 minutes",
+    "heroTitle1": "Are you exposed",
+    "heroTitle2": "right now?",
+    "heroBody": "Cyber threats change fast. Most people don't know if their habits and devices are still safe. In a few minutes, get a clear picture — without jargon or scare tactics.",
+    "heroCta": "Start My Free Risk Check",
+    "heroDisclaimer": "No personal data collected. No account required.",
+    "pillars": [
+      {
+        "title": "3–5 minutes",
+        "body": "Ten plain-language questions. No jargon, no installations required."
+      },
+      {
+        "title": "Clear score",
+        "body": "See exactly where you stand across accounts, devices, backups, and habits."
+      },
+      {
+        "title": "What to do next",
+        "body": "Prioritised actions — only the 3–5 things that actually matter for your situation."
+      }
+    ],
+    "coversTitle": "What the check covers",
+    "coversSubtitle": "Four areas that account for the vast majority of personal and business cyber incidents.",
+    "modules": [
+      { "label": "Accounts & Passwords" },
+      { "label": "Devices & Software" },
+      { "label": "Backups & Recovery" },
+      { "label": "Habits & Awareness" }
+    ],
+    "quote": "I've been in IT for years and still found two things I hadn't thought about. The plain-language format is what makes it different.",
+    "quoteAttrib": "— SME Operations Manager, early tester",
+    "ctaTitle": "Ready to find out where you stand?",
+    "ctaBody": "It takes about 5 minutes. You'll walk away knowing exactly what matters and what to do next.",
+    "ctaBtn": "Start Free Check →",
+    "footerTagline": "A decision and clarity tool, not a security product."
+  },
+  "assessment": {
+    "metaTitle": "Free Cyber Risk Check",
+    "metaDesc": "Answer 10 plain-language questions and get a clear picture of your cyber risk in under 5 minutes.",
+    "pageTitle": "Your Cyber Risk Check",
+    "pageSubtitle": "Answer honestly — there are no wrong answers, just a clearer picture.",
+    "questionOf": "Question {current} of {total}",
+    "pctComplete": "{pct}% complete",
+    "chooseAnswer": "Choose your answer",
+    "seeResults": "See My Results",
+    "nextQuestion": "Next Question →"
+  },
+  "results": {
+    "metaTitle": "Your Results",
+    "metaDesc": "Your personalised cyber risk score and recommended next steps.",
+    "pageTitle": "Your Results",
+    "pageSubtitle": "Here's a clear picture of your cyber risk — and exactly what to do about it.",
+    "overallTitle": "Overall Risk Level",
+    "assessed": "Assessed",
+    "narrativeLow": "Your habits are in good shape. A few targeted improvements will close the remaining gaps.",
+    "narrativeMedium": "You have solid foundations, but there are meaningful gaps worth addressing soon — before an incident forces your hand.",
+    "narrativeHigh": "There are several significant gaps in your current setup. The good news: most are quick to fix once you know about them.",
+    "breakdownTitle": "Breakdown by area",
+    "recsTitle": "What to do next",
+    "recsSubtitle": "These are the highest-impact actions for your specific situation — effort is low for all of them.",
+    "incidentTitle": "If something happens — do this first",
+    "incidentSubtitle": "Save or print this. Most people lose valuable response time because they don't know the steps.",
+    "businessCta": "Want to assess your business? The same framework applies — with more depth.",
+    "retake": "Retake Assessment",
+    "print": "🖨 Print / Save Results"
+  },
+  "modules": {
+    "accounts": "Accounts & Passwords",
+    "devices": "Devices & Software",
+    "backups": "Backups & Recovery",
+    "behavior": "Habits & Awareness"
+  },
+  "questions": {
+    "acc-1": {
+      "text": "Do you use a unique password for each important account (email, banking, work)?",
+      "hint": "Reusing passwords is one of the most common causes of account takeovers.",
+      "options": {
+        "acc-1-a": "Yes, always",
+        "acc-1-b": "Sometimes — for the important ones",
+        "acc-1-c": "No, I reuse the same few passwords"
+      }
+    },
+    "acc-2": {
+      "text": "Do you have two-factor authentication (2FA) enabled on your email account?",
+      "hint": "Email is the master key to all your other accounts. 2FA adds a critical second lock.",
+      "options": {
+        "acc-2-a": "Yes",
+        "acc-2-b": "Not sure",
+        "acc-2-c": "No"
+      }
+    },
+    "acc-3": {
+      "text": "Do you use a password manager?",
+      "options": {
+        "acc-3-a": "Yes",
+        "acc-3-b": "I write passwords down / save them in a notes app",
+        "acc-3-c": "No, I remember them all"
+      }
+    },
+    "dev-1": {
+      "text": "How up-to-date is the software on your main device (phone or laptop)?",
+      "hint": "Most successful attacks exploit known vulnerabilities that already have patches available.",
+      "options": {
+        "dev-1-a": "Auto-updates are on and it's current",
+        "dev-1-b": "I update occasionally when prompted",
+        "dev-1-c": "I rarely update or don't know"
+      }
+    },
+    "dev-2": {
+      "text": "Do your devices lock automatically after a short period of inactivity?",
+      "options": {
+        "dev-2-a": "Yes, with a PIN, password or biometric",
+        "dev-2-b": "Sometimes — not consistently",
+        "dev-2-c": "No, I rarely lock them"
+      }
+    },
+    "dev-3": {
+      "text": "Have you ever connected to public Wi-Fi (café, airport) without a VPN?",
+      "options": {
+        "dev-3-a": "I avoid public Wi-Fi or always use a VPN",
+        "dev-3-b": "Occasionally for non-sensitive browsing",
+        "dev-3-c": "Yes, including for email or banking"
+      }
+    },
+    "bak-1": {
+      "text": "Do you have recent backups of your most important files (photos, documents, work)?",
+      "hint": "Ransomware and device loss are both solved by a backup. Without one, you may lose everything permanently.",
+      "options": {
+        "bak-1-a": "Yes, automatic cloud or external backups",
+        "bak-1-b": "Occasional manual copies",
+        "bak-1-c": "No backups"
+      }
+    },
+    "bak-2": {
+      "text": "If your phone was stolen today, could you recover access to your accounts and data?",
+      "options": {
+        "bak-2-a": "Yes, I'm confident I could recover everything",
+        "bak-2-b": "Partially — some things would be lost",
+        "bak-2-c": "No, it would be very difficult"
+      }
+    },
+    "beh-1": {
+      "text": "How do you react to unexpected emails asking you to click a link or confirm your details?",
+      "hint": "Phishing is still the #1 way attackers get in — even for businesses.",
+      "options": {
+        "beh-1-a": "I verify the sender and never click unprompted links",
+        "beh-1-b": "I'm careful but have clicked a few in the past",
+        "beh-1-c": "I usually just click and see what it is"
+      }
+    },
+    "beh-2": {
+      "text": "Do you know what to do in the first 30 minutes if you suspect your account has been hacked?",
+      "options": {
+        "beh-2-a": "Yes, I know the steps clearly",
+        "beh-2-b": "I have a rough idea",
+        "beh-2-c": "No, I'd be lost"
+      }
+    }
+  },
+  "recommendations": {
+    "rec-pw-manager": {
+      "title": "Start using a password manager",
+      "description": "Apps like Bitwarden (free) or 1Password generate and store unique passwords for every account. You only need to remember one master password."
+    },
+    "rec-2fa-email": {
+      "title": "Enable 2FA on your email account",
+      "description": "Go to your email settings and turn on two-factor authentication. Use an app like Google Authenticator or Authy — not SMS if you can avoid it."
+    },
+    "rec-updates": {
+      "title": "Turn on automatic software updates",
+      "description": "Enable auto-updates on your phone and laptop. The single most effective thing you can do to close known security gaps."
+    },
+    "rec-screen-lock": {
+      "title": "Set your device to lock after 1–2 minutes",
+      "description": "A locked screen protects your data if you lose your device. Set it in your phone/laptop display settings right now."
+    },
+    "rec-backup": {
+      "title": "Set up automatic cloud backups",
+      "description": "Enable iCloud, Google Drive, or OneDrive backups. Make sure photos and documents are included. Verify the backup is actually running."
+    },
+    "rec-recovery-plan": {
+      "title": "Write down your account recovery options",
+      "description": "Note your 2FA backup codes, recovery email addresses, and any recovery keys. Store them somewhere physically safe (not just on your phone)."
+    },
+    "rec-phishing": {
+      "title": "Learn to spot phishing emails",
+      "description": "Check the sender's actual email address (not just the display name). Never click links in unexpected 'urgent' emails — go directly to the website instead."
+    },
+    "rec-incident-plan": {
+      "title": "Know your first 3 steps if you're hacked",
+      "description": "Change your password → revoke active sessions → check for forwarding rules in your email. Write these down and save them."
+    }
+  },
+  "incident": {
+    "1": {
+      "title": "Don't panic — act quickly",
+      "description": "Speed matters, but mistakes under panic make things worse. Take a breath, then work through these steps."
+    },
+    "2": {
+      "title": "Change your password immediately",
+      "description": "Go directly to the service's website (don't click any links in suspicious emails). Change your password from a trusted device."
+    },
+    "3": {
+      "title": "Sign out all other sessions",
+      "description": "Most services have a 'sign out all devices' option in security settings. Use it to kick out any attacker who is already logged in."
+    },
+    "4": {
+      "title": "Check your email for forwarding rules",
+      "description": "Attackers often add a forwarding rule to quietly receive copies of your emails. Check Settings → Forwarding and delete any rules you didn't create."
+    },
+    "5": {
+      "title": "Secure your account recovery options",
+      "description": "Verify that your recovery email and phone number are still yours. Attackers sometimes change these to lock you out permanently."
+    },
+    "6": {
+      "title": "Tell the people who need to know",
+      "description": "If a work account was involved, notify your IT contact or manager immediately. If personal data was leaked, consider alerting your bank."
+    }
+  }
+}
