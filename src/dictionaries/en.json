@@ -226,5 +226,292 @@
       "title": "Tell the people who need to know",
       "description": "If a work account was involved, notify your IT contact or manager immediately. If personal data was leaked, consider alerting your bank."
     }
+  },
+  "quiz": {
+    "common": {
+      "start": "Start the Check",
+      "next": "Next Question →",
+      "seeResults": "See My Results",
+      "questionOf": "Question {current} of {total}",
+      "pctComplete": "{pct}% complete",
+      "chooseAnswer": "Choose your answer",
+      "retake": "Retake",
+      "print": "🖨 Print / Save Results",
+      "completedOn": "Assessed on",
+      "overallTitle": "Overall Result",
+      "breakdownTitle": "Breakdown by area",
+      "whatNext": "What to do next",
+      "optionYes": "Yes",
+      "optionPartly": "Partly / Needs work",
+      "optionNo": "No"
+    },
+    "nis2": {
+      "metaTitle": "NIS2 Cyber Security Check",
+      "metaDesc": "A free 12-question self-assessment for small businesses based on NIS2 and BSI recommendations. Find out where your cybersecurity stands in under 7 minutes.",
+      "title": "NIS2 Cyber Security Check",
+      "subtitle": "A practical self-assessment for small businesses, based on NIS2 and BSI recommendations.",
+      "description": "This check gives you an honest picture of your cybersecurity baseline across six key areas. There are no trick questions — just a clear view of where you stand and what to focus on next. It takes about 5–7 minutes.",
+      "estimatedTime": "5–7 minutes",
+      "questionCount": "12 questions",
+      "categories": {
+        "applicability": "Applicability & Responsibility",
+        "systems": "Critical Systems",
+        "hygiene": "Basic Cyber Hygiene",
+        "incidents": "Incident Detection & Response",
+        "backups": "Business Continuity & Backups",
+        "suppliers": "Suppliers & IT Providers"
+      },
+      "questions": {
+        "nis2-1": {
+          "text": "Do you know whether NIS2 applies to your company — given your sector and size?",
+          "hint": "If you operate in energy, transport, healthcare, water, or digital infrastructure with 50+ employees, NIS2 likely applies directly. Smaller businesses may be covered indirectly through their supply chain."
+        },
+        "nis2-2": {
+          "text": "Is someone clearly responsible for cybersecurity decisions in your organisation — whether internal staff or an external IT provider?",
+          "hint": "NIS2 holds management personally accountable for security incidents. Clear ownership is the mandatory starting point, not an optional extra."
+        },
+        "nis2-3": {
+          "text": "Do you know which systems and tools are essential for your business to operate day-to-day?",
+          "hint": "Think about email, CRM, payment systems, production tools — anything whose unavailability would stop your business within hours."
+        },
+        "nis2-4": {
+          "text": "Have you thought about what would hurt your business most if your systems were unavailable for 1–3 days?",
+          "hint": "Identifying your single point of failure is the first step towards prioritising protection and building a realistic recovery plan."
+        },
+        "nis2-5": {
+          "text": "Do your employees use strong, unique passwords — and ideally multi-factor authentication (MFA)?",
+          "hint": "Compromised credentials are behind the majority of breaches. MFA alone blocks over 99% of automated account takeover attacks."
+        },
+        "nis2-6": {
+          "text": "Are your operating systems, software, and devices kept regularly updated and patched?",
+          "hint": "Unpatched systems are the easiest entry point for attackers. Most ransomware exploits vulnerabilities that already have publicly available fixes."
+        },
+        "nis2-7": {
+          "text": "Would your team recognise a serious cyber incident — such as ransomware, a phishing attack, or an unusual system outage?",
+          "hint": "Early detection dramatically reduces damage and cost. Even basic awareness means your team knows to pause and call for help rather than click further."
+        },
+        "nis2-8": {
+          "text": "Do you know that serious cyber incidents affecting your business may need to be reported to authorities within 24 hours?",
+          "hint": "Under NIS2, significant incidents must be notified to the relevant national authority within 24 hours of detection. Failing to report in time carries its own penalties."
+        },
+        "nis2-9": {
+          "text": "Are backups of your important business data performed on a regular, automated schedule?",
+          "hint": "Backups are your recovery plan when everything else fails. Without tested backups, a ransomware attack can be permanently catastrophic."
+        },
+        "nis2-10": {
+          "text": "Have you ever actually tested whether your backups can be restored when needed?",
+          "hint": "Many businesses discover their backups are incomplete or corrupt during an actual incident. A simple restore test once a year is enough to know you're covered."
+        },
+        "nis2-11": {
+          "text": "Do you know which IT suppliers or service providers have access to your business systems or data?",
+          "hint": "Supply chain attacks are increasing rapidly. Your security is only as strong as your most trusted vendor's security — and you need to know who those vendors are."
+        },
+        "nis2-12": {
+          "text": "Do your contracts or agreements with key IT providers mention security requirements or how they handle incidents?",
+          "hint": "Basic contractual safeguards ensure you can hold providers accountable and that you receive timely notification if they are ever breached."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Your cybersecurity baseline is solid. You have clear responsibilities, critical systems mapped, and foundational hygiene in place. Focus on continuous improvement and regular reviews.",
+          "actions": [
+            "Schedule a yearly NIS2 review with your IT provider to catch any gaps that have opened",
+            "Test your backup restore process if you haven't done so recently — a failed backup is common",
+            "Ask your key IT suppliers about their own incident notification processes",
+            "Document your incident response contacts so they are ready before a crisis"
+          ]
+        },
+        "medium": {
+          "narrative": "You have foundational measures in place, but meaningful gaps remain. Focus first on responsibility clarity, backup reliability, and incident readiness — these have the highest real-world impact.",
+          "actions": [
+            "Assign clear cybersecurity ownership to one named person or external provider today",
+            "Enable multi-factor authentication (MFA) on all employee business accounts this week",
+            "Set up and verify automated backups — then test a restore before you need it",
+            "Establish a one-page incident response plan: who to call, what to do first, the 24-hour reporting rule",
+            "Document which IT suppliers have access to your systems and what they can see"
+          ]
+        },
+        "high": {
+          "narrative": "Your business has significant cybersecurity gaps. A single incident — ransomware, phishing, or a supply chain breach — could cause serious operational and legal consequences. Immediate action is recommended.",
+          "actions": [
+            "Book a cybersecurity review with a qualified IT provider this month — this is now a business priority",
+            "Enable MFA on email and all business systems immediately — this blocks the majority of attacks",
+            "Start automated backups today and verify that they work with a test restore",
+            "Create a one-page incident response protocol: who to call, what to do first, the 24-hour reporting deadline",
+            "Get legal advice on NIS2 applicability for your sector and size — non-compliance carries personal liability for management"
+          ]
+        }
+      }
+    },
+    "gdpr": {
+      "metaTitle": "GDPR Privacy Awareness Check",
+      "metaDesc": "A free 10-question check to find out how well you understand your personal data rights and digital privacy habits under GDPR.",
+      "title": "GDPR Privacy Awareness Check",
+      "subtitle": "Find out how well you know your personal data rights — and how your digital habits measure up.",
+      "description": "GDPR gives you powerful rights over your personal data — but most people have never used them. This check helps you understand where your data is going, what rights you have, and a few simple habits that make a real difference. It takes about 4–5 minutes.",
+      "estimatedTime": "4–5 minutes",
+      "questionCount": "10 questions",
+      "categories": {
+        "data_awareness": "Data Awareness",
+        "your_rights":    "Your GDPR Rights",
+        "digital_habits": "Digital Habits",
+        "breach_response": "Breach Response"
+      },
+      "questions": {
+        "gdpr-1": {
+          "text": "Do you know what types of personal data companies typically collect about you when you use their apps or websites?",
+          "hint": "This usually includes your name, email, location, device information, browsing behaviour, and inferred interests. Default settings collect the maximum amount."
+        },
+        "gdpr-2": {
+          "text": "Have you ever reviewed the privacy settings on the social media platforms or apps you use regularly?",
+          "hint": "Default settings on most platforms are set to maximum data sharing. You can often significantly reduce what's collected in just a few minutes in settings."
+        },
+        "gdpr-3": {
+          "text": "Do you check which permissions — such as location, microphone, or contacts — you've granted to apps on your phone?",
+          "hint": "Apps often retain permissions long after you've stopped actively using them. A quick audit in your phone's settings takes less than five minutes."
+        },
+        "gdpr-4": {
+          "text": "Do you know you have the legal right to request a copy of all personal data a company holds about you?",
+          "hint": "This is your 'right of access' under GDPR Article 15. Companies must respond within 30 days, completely free of charge."
+        },
+        "gdpr-5": {
+          "text": "Do you know you can ask any company to permanently delete your personal data — and that they are generally required to comply?",
+          "hint": "This is the 'right to erasure' (also called the right to be forgotten). It applies in most cases, with some exceptions for legal obligations."
+        },
+        "gdpr-6": {
+          "text": "Are you aware that you can object to your data being used for targeted advertising or profiling at any time?",
+          "hint": "GDPR Article 21 gives you the right to object. You can opt out of personalised advertising from most platforms — the company must stop unless they can prove a compelling reason."
+        },
+        "gdpr-7": {
+          "text": "Before signing up for a new online service, do you check whether your data might be sold or shared with third parties?",
+          "hint": "Privacy policies are long, but the key question is simple: does this service sell my data to advertisers or data brokers? A quick search for 'sell your data' in the policy helps."
+        },
+        "gdpr-8": {
+          "text": "When you stop using an online service, do you delete your account rather than just stopping your usage?",
+          "hint": "Dormant accounts still hold your data — and they're often less monitored and less protected. Deleting them limits your exposure if the service is later breached."
+        },
+        "gdpr-9": {
+          "text": "Would you know what immediate steps to take if you received a notification that your personal data was involved in a breach?",
+          "hint": "Key steps: change affected passwords immediately, enable MFA on those accounts, monitor your bank statements, and check whether the same password is used elsewhere."
+        },
+        "gdpr-10": {
+          "text": "Have you ever checked whether your email address appears in known data breaches — for example using HaveIBeenPwned.com?",
+          "hint": "Millions of credentials from old breaches are freely available. A quick check at HaveIBeenPwned.com takes 30 seconds and is completely free."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "You have a good grasp of your personal data rights and digital privacy habits. Keep reviewing your settings periodically and stay alert to breach notifications.",
+          "actions": [
+            "Set a reminder to audit app permissions on your phone every 6 months",
+            "Check HaveIBeenPwned.com for all your email addresses if you haven't already",
+            "Use a password manager — it makes unique passwords easy and removes the biggest breach risk"
+          ]
+        },
+        "medium": {
+          "narrative": "You understand the basics, but there are rights and habits you're not fully making use of. A few targeted steps would significantly reduce your data exposure.",
+          "actions": [
+            "Review privacy settings on your top 3 social media platforms this week",
+            "Audit app permissions on your phone — location and microphone access are the ones to prioritise",
+            "Check HaveIBeenPwned.com for your email addresses",
+            "Delete accounts from online services you no longer actively use",
+            "Look up your national data protection authority's website to understand your GDPR access rights"
+          ]
+        },
+        "high": {
+          "narrative": "Your personal data is likely widely exposed without your full awareness. You have more rights and controls than you may realise — and using them takes far less time than you'd expect.",
+          "actions": [
+            "Check HaveIBeenPwned.com for your email addresses right now",
+            "Change passwords on any accounts that appear in breach results — and enable MFA",
+            "Review and restrict app permissions on your phone this week, focusing on location, microphone, and contacts",
+            "Go into the privacy or account settings of your most-used platforms and reduce data sharing",
+            "Learn about your rights at your national data protection authority's website — it takes 10 minutes"
+          ]
+        }
+      }
+    },
+    "aiCheck": {
+      "metaTitle": "AI Reality Check",
+      "metaDesc": "A free 9-question self-assessment for small businesses and freelancers on GenAI risks, EU AI Act compliance, and data privacy when using AI tools.",
+      "title": "Everyday AI Reality Check",
+      "subtitle": "Are you using AI tools safely — and in line with the EU AI Act?",
+      "description": "With the EU AI Act fully enforced in 2026, many small businesses are inadvertently exposing themselves to legal and operational risks through everyday GenAI use. This check covers four areas: data leakage, transparency obligations, high-risk AI use cases, and human oversight. It takes about 4–5 minutes.",
+      "estimatedTime": "4–5 minutes",
+      "questionCount": "9 questions",
+      "categories": {
+        "data_ip_leaks":   "Data & IP Leaks",
+        "transparency":    "Transparency",
+        "high_risk":       "High-Risk Zones",
+        "human_oversight": "Human Oversight"
+      },
+      "questions": {
+        "ai-1": {
+          "text": "Do your employees have a clear, written rule about what types of company or customer data must never be pasted into public AI chatbots?",
+          "hint": "ChatGPT, Claude, Gemini and others may use your inputs to improve their models on free or default tiers. Without a clear policy, employees often share sensitive data without realising the risk."
+        },
+        "ai-2": {
+          "text": "Have you verified whether the AI tools your business uses can train their models on your data?",
+          "hint": "Most enterprise or paid plans disable model training on customer data — but you need to check this explicitly in the service's privacy or terms of service settings. Never assume."
+        },
+        "ai-3": {
+          "text": "Do you know which AI tools your team is actually using on a daily basis — including tools they may have found themselves without IT approval?",
+          "hint": "This is the 'Shadow AI' problem. Employees often use consumer AI tools on work devices with sensitive data, creating invisible compliance and data leakage risks."
+        },
+        "ai-4": {
+          "text": "Do you clearly disclose to customers when they are reading purely AI-generated content — such as automated support emails, marketing copy, or chatbot replies?",
+          "hint": "Article 50 of the EU AI Act requires transparency when consumers interact with AI-generated output. Implementing clear 'Generated by AI' labels is increasingly a legal requirement, not just good practice."
+        },
+        "ai-5": {
+          "text": "If you use an AI chatbot for customer service, is it immediately obvious to the user that they are not speaking to a human?",
+          "hint": "An AI system must never claim to be human when directly asked. Even subtle deception — such as using a realistic human name without disclosure — may violate the EU AI Act."
+        },
+        "ai-6": {
+          "text": "Are you certain your business is NOT using AI to screen job applications, evaluate employee performance, or assist in hiring decisions?",
+          "hint": "Using AI in HR and recruitment is classified as 'High Risk' under Annex III of the EU AI Act. It requires strict compliance, bias auditing, detailed documentation, and human oversight — not optional."
+        },
+        "ai-7": {
+          "text": "Does your business avoid using AI to make automated decisions that significantly affect a customer's access to services, credit, or insurance?",
+          "hint": "Automated decision-making that meaningfully impacts individuals is regulated under both GDPR Article 22 and the EU AI Act. Individuals must have access to a human review process."
+        },
+        "ai-8": {
+          "text": "Do you have a process requiring a human to verify AI-generated technical, legal, or financial advice before it is sent to a client?",
+          "hint": "Article 14 of the EU AI Act requires 'human in the loop' oversight for high-stakes AI outputs. AI hallucinations — confidently stated but completely fabricated information — are a real and documented risk."
+        },
+        "ai-9": {
+          "text": "Do you know who in your organisation would be legally responsible if an AI tool you deployed produced discriminatory or fabricated output that harmed a customer?",
+          "hint": "Under the EU AI Act, the 'deployer' — meaning the business that uses an AI system — is responsible for its outputs, even if you didn't build the AI. This responsibility cannot be delegated to the AI vendor."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Your business has a thoughtful approach to AI risk. You have policies in place, maintain transparency with customers, and steer clear of high-risk AI use cases. Keep reviewing as the regulatory landscape evolves.",
+          "actions": [
+            "Review your AI usage policy quarterly — regulations and tools change fast",
+            "Document which AI tools you use, why, and how outputs are reviewed — this may be required for compliance audits",
+            "Stay updated on EU AI Act enforcement guidance from your national authority"
+          ]
+        },
+        "medium": {
+          "narrative": "You're using AI tools but may not have adequate guardrails in place. Shadow AI data leakage and missing transparency disclosures are the most common — and most fixable — risks at this stage.",
+          "actions": [
+            "Write and distribute a simple AI usage policy defining what data employees may not share with public AI tools",
+            "Audit which AI tools your team is actually using — ask them directly and check browser history or app installs if needed",
+            "Review your AI tool subscriptions: are model training opt-outs enabled on paid plans?",
+            "Add visible 'Generated by AI' labels to automated emails, content, or chatbot interfaces",
+            "Check whether any of your current AI use cases fall into NIS2 or EU AI Act High-Risk categories"
+          ]
+        },
+        "high": {
+          "narrative": "Your business is likely exposed to real legal and operational AI risks under both GDPR and the EU AI Act. Immediate steps are needed to prevent data leakage, ensure compliant AI use, and establish proper oversight.",
+          "actions": [
+            "Immediately brief all staff: no customer data, employee data, or company IP may be pasted into public AI chatbots without explicit approval",
+            "Audit every AI tool subscription — verify whether they train models on your data and opt out where possible",
+            "Halt any AI-assisted hiring, HR evaluation, or automated customer decisions until you have legal guidance",
+            "Implement a mandatory human review step for any AI-generated content sent to clients",
+            "Consult a legal or compliance advisor on EU AI Act High-Risk classification and GDPR Article 22 for your specific use cases"
+          ]
+        }
+      }
+    }
   }
 }

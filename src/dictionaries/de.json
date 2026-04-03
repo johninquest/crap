@@ -226,5 +226,292 @@
       "title": "Die Personen informieren, die es wissen müssen",
       "description": "Wenn ein Arbeitskonto betroffen war, informieren Sie sofort Ihren IT-Kontakt oder Vorgesetzten. Wenn persönliche Daten geleakt wurden, erwägen Sie, Ihre Bank zu benachrichtigen."
     }
+  },
+  "quiz": {
+    "common": {
+      "start": "Check starten",
+      "next": "Nächste Frage →",
+      "seeResults": "Mein Ergebnis ansehen",
+      "questionOf": "Frage {current} von {total}",
+      "pctComplete": "{pct}% abgeschlossen",
+      "chooseAnswer": "Antwort auswählen",
+      "retake": "Wiederholen",
+      "print": "🖨 Ergebnis drucken / speichern",
+      "completedOn": "Bewertet am",
+      "overallTitle": "Gesamtergebnis",
+      "breakdownTitle": "Auswertung nach Bereich",
+      "whatNext": "Was als Nächstes tun",
+      "optionYes": "Ja",
+      "optionPartly": "Teilweise / Verbesserungsbedarf",
+      "optionNo": "Nein"
+    },
+    "nis2": {
+      "metaTitle": "NIS2-Cybersicherheits-Check",
+      "metaDesc": "Ein kostenloser Selbst-Check mit 12 Fragen für kleine Unternehmen, basierend auf NIS2 und BSI-Empfehlungen. Erfahren Sie in unter 7 Minuten, wie es um Ihre Cybersicherheit steht.",
+      "title": "NIS2-Cybersicherheits-Check",
+      "subtitle": "Eine praxisnahe Selbstbewertung für kleine Unternehmen, basierend auf NIS2 und BSI-Empfehlungen.",
+      "description": "Dieser Check gibt Ihnen einen ehrlichen Überblick über Ihr Cybersicherheits-Niveau in sechs Schlüsselbereichen. Es gibt keine Fangfragen — nur eine klare Einschätzung, wo Sie stehen und was als Nächstes zu tun ist. Er dauert etwa 5–7 Minuten.",
+      "estimatedTime": "5–7 Minuten",
+      "questionCount": "12 Fragen",
+      "categories": {
+        "applicability": "Anwendbarkeit & Verantwortung",
+        "systems": "Kritische Systeme",
+        "hygiene": "Grundlegende Cyber-Hygiene",
+        "incidents": "Vorfallserkennung & -reaktion",
+        "backups": "Geschäftskontinuität & Backups",
+        "suppliers": "Lieferanten & IT-Dienstleister"
+      },
+      "questions": {
+        "nis2-1": {
+          "text": "Wissen Sie, ob NIS2 für Ihr Unternehmen gilt — bezogen auf Ihre Branche und Größe?",
+          "hint": "Wenn Sie in Energie, Transport, Gesundheit, Wasser oder digitaler Infrastruktur mit 50+ Mitarbeitenden tätig sind, gilt NIS2 wahrscheinlich direkt. Kleinere Unternehmen können indirekt über ihre Lieferkette betroffen sein."
+        },
+        "nis2-2": {
+          "text": "Ist jemand klar für Cybersicherheitsentscheidungen in Ihrem Unternehmen verantwortlich — intern oder durch einen externen IT-Dienstleister?",
+          "hint": "NIS2 macht das Management persönlich für Sicherheitsvorfälle haftbar. Klare Verantwortlichkeiten sind kein optionales Extra, sondern der gesetzlich vorgeschriebene Ausgangspunkt."
+        },
+        "nis2-3": {
+          "text": "Wissen Sie, welche Systeme und Tools für den täglichen Geschäftsbetrieb unverzichtbar sind?",
+          "hint": "Denken Sie an E-Mail, CRM, Zahlungssysteme, Produktionstools — alles, dessen Ausfall den Betrieb innerhalb weniger Stunden zum Stillstand bringen würde."
+        },
+        "nis2-4": {
+          "text": "Haben Sie sich überlegt, was Ihr Unternehmen am meisten treffen würde, wenn Ihre Systeme 1–3 Tage nicht verfügbar wären?",
+          "hint": "Die Identifizierung Ihres größten Ausfallrisikos ist der erste Schritt, um Schutz zu priorisieren und einen realistischen Wiederherstellungsplan zu erstellen."
+        },
+        "nis2-5": {
+          "text": "Verwenden Ihre Mitarbeitenden starke, einmalige Passwörter — und idealerweise Multi-Faktor-Authentifizierung (MFA)?",
+          "hint": "Kompromittierte Zugangsdaten stecken hinter der Mehrheit aller Sicherheitsverletzungen. MFA allein blockiert über 99% aller automatisierten Kontoübernahme-Angriffe."
+        },
+        "nis2-6": {
+          "text": "Werden Ihre Betriebssysteme, Software und Geräte regelmäßig aktualisiert und gepatcht?",
+          "hint": "Ungepatchte Systeme sind der einfachste Einstiegspunkt für Angreifer. Die meiste Ransomware nutzt Schwachstellen aus, für die es bereits öffentlich verfügbare Fixes gibt."
+        },
+        "nis2-7": {
+          "text": "Würde Ihr Team einen ernsthaften Cybervorfall erkennen — wie Ransomware, einen Phishing-Angriff oder einen ungewöhnlichen Systemausfall?",
+          "hint": "Frühe Erkennung reduziert Schäden und Kosten erheblich. Selbst grundlegendes Bewusstsein bedeutet, dass Ihr Team weiß, wann es innehalten und Hilfe rufen soll."
+        },
+        "nis2-8": {
+          "text": "Wissen Sie, dass schwerwiegende Cybervorfälle, die Ihr Unternehmen betreffen, innerhalb von 24 Stunden an die Behörden gemeldet werden müssen?",
+          "hint": "Gemäß NIS2 müssen erhebliche Vorfälle innerhalb von 24 Stunden nach ihrer Feststellung der zuständigen nationalen Behörde gemeldet werden. Eine verspätete Meldung ist selbst eine Ordnungswidrigkeit."
+        },
+        "nis2-9": {
+          "text": "Werden Backups Ihrer wichtigen Geschäftsdaten nach einem regelmäßigen, automatisierten Zeitplan durchgeführt?",
+          "hint": "Backups sind Ihr Wiederherstellungsplan, wenn alles andere versagt. Ohne getestete Backups kann ein Ransomware-Angriff dauerhaft katastrophale Folgen haben."
+        },
+        "nis2-10": {
+          "text": "Haben Sie schon einmal tatsächlich getestet, ob Ihre Backups bei Bedarf wiederhergestellt werden können?",
+          "hint": "Viele Unternehmen stellen erst während eines echten Vorfalls fest, dass ihre Backups unvollständig oder beschädigt sind. Ein einfacher Wiederherstellungstest einmal im Jahr reicht aus."
+        },
+        "nis2-11": {
+          "text": "Wissen Sie, welche IT-Lieferanten oder Dienstleister Zugang zu Ihren Geschäftssystemen oder Daten haben?",
+          "hint": "Lieferkettenangriffe nehmen rapide zu. Ihre Sicherheit ist nur so stark wie die Sicherheit Ihres vertrauenswürdigsten Anbieters — und Sie müssen wissen, wer das ist."
+        },
+        "nis2-12": {
+          "text": "Erwähnen Ihre Verträge oder Vereinbarungen mit wichtigen IT-Dienstleistern Sicherheitsanforderungen oder den Umgang mit Vorfällen?",
+          "hint": "Grundlegende vertragliche Schutzmaßnahmen stellen sicher, dass Sie Anbieter zur Rechenschaft ziehen können und zeitnahe Benachrichtigung erhalten, wenn sie selbst Opfer einer Sicherheitsverletzung werden."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Ihr Cybersicherheits-Niveau ist solide. Sie haben klare Verantwortlichkeiten, kritische Systeme identifiziert und grundlegende Hygiene etabliert. Konzentrieren Sie sich auf kontinuierliche Verbesserung und regelmäßige Überprüfungen.",
+          "actions": [
+            "Planen Sie eine jährliche NIS2-Überprüfung mit Ihrem IT-Dienstleister, um neu entstandene Lücken zu erkennen",
+            "Testen Sie Ihren Backup-Wiederherstellungsprozess, wenn Sie das noch nicht kürzlich getan haben — fehlerhafte Backups sind häufiger als gedacht",
+            "Fragen Sie Ihre wichtigsten IT-Lieferanten nach deren eigenem Vorfallsbenachrichtigungsprozess",
+            "Dokumentieren Sie Ihre Incident-Response-Kontakte, damit sie vor einer Krise einsatzbereit sind"
+          ]
+        },
+        "medium": {
+          "narrative": "Sie haben grundlegende Maßnahmen etabliert, aber es bestehen noch wesentliche Lücken. Konzentrieren Sie sich zunächst auf klare Verantwortlichkeiten, Backup-Zuverlässigkeit und Vorfallsbereitschaft — diese haben die höchste reale Auswirkung.",
+          "actions": [
+            "Weisen Sie die Cybersicherheitsverantwortung noch heute einer namentlich genannten Person oder einem externen Anbieter zu",
+            "Aktivieren Sie diese Woche Multi-Faktor-Authentifizierung (MFA) für alle Mitarbeiter-Geschäftskonten",
+            "Richten Sie automatisierte Backups ein und überprüfen Sie diese — dann testen Sie eine Wiederherstellung, bevor Sie sie brauchen",
+            "Erstellen Sie einen einseitigen Incident-Response-Plan: wen anrufen, was zuerst tun, die 24-Stunden-Meldepflicht",
+            "Dokumentieren Sie, welche IT-Lieferanten Zugang zu Ihren Systemen haben und was sie sehen können"
+          ]
+        },
+        "high": {
+          "narrative": "Ihr Unternehmen weist erhebliche Cybersicherheitslücken auf. Ein einziger Vorfall — Ransomware, Phishing oder ein Lieferkettenangriff — könnte ernste betriebliche und rechtliche Konsequenzen haben. Sofortiges Handeln wird empfohlen.",
+          "actions": [
+            "Buchen Sie diesen Monat eine Cybersicherheitsüberprüfung bei einem qualifizierten IT-Dienstleister — dies ist jetzt eine Geschäftspriorität",
+            "Aktivieren Sie sofort MFA für E-Mail und alle Geschäftssysteme — dies blockiert die Mehrzahl aller Angriffe",
+            "Starten Sie noch heute automatisierte Backups und bestätigen Sie deren Funktion mit einem Wiederherstellungstest",
+            "Erstellen Sie ein einseitiges Incident-Response-Protokoll: wen anrufen, was zuerst tun, die 24-Stunden-Meldefrist",
+            "Holen Sie rechtliche Beratung zur NIS2-Anwendbarkeit für Ihre Branche und Größe ein — Nichteinhaltung führt zur persönlichen Haftung des Managements"
+          ]
+        }
+      }
+    },
+    "gdpr": {
+      "metaTitle": "DSGVO-Datenschutz-Bewusstsein-Check",
+      "metaDesc": "Ein kostenloser Check mit 10 Fragen, der Ihnen zeigt, wie gut Sie Ihre DSGVO-Rechte kennen und wie Ihre digitalen Gewohnheiten abschneiden.",
+      "title": "DSGVO-Datenschutz-Bewusstsein-Check",
+      "subtitle": "Wie gut kennen Sie Ihre Datenschutzrechte — und wie stehen Ihre digitalen Gewohnheiten da?",
+      "description": "Die DSGVO gibt Ihnen weitreichende Rechte über Ihre persönlichen Daten — aber die meisten Menschen haben sie nie genutzt. Dieser Check hilft Ihnen zu verstehen, wohin Ihre Daten fließen, welche Rechte Sie haben und einige einfache Gewohnheiten, die wirklich einen Unterschied machen. Er dauert etwa 4–5 Minuten.",
+      "estimatedTime": "4–5 Minuten",
+      "questionCount": "10 Fragen",
+      "categories": {
+        "data_awareness":  "Datenbewusstsein",
+        "your_rights":     "Ihre DSGVO-Rechte",
+        "digital_habits":  "Digitale Gewohnheiten",
+        "breach_response": "Reaktion auf Datenpannen"
+      },
+      "questions": {
+        "gdpr-1": {
+          "text": "Wissen Sie, welche Arten personenbezogener Daten Unternehmen typischerweise über Sie sammeln, wenn Sie deren Apps oder Websites nutzen?",
+          "hint": "Dazu gehören in der Regel Name, E-Mail, Standort, Geräteinformationen, Surfverhalten und abgeleitete Interessen. Standardeinstellungen erfassen die maximale Datenmenge."
+        },
+        "gdpr-2": {
+          "text": "Haben Sie jemals die Datenschutzeinstellungen der Social-Media-Plattformen oder Apps überprüft, die Sie regelmäßig nutzen?",
+          "hint": "Standardeinstellungen auf den meisten Plattformen sind auf maximale Datenweitergabe ausgerichtet. In den Einstellungen können Sie dies oft in wenigen Minuten erheblich einschränken."
+        },
+        "gdpr-3": {
+          "text": "Prüfen Sie, welche Berechtigungen — wie Standort, Mikrofon oder Kontakte — Sie den Apps auf Ihrem Smartphone erteilt haben?",
+          "hint": "Apps behalten Berechtigungen oft lange, nachdem Sie sie nicht mehr aktiv nutzen. Eine kurze Überprüfung in den Einstellungen Ihres Smartphones dauert weniger als fünf Minuten."
+        },
+        "gdpr-4": {
+          "text": "Wissen Sie, dass Sie das gesetzliche Recht haben, eine Kopie aller personenbezogenen Daten anzufordern, die ein Unternehmen über Sie gespeichert hat?",
+          "hint": "Dies ist Ihr 'Auskunftsrecht' gemäß Art. 15 DSGVO. Unternehmen müssen innerhalb von 30 Tagen kostenlos antworten."
+        },
+        "gdpr-5": {
+          "text": "Wissen Sie, dass Sie jedes Unternehmen auffordern können, Ihre personenbezogenen Daten dauerhaft zu löschen — und dass es in der Regel dazu verpflichtet ist?",
+          "hint": "Dies ist das 'Recht auf Löschung' (auch bekannt als Recht auf Vergessenwerden). Es gilt in den meisten Fällen, mit einigen Ausnahmen für gesetzliche Pflichten."
+        },
+        "gdpr-6": {
+          "text": "Wissen Sie, dass Sie jederzeit der Nutzung Ihrer Daten für zielgerichtete Werbung oder Profiling widersprechen können?",
+          "hint": "Art. 21 DSGVO gibt Ihnen das Widerspruchsrecht. Sie können sich bei den meisten Plattformen von personalisierter Werbung abmelden — das Unternehmen muss aufhören, es sei denn, es kann einen zwingenden Grund nachweisen."
+        },
+        "gdpr-7": {
+          "text": "Prüfen Sie vor der Registrierung für einen neuen Online-Dienst, ob Ihre Daten an Dritte verkauft oder weitergegeben werden könnten?",
+          "hint": "Datenschutzerklärungen sind lang, aber die Kernfrage ist einfach: Verkauft dieser Dienst meine Daten an Werbetreibende oder Datenhändler? Eine kurze Suche nach 'Weitergabe' in der Erklärung hilft."
+        },
+        "gdpr-8": {
+          "text": "Wenn Sie einen Online-Dienst nicht mehr nutzen, löschen Sie dann Ihr Konto, anstatt die Nutzung nur einzustellen?",
+          "hint": "Ruhende Konten enthalten weiterhin Ihre Daten — und werden oft weniger gut überwacht und geschützt. Das Löschen begrenzt Ihre Exposition, wenn der Dienst später gehackt wird."
+        },
+        "gdpr-9": {
+          "text": "Würden Sie wissen, welche sofortigen Schritte zu unternehmen sind, wenn Sie eine Benachrichtigung erhalten, dass Ihre personenbezogenen Daten an einer Datenpanne beteiligt waren?",
+          "hint": "Wichtige Schritte: betroffene Passwörter sofort ändern, MFA auf diesen Konten aktivieren, Kontoauszüge überwachen und prüfen, ob dasselbe Passwort andernorts verwendet wird."
+        },
+        "gdpr-10": {
+          "text": "Haben Sie schon einmal geprüft, ob Ihre E-Mail-Adresse in bekannten Datenpannen auftaucht — zum Beispiel mit HaveIBeenPwned.com?",
+          "hint": "Millionen von Zugangsdaten aus alten Sicherheitsverletzungen sind frei verfügbar. Eine kurze Überprüfung bei HaveIBeenPwned.com dauert 30 Sekunden und ist völlig kostenlos."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Sie haben ein gutes Verständnis Ihrer Datenschutzrechte und digitalen Gewohnheiten. Überprüfen Sie Ihre Einstellungen regelmäßig und bleiben Sie wachsam bei Benachrichtigungen über Datenpannen.",
+          "actions": [
+            "Legen Sie alle 6 Monate eine Erinnerung fest, um App-Berechtigungen auf Ihrem Smartphone zu überprüfen",
+            "Prüfen Sie alle Ihre E-Mail-Adressen auf HaveIBeenPwned.com, falls noch nicht geschehen",
+            "Nutzen Sie einen Passwort-Manager — er macht einmalige Passwörter einfach und beseitigt das größte Datenpannrisiko"
+          ]
+        },
+        "medium": {
+          "narrative": "Sie verstehen die Grundlagen, aber es gibt Rechte und Gewohnheiten, die Sie nicht vollständig nutzen. Einige gezielte Schritte würden Ihre Datenexposition erheblich reduzieren.",
+          "actions": [
+            "Überprüfen Sie diese Woche die Datenschutzeinstellungen Ihrer 3 meistgenutzten Social-Media-Plattformen",
+            "Überprüfen Sie App-Berechtigungen auf Ihrem Smartphone — Standort und Mikrofon haben Priorität",
+            "Prüfen Sie Ihre E-Mail-Adressen auf HaveIBeenPwned.com",
+            "Löschen Sie Konten von Online-Diensten, die Sie nicht mehr aktiv nutzen",
+            "Informieren Sie sich über die DSGVO-Auskunftsrechte auf der Website Ihrer nationalen Datenschutzbehörde"
+          ]
+        },
+        "high": {
+          "narrative": "Ihre persönlichen Daten sind wahrscheinlich in erheblichem Umfang exponiert, ohne dass Sie sich dessen vollständig bewusst sind. Sie haben mehr Rechte und Kontrollen als Sie vielleicht wissen — und deren Nutzung dauert viel weniger Zeit als erwartet.",
+          "actions": [
+            "Prüfen Sie Ihre E-Mail-Adressen jetzt sofort auf HaveIBeenPwned.com",
+            "Ändern Sie Passwörter auf allen Konten, die in Datenpannen-Ergebnissen erscheinen — und aktivieren Sie MFA",
+            "Überprüfen und beschränken Sie diese Woche App-Berechtigungen auf Ihrem Smartphone, mit Fokus auf Standort, Mikrofon und Kontakte",
+            "Öffnen Sie die Datenschutz- oder Kontoeinstellungen Ihrer meistgenutzten Plattformen und reduzieren Sie die Datenweitergabe",
+            "Informieren Sie sich über Ihre Rechte auf der Website Ihrer nationalen Datenschutzbehörde — es dauert 10 Minuten"
+          ]
+        }
+      }
+    },
+    "aiCheck": {
+      "metaTitle": "Alltäglicher KI-Reality-Check",
+      "metaDesc": "Ein kostenloser Selbst-Check mit 9 Fragen für kleine Unternehmen und Freiberufler zu GenKI-Risiken, EU-KI-Gesetz-Compliance und Datenschutz beim Einsatz von KI-Tools.",
+      "title": "Alltäglicher KI-Reality-Check",
+      "subtitle": "Setzen Sie KI-Tools sicher ein — und im Einklang mit dem EU-KI-Gesetz?",
+      "description": "Mit der vollständigen Durchsetzung des EU-KI-Gesetzes im Jahr 2026 setzen sich viele kleine Unternehmen unwissentlich durch den alltäglichen Einsatz von GenKI-Tools rechtlichen und operativen Risiken aus. Dieser Check deckt vier Bereiche ab: Datenlecks, Transparenzpflichten, hochriskante KI-Anwendungsfälle und menschliche Aufsicht. Er dauert etwa 4–5 Minuten.",
+      "estimatedTime": "4–5 Minuten",
+      "questionCount": "9 Fragen",
+      "categories": {
+        "data_ip_leaks":   "Daten- & IP-Lecks",
+        "transparency":    "Transparenz",
+        "high_risk":       "Hochrisikobereiche",
+        "human_oversight": "Menschliche Aufsicht"
+      },
+      "questions": {
+        "ai-1": {
+          "text": "Haben Ihre Mitarbeitenden eine klare, schriftliche Regel, welche Arten von Unternehmens- oder Kundendaten niemals in öffentliche KI-Chatbots eingefügt werden dürfen?",
+          "hint": "ChatGPT, Claude, Gemini und andere können Ihre Eingaben im kostenlosen oder Standard-Tarif zur Modellverbesserung nutzen. Ohne klare Richtlinien geben Mitarbeitende oft sensible Daten weiter, ohne die Risiken zu kennen."
+        },
+        "ai-2": {
+          "text": "Haben Sie überprüft, ob die von Ihrem Unternehmen verwendeten KI-Tools Ihre Daten zur Modelltraining nutzen können?",
+          "hint": "Die meisten Enterprise- oder kostenpflichtigen Tarife deaktivieren das Modelltraining mit Kundendaten — aber Sie müssen dies in den Datenschutz- oder Nutzungsbedingungen des Dienstes explizit nachprüfen. Nehmen Sie nichts an."
+        },
+        "ai-3": {
+          "text": "Wissen Sie, welche KI-Tools Ihr Team täglich tatsächlich verwendet — einschließlich Tools, die Mitarbeitende möglicherweise ohne IT-Genehmigung gefunden haben?",
+          "hint": "Dies ist das 'Shadow-KI'-Problem. Mitarbeitende verwenden häufig Consumer-KI-Tools auf Arbeitsgeräten mit sensiblen Daten, was unsichtbare Compliance- und Datenleck-Risiken erzeugt."
+        },
+        "ai-4": {
+          "text": "Informieren Sie Kunden klar, wenn sie rein KI-generierte Inhalte lesen — wie automatisierte Support-E-Mails, Marketingtext oder Chatbot-Antworten?",
+          "hint": "Art. 50 des EU-KI-Gesetzes verlangt Transparenz, wenn Verbraucher mit KI-generiertem Output interagieren. Die Implementierung klarer 'KI-generiert'-Labels ist zunehmend eine gesetzliche Anforderung, nicht nur gute Praxis."
+        },
+        "ai-5": {
+          "text": "Wenn Sie einen KI-Chatbot für den Kundenservice einsetzen, ist es für den Nutzer unmittelbar offensichtlich, dass er nicht mit einem Menschen spricht?",
+          "hint": "Ein KI-System darf nie behaupten, ein Mensch zu sein, wenn es direkt gefragt wird. Selbst subtile Täuschung — etwa durch Verwendung eines realistischen menschlichen Namens ohne Offenlegung — kann gegen das EU-KI-Gesetz verstoßen."
+        },
+        "ai-6": {
+          "text": "Sind Sie sicher, dass Ihr Unternehmen KI NICHT zur Vorauswahl von Bewerbungen, zur Bewertung der Mitarbeiterleistung oder bei Einstellungsentscheidungen einsetzt?",
+          "hint": "Der KI-Einsatz in HR und Recruiting wird in Anhang III des EU-KI-Gesetzes als 'Hochrisiko' eingestuft. Er erfordert strikte Compliance, Bias-Auditing, detaillierte Dokumentation und menschliche Aufsicht — nicht optional."
+        },
+        "ai-7": {
+          "text": "Vermeidet Ihr Unternehmen den Einsatz von KI für automatisierte Entscheidungen, die den Zugang eines Kunden zu Dienstleistungen, Krediten oder Versicherungen erheblich beeinflussen?",
+          "hint": "Automatisierte Entscheidungsfindung, die Einzelpersonen wesentlich betrifft, ist sowohl durch Art. 22 DSGVO als auch durch das EU-KI-Gesetz geregelt. Betroffene müssen Zugang zu einem menschlichen Überprüfungsprozess haben."
+        },
+        "ai-8": {
+          "text": "Haben Sie einen Prozess, der erfordert, dass ein Mensch KI-generierte technische, rechtliche oder finanzielle Empfehlungen überprüft, bevor sie an einen Kunden gesendet werden?",
+          "hint": "Art. 14 des EU-KI-Gesetzes verlangt 'Human in the Loop'-Aufsicht für hochriskante KI-Ausgaben. KI-Halluzinationen — selbstbewusst formulierte, aber vollständig falsche Informationen — sind ein reales und dokumentiertes Risiko."
+        },
+        "ai-9": {
+          "text": "Wissen Sie, wer in Ihrem Unternehmen rechtlich verantwortlich wäre, wenn ein von Ihnen eingesetztes KI-Tool diskriminierende oder erfundene Ausgaben produzierte, die einem Kunden schadeten?",
+          "hint": "Gemäß dem EU-KI-Gesetz ist der 'Betreiber' — also das Unternehmen, das ein KI-System verwendet — für dessen Ausgaben verantwortlich, auch wenn Sie die KI nicht selbst entwickelt haben."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Ihr Unternehmen hat einen durchdachten Umgang mit KI-Risiken. Sie haben Richtlinien eingeführt, halten Transparenz gegenüber Kunden aufrecht und meiden hochriskante KI-Anwendungsfälle. Bleiben Sie wachsam, da sich die regulatorische Landschaft weiterentwickelt.",
+          "actions": [
+            "Überprüfen Sie Ihre KI-Nutzungsrichtlinie vierteljährlich — Vorschriften und Tools ändern sich schnell",
+            "Dokumentieren Sie, welche KI-Tools Sie verwenden, warum und wie Ausgaben überprüft werden — dies kann für Compliance-Audits erforderlich sein",
+            "Verfolgen Sie die Durchsetzungsleitlinien des EU-KI-Gesetzes Ihrer nationalen Behörde"
+          ]
+        },
+        "medium": {
+          "narrative": "Sie nutzen KI-Tools, haben aber möglicherweise keine ausreichenden Schutzmaßnahmen eingerichtet. Shadow-KI-Datenlecks und fehlende Transparenzoffenlegungen sind die häufigsten — und am leichtesten behebbaren — Risiken in dieser Phase.",
+          "actions": [
+            "Schreiben und verteilen Sie eine einfache KI-Nutzungsrichtlinie, die definiert, welche Daten Mitarbeitende nicht mit öffentlichen KI-Tools teilen dürfen",
+            "Prüfen Sie, welche KI-Tools Ihr Team tatsächlich verwendet — fragen Sie direkt und prüfen Sie bei Bedarf installierte Apps",
+            "Überprüfen Sie Ihre KI-Tool-Abonnements: Sind Opt-outs für Modelltraining in bezahlten Tarifen aktiviert?",
+            "Fügen Sie sichtbare 'KI-generiert'-Labels zu automatisierten E-Mails, Inhalten oder Chatbot-Schnittstellen hinzu",
+            "Prüfen Sie, ob aktuelle KI-Anwendungsfälle in die Hochrisiko-Kategorie des EU-KI-Gesetzes fallen"
+          ]
+        },
+        "high": {
+          "narrative": "Ihr Unternehmen ist wahrscheinlich realen rechtlichen und operativen KI-Risiken unter DSGVO und EU-KI-Gesetz ausgesetzt. Sofortige Maßnahmen sind erforderlich, um Datenlecks zu verhindern, konformen KI-Einsatz sicherzustellen und angemessene Aufsicht zu etablieren.",
+          "actions": [
+            "Weisen Sie alle Mitarbeitenden sofort an: keine Kundendaten, Mitarbeiterdaten oder Unternehmens-IP in öffentliche KI-Chatbots ohne ausdrückliche Genehmigung",
+            "Prüfen Sie alle KI-Tool-Abonnements — stellen Sie fest, ob sie Modelle mit Ihren Daten trainieren, und deaktivieren Sie dies wo möglich",
+            "Stoppen Sie jeden KI-gestützten Einstellungsprozess, jede HR-Bewertung oder automatisierte Kundenentscheidung bis zur rechtlichen Beratung",
+            "Implementieren Sie einen obligatorischen menschlichen Überprüfungsschritt für jeglichen KI-generierten Inhalt, der an Kunden gesendet wird",
+            "Konsultieren Sie einen Rechts- oder Compliance-Berater zur EU-KI-Gesetz-Hochrisiko-Einstufung und Art. 22 DSGVO für Ihre spezifischen Anwendungsfälle"
+          ]
+        }
+      }
+    }
   }
 }

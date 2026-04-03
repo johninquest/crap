@@ -4,6 +4,48 @@ export interface QuestionDict {
   options: Record<string, string>;
 }
 
+// ─── Quiz Engine Dictionary Types ────────────────────────────────────────────
+
+export interface QuizResultLevel {
+  narrative: string;
+  actions: string[];
+}
+
+export interface QuizSectionDict {
+  metaTitle: string;
+  metaDesc: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  estimatedTime: string;
+  questionCount: string;
+  categories: Record<string, string>;
+  questions: Record<string, { text: string; hint?: string }>;
+  results: {
+    low: QuizResultLevel;
+    medium: QuizResultLevel;
+    high: QuizResultLevel;
+  };
+}
+
+export interface QuizCommonDict {
+  start: string;
+  next: string;
+  seeResults: string;
+  questionOf: string;
+  pctComplete: string;
+  chooseAnswer: string;
+  retake: string;
+  print: string;
+  completedOn: string;
+  overallTitle: string;
+  breakdownTitle: string;
+  whatNext: string;
+  optionYes: string;
+  optionPartly: string;
+  optionNo: string;
+}
+
 export interface RecommendationDict {
   title: string;
   description: string;
@@ -76,4 +118,10 @@ export interface Dictionary {
   questions: Record<string, QuestionDict>;
   recommendations: Record<string, RecommendationDict>;
   incident: Record<string, IncidentDict>;
+  quiz: {
+    common: QuizCommonDict;
+    nis2: QuizSectionDict;
+    gdpr: QuizSectionDict;
+    aiCheck: QuizSectionDict;
+  };
 }
