@@ -409,7 +409,7 @@
           ]
         },
         "medium": {
-          "narrative": "Sie verstehen die Grundlagen, aber es gibt Rechte und Gewohnheiten, die Sie nicht vollständig nutzen. Einige gezielte Schritte würden Ihre Datenexposition erheblich reduzieren.",
+          "narrative": "Sie verstehen die Grundlagen, aber es gibt Rechte und Gewohnheiten, die Sie nicht vollständig nutzen. Einige gezielte Schritte würden erheblich dazu beitragen, Ihre Daten besser zu schützen.",
           "actions": [
             "Überprüfen Sie diese Woche die Datenschutzeinstellungen Ihrer 3 meistgenutzten Social-Media-Plattformen",
             "Überprüfen Sie App-Berechtigungen auf Ihrem Smartphone — Standort und Mikrofon haben Priorität",
@@ -419,7 +419,7 @@
           ]
         },
         "high": {
-          "narrative": "Ihre persönlichen Daten sind wahrscheinlich in erheblichem Umfang exponiert, ohne dass Sie sich dessen vollständig bewusst sind. Sie haben mehr Rechte und Kontrollen als Sie vielleicht wissen — und deren Nutzung dauert viel weniger Zeit als erwartet.",
+          "narrative": "Ihre persönlichen Daten sind wahrscheinlich in erheblichem Umfang offengelegt, ohne dass Sie sich dessen vollständig bewusst sind. Sie haben mehr Rechte und Kontrollen als Sie vielleicht wissen — und deren Nutzung dauert viel weniger Zeit als erwartet.",
           "actions": [
             "Prüfen Sie Ihre E-Mail-Adressen jetzt sofort auf HaveIBeenPwned.com",
             "Ändern Sie Passwörter auf allen Konten, die in Datenpannen-Ergebnissen erscheinen — und aktivieren Sie MFA",
