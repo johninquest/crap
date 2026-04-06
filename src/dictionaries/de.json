@@ -44,6 +44,10 @@
     "ctaBtn": "Kostenlos starten →",
     "footerTagline": "Ein Entscheidungs- und Klarheitswerkzeug, kein Sicherheitsprodukt."
   },
+  "footer": {
+    "madeBy": "Ein Produkt von JohnX Labs",
+    "disclaimer": "Ein Entscheidungs- und Klarheitswerkzeug, kein Sicherheitsprodukt."
+  },
   "assessment": {
     "metaTitle": "Kostenloser Cyber-Risiko-Check",
     "metaDesc": "Beantworten Sie 10 verständliche Fragen und erhalten Sie in weniger als 5 Minuten ein klares Bild Ihres Cyber-Risikos.",

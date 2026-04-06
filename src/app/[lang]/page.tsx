@@ -107,9 +107,7 @@ export default async function Home({
         </section>
       </main>
 
-      <footer className="border-t border-[#E5E7EB] py-6 text-center text-sm text-[#6B7280]">
-        {BRAND.name} — {t.footerTagline}
-      </footer>
+
     </>
   );
 }

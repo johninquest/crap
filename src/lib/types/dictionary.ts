@@ -66,6 +66,10 @@ export interface Dictionary {
   header: {
     startCheck: string;
   };
+  footer: {
+    madeBy: string;
+    disclaimer: string;
+  };
   home: {
     badge: string;
     heroTitle1: string;

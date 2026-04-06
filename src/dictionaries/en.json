@@ -44,6 +44,10 @@
     "ctaBtn": "Start Free Check →",
     "footerTagline": "A decision and clarity tool, not a security product."
   },
+  "footer": {
+    "madeBy": "A product of JohnX Labs",
+    "disclaimer": "A decision and clarity tool, not a security product."
+  },
   "assessment": {
     "metaTitle": "Free Cyber Risk Check",
     "metaDesc": "Answer 10 plain-language questions and get a clear picture of your cyber risk in under 5 minutes.",

@@ -5,6 +5,7 @@ import "../globals.css";
 import { BRAND } from "@/lib/config";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { notFound } from "next/navigation";
+import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,11 +42,13 @@ export default async function LangLayout({
 }) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
+  const dict = await getDictionary(lang as Locale);
 
   return (
     <html lang={lang} className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        {children}
+        <div className="flex-1 flex flex-col">{children}</div>
+        <Footer dict={dict} />
       </body>
       {GA_ID && (
         <>
