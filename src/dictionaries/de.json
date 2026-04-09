@@ -46,7 +46,15 @@
   },
   "footer": {
     "madeBy": "Ein Produkt von JohnX Labs",
-    "disclaimer": "Ein Entscheidungs- und Klarheitswerkzeug, kein Sicherheitsprodukt."
+    "disclaimer": "Ein Entscheidungs- und Klarheitswerkzeug, kein Sicherheitsprodukt.",
+    "toolsLabel": "Weitere Tools",
+    "checks": {
+      "assessment": "Kostenloser Cyber-Risiko-Check",
+      "gdprCheck": "DSGVO-Compliance-Check",
+      "nis2Check": "NIS2-Compliance-Check",
+      "aiCheck": "EU-KI-Gesetz Bereitschafts-Check",
+      "rulesFinder": "EU-Regulierungsfinder"
+    }
   },
   "assessment": {
     "metaTitle": "Kostenloser Cyber-Risiko-Check",
@@ -557,7 +565,7 @@
       },
       "q3": {
         "text": "Entwickelt, nutzt oder setzt Ihr Unternehmen KI-Systeme ein?",
-        "hint": "Dazu geh\u00f6ren KI-Tools f\u00fcr Einstellungen, Kundenentscheidungen, Betrugserkennung, Inhaltsgenerierung oder automatisierte Entscheidungsfindung.",
+        "hint": "Dazu gehören KI-Tools für Einstellungen, Kundenentscheidungen, Betrugserkennung, Inhaltsgenerierung oder automatisierte Entscheidungsfindung.",
         "yes": "Ja",
         "no": "Nein",
         "unsure": "Unsicher"

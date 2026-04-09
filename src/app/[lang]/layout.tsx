@@ -48,7 +48,7 @@ export default async function LangLayout({
     <html lang={lang} className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <div className="flex-1 flex flex-col">{children}</div>
-        <Footer dict={dict} />
+        <Footer dict={dict} lang={lang} />
       </body>
       {GA_ID && (
         <>

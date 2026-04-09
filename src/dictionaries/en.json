@@ -46,7 +46,15 @@
   },
   "footer": {
     "madeBy": "A product of JohnX Labs",
-    "disclaimer": "A decision and clarity tool, not a security product."
+    "disclaimer": "A decision and clarity tool, not a security product.",
+    "toolsLabel": "Other Tools",
+    "checks": {
+      "assessment": "Free Cyber Risk Assessment",
+      "gdprCheck": "GDPR Compliance Check",
+      "nis2Check": "NIS2 Compliance Check",
+      "aiCheck": "EU AI Act Readiness Check",
+      "rulesFinder": "EU Regulation Finder"
+    }
   },
   "assessment": {
     "metaTitle": "Free Cyber Risk Check",

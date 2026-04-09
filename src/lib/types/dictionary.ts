@@ -69,6 +69,14 @@ export interface Dictionary {
   footer: {
     madeBy: string;
     disclaimer: string;
+    toolsLabel: string;
+    checks: {
+      assessment: string;
+      gdprCheck: string;
+      nis2Check: string;
+      aiCheck: string;
+      rulesFinder: string;
+    };
   };
   home: {
     badge: string;
