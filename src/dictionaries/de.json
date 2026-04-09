@@ -74,7 +74,9 @@
     "recsSubtitle": "Dies sind die wirkungsvollsten Maßnahmen für Ihre spezifische Situation — der Aufwand ist für alle gering.",
     "incidentTitle": "Wenn etwas passiert — tun Sie das zuerst",
     "incidentSubtitle": "Speichern oder drucken Sie dies. Die meisten Menschen verlieren wertvolle Reaktionszeit, weil sie die Schritte nicht kennen.",
-    "businessCta": "Möchten Sie Ihr Unternehmen bewerten? Dasselbe Framework gilt — mit mehr Tiefe.",
+    "businessCta": "Unternehmer oder Manager?",
+    "businessCtaBody": "Finden Sie in 3 kurzen Schritten heraus, welche EU-Cyber-Regeln für Ihr Unternehmen gelten.",
+    "businessCtaBtn": "Meine Cyber-Regeln finden →",
     "retake": "Check wiederholen",
     "print": "🖨 Ergebnisse drucken / speichern"
   },
@@ -515,6 +517,67 @@
             "Konsultieren Sie einen Rechts- oder Compliance-Berater zur EU-KI-Gesetz-Hochrisiko-Einstufung und Art. 22 DSGVO für Ihre spezifischen Anwendungsfälle"
           ]
         }
+      }
+    }
+  },
+  "rulesFinder": {
+    "metaTitle": "Cyber-Regeln Finder",
+    "metaDesc": "Finden Sie in 3 kurzen Schritten heraus, welche EU-Cybersicherheitsregeln f\u00fcr Ihr Unternehmen gelten.",
+    "pageTitle": "Cyber-Regeln Finder",
+    "pageSubtitle": "Beantworten Sie 3 einfache Fragen und erfahren Sie, welche EU-Cyber-Regeln f\u00fcr Ihr Unternehmen gelten.",
+    "description": "Nicht sicher, welche EU-Cyber-Vorschriften f\u00fcr Ihr Unternehmen gelten? Dieser 3-Schritte-Check zeigt Ihnen, welche Regeln Sie kennen m\u00fcssen \u2014 und leitet Sie zum passenden vertiefenden Check weiter.",
+    "estimatedTime": "Unter 2 Minuten",
+    "questionCount": "3 Fragen",
+    "start": "Meine Cyber-Regeln finden",
+    "next": "Weiter \u2192",
+    "resultMetaTitle": "Ihre Cyber-Regeln",
+    "resultMetaDesc": "Die EU-Cybersicherheitsregeln, die f\u00fcr Ihr Unternehmen gelten.",
+    "resultPageTitle": "Ihre Cyber-Regeln",
+    "resultPageSubtitle": "Basierend auf Ihren Antworten sind dies die Vorschriften, die Ihr Unternehmen kennen muss.",
+    "resultApplies": "Gilt f\u00fcr Sie",
+    "resultMayApply": "K\u00f6nnte gelten",
+    "resultNoMatch": "Keine spezifischen Regeln gelten derzeit",
+    "resultNoMatchBody": "Basierend auf Ihren Antworten gelten derzeit keine der gro\u00dfen EU-Cybersicherheitsrichtlinien f\u00fcr Ihr Unternehmen. Der allgemeine Cyber-Hygiene-Check, den Sie bereits absolviert haben, ist der richtige Ausgangspunkt.",
+    "resultDeepDive": "Vertiefenden Check starten",
+    "resultRetake": "Neu starten",
+    "questions": {
+      "q1": {
+        "text": "Ist Ihr Unternehmen in einem kritischen Sektor t\u00e4tig?",
+        "hint": "Kritische Sektoren umfassen Energie, Wasser, Verkehr, Banking, Gesundheitswesen, digitale Infrastruktur und \u00f6ffentliche Verwaltung.",
+        "yes": "Ja",
+        "no": "Nein",
+        "unsure": "Unsicher"
+      },
+      "q2": {
+        "text": "Erfasst, speichert oder verarbeitet Ihr Unternehmen personenbezogene Daten von EU-Einwohnern?",
+        "hint": "Personenbezogene Daten sind alle Informationen, die eine Person identifizieren k\u00f6nnen: Namen, E-Mails, IP-Adressen, Kaufhistorie usw.",
+        "yes": "Ja",
+        "no": "Nein",
+        "unsure": "Unsicher"
+      },
+      "q3": {
+        "text": "Entwickelt, nutzt oder setzt Ihr Unternehmen KI-Systeme ein?",
+        "hint": "Dazu geh\u00f6ren KI-Tools f\u00fcr Einstellungen, Kundenentscheidungen, Betrugserkennung, Inhaltsgenerierung oder automatisierte Entscheidungsfindung.",
+        "yes": "Ja",
+        "no": "Nein",
+        "unsure": "Unsicher"
+      }
+    },
+    "rules": {
+      "nis2": {
+        "name": "NIS2-Richtlinie",
+        "summary": "Das wichtigste EU-Cybersicherheitsgesetz f\u00fcr Unternehmen in kritischen Sektoren. Es verlangt Sicherheitsma\u00dfnahmen, Vorfallsmeldungen innerhalb von 24 Stunden und Lieferketten-Risikomanagement.",
+        "ctaLabel": "NIS2-Check starten"
+      },
+      "gdpr": {
+        "name": "DSGVO",
+        "summary": "Das EU-Datenschutzgesetz. Es gilt f\u00fcr jedes Unternehmen, das personenbezogene Daten von EU-Einwohnern verarbeitet, unabh\u00e4ngig vom Unternehmensstandort. Bei Verst\u00f6\u00dfen drohen Bu\u00dfgelder bis zu 20 Mio. \u20ac.",
+        "ctaLabel": "DSGVO-Check starten"
+      },
+      "aiAct": {
+        "name": "EU KI-Gesetz",
+        "summary": "Das weltweit erste umfassende KI-Gesetz. Es klassifiziert KI-Systeme nach Risikoklassen und legt Pflichten f\u00fcr Anbieter, Betreiber und Nutzer fest \u2014 insbesondere f\u00fcr risikoreiche KI-Anwendungen.",
+        "ctaLabel": "KI-Check starten"
       }
     }
   }

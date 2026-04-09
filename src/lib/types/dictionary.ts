@@ -115,6 +115,8 @@ export interface Dictionary {
     incidentTitle: string;
     incidentSubtitle: string;
     businessCta: string;
+    businessCtaBody: string;
+    businessCtaBtn: string;
     retake: string;
     print: string;
   };
@@ -127,5 +129,36 @@ export interface Dictionary {
     nis2: QuizSectionDict;
     gdpr: QuizSectionDict;
     aiCheck: QuizSectionDict;
+  };
+  rulesFinder: {
+    metaTitle: string;
+    metaDesc: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    description: string;
+    estimatedTime: string;
+    questionCount: string;
+    start: string;
+    next: string;
+    resultMetaTitle: string;
+    resultMetaDesc: string;
+    resultPageTitle: string;
+    resultPageSubtitle: string;
+    resultApplies: string;
+    resultMayApply: string;
+    resultNoMatch: string;
+    resultNoMatchBody: string;
+    resultDeepDive: string;
+    resultRetake: string;
+    questions: {
+      q1: { text: string; hint: string; yes: string; no: string; unsure: string };
+      q2: { text: string; hint: string; yes: string; no: string; unsure: string };
+      q3: { text: string; hint: string; yes: string; no: string; unsure: string };
+    };
+    rules: {
+      nis2: { name: string; summary: string; ctaLabel: string };
+      gdpr: { name: string; summary: string; ctaLabel: string };
+      aiAct: { name: string; summary: string; ctaLabel: string };
+    };
   };
 }

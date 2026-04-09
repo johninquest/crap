@@ -74,7 +74,9 @@
     "recsSubtitle": "These are the highest-impact actions for your specific situation — effort is low for all of them.",
     "incidentTitle": "If something happens — do this first",
     "incidentSubtitle": "Save or print this. Most people lose valuable response time because they don't know the steps.",
-    "businessCta": "Want to assess your business? The same framework applies — with more depth.",
+    "businessCta": "Business owner or manager?",
+    "businessCtaBody": "Find out which EU cyber rules apply to your company in 3 quick steps.",
+    "businessCtaBtn": "Find My Cyber Rules →",
     "retake": "Retake Assessment",
     "print": "🖨 Print / Save Results"
   },
@@ -515,6 +517,67 @@
             "Consult a legal or compliance advisor on EU AI Act High-Risk classification and GDPR Article 22 for your specific use cases"
           ]
         }
+      }
+    }
+  },
+  "rulesFinder": {
+    "metaTitle": "Cyber Rules Finder",
+    "metaDesc": "Find out which EU cybersecurity rules apply to your business in 3 quick steps.",
+    "pageTitle": "Cyber Rules Finder",
+    "pageSubtitle": "Answer 3 plain-language questions to see which EU cyber rules apply to your company.",
+    "description": "Not sure which EU cyber regulations apply to your business? This 3-step check tells you which rules you need to know about \u2014 and links you to the right deeper check.",
+    "estimatedTime": "Under 2 minutes",
+    "questionCount": "3 questions",
+    "start": "Find My Cyber Rules",
+    "next": "Next \u2192",
+    "resultMetaTitle": "Your Cyber Rules",
+    "resultMetaDesc": "The EU cybersecurity rules that apply to your business.",
+    "resultPageTitle": "Your Cyber Rules",
+    "resultPageSubtitle": "Based on your answers, here are the regulations your business needs to know.",
+    "resultApplies": "Applies to you",
+    "resultMayApply": "May apply",
+    "resultNoMatch": "No specific rules apply right now",
+    "resultNoMatchBody": "Based on your answers, none of the major EU cybersecurity directives currently apply to your business. The general cyber hygiene check you already completed is the right starting point.",
+    "resultDeepDive": "Start deep-dive check",
+    "resultRetake": "Start over",
+    "questions": {
+      "q1": {
+        "text": "Does your business operate in a critical sector?",
+        "hint": "Critical sectors include energy, water, transport, banking, healthcare, digital infrastructure, and public administration.",
+        "yes": "Yes",
+        "no": "No",
+        "unsure": "Not sure"
+      },
+      "q2": {
+        "text": "Does your business collect, store, or process personal data of EU residents?",
+        "hint": "Personal data means anything that can identify a person: names, emails, IP addresses, purchase history, etc.",
+        "yes": "Yes",
+        "no": "No",
+        "unsure": "Not sure"
+      },
+      "q3": {
+        "text": "Does your business develop, use, or deploy AI systems?",
+        "hint": "This includes AI tools used for hiring, customer decisions, fraud detection, content generation, or any automated decision-making.",
+        "yes": "Yes",
+        "no": "No",
+        "unsure": "Not sure"
+      }
+    },
+    "rules": {
+      "nis2": {
+        "name": "NIS2 Directive",
+        "summary": "The EU\u2019s main cybersecurity law for businesses in critical sectors. It requires you to have security measures in place, report incidents within 24 hours, and manage supply chain risk.",
+        "ctaLabel": "Start NIS2 Check"
+      },
+      "gdpr": {
+        "name": "GDPR",
+        "summary": "The EU\u2019s data protection law. It applies to any business that handles personal data of EU residents, regardless of where the business is based. Non-compliance can result in fines up to \u20ac20 million.",
+        "ctaLabel": "Start GDPR Check"
+      },
+      "aiAct": {
+        "name": "EU AI Act",
+        "summary": "The world\u2019s first comprehensive AI law. It classifies AI systems by risk level and sets obligations for providers, deployers, and users \u2014 especially for high-risk AI applications.",
+        "ctaLabel": "Start AI Check"
       }
     }
   }

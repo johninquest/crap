@@ -161,8 +161,17 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────── */}
+      <section className="bg-[#F0FDF4] border border-[#BBF7D0] rounded-2xl p-6 space-y-4">
+        <div>
+          <p className="font-semibold text-[#166534]">{t.businessCta}</p>
+          <p className="text-sm text-[#166534] mt-1">{t.businessCtaBody}</p>
+        </div>
+        <Link href={`/${lang}/rules-finder`}>
+          <Button variant="primary">{t.businessCtaBtn}</Button>
+        </Link>
+      </section>
+
       <section className="text-center space-y-4 pb-8">
-        <p className="text-text-muted text-sm">{t.businessCta}</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link href={`/${lang}/assessment`}>
             <Button variant="outline">{t.retake}</Button>
