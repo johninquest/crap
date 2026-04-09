@@ -133,11 +133,13 @@ export function RulesResultsView({ lang, dict }: RulesResultsViewProps) {
               </span>
             </div>
             <p className="text-sm text-text-muted leading-relaxed">{ruleDict.summary}</p>
-            <Link href={`/${lang}/${route}`}>
-              <Button variant="primary" size="sm">
-                {ruleDict.ctaLabel}
-              </Button>
-            </Link>
+            {rule.key !== "gdpr" && (
+              <Link href={`/${lang}/${route}`}>
+                <Button variant="primary" size="sm">
+                  {ruleDict.ctaLabel}
+                </Button>
+              </Link>
+            )}
           </section>
         );
       })}
