@@ -1,4 +1,6 @@
-// Analytics helper — wraps window.gtag with an SSR guard
+// Analytics helper — dual-dispatches to Google Analytics and PostHog
+
+import posthog from "posthog-js";
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -9,6 +11,11 @@ export function trackEvent(
   eventName: string,
   params?: Record<string, string | number | boolean>
 ): void {
-  if (typeof window === "undefined" || typeof gtag === "undefined") return;
-  gtag("event", eventName, params ?? {});
+  if (typeof window === "undefined") return;
+
+  if (typeof gtag !== "undefined") {
+    gtag("event", eventName, params ?? {});
+  }
+
+  posthog.capture(eventName, params);
 }
