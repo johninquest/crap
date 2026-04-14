@@ -10,9 +10,9 @@
   },
   "home": {
     "badge": "Kostenlos · Kein Konto nötig · 5 Minuten",
-    "heroTitle1": "Sind Sie gerade",
+    "heroTitle1": "Bist du gerade",
     "heroTitle2": "gefährdet?",
-    "heroBody": "Cyber-Bedrohungen ändern sich schnell. Die meisten Menschen wissen nicht, ob ihre Gewohnheiten und Geräte noch sicher sind. Verschaffen Sie sich in wenigen Minuten ein klares Bild — ohne Fachjargon und Panikmache.",
+    "heroBody": "Cyber-Bedrohungen ändern sich schnell. Oft ist unklar, ob deine Gewohnheiten und Geräte noch sicher sind. Verschaffe dir in wenigen Minuten ein klares Bild — ohne Fachjargon und Panikmache.",
     "heroCta": "Meinen kostenlosen Risiko-Check starten",
     "heroDisclaimer": "Keine persönlichen Daten erfasst. Kein Konto erforderlich.",
     "pillars": [
@@ -22,11 +22,11 @@
       },
       {
         "title": "Klares Ergebnis",
-        "body": "Sehen Sie genau, wo Sie bei Konten, Geräten, Backups und Gewohnheiten stehen."
+        "body": "Sieh genau, wo du bei Konten, Geräten, Backups und Gewohnheiten stehst."
       },
       {
         "title": "Was als Nächstes tun",
-        "body": "Priorisierte Maßnahmen — nur die 3–5 Dinge, die für Ihre Situation wirklich wichtig sind."
+        "body": "Priorisierte Maßnahmen — nur die 3–5 Dinge, die für deine Situation wirklich wichtig sind."
       }
     ],
     "coversTitle": "Was der Check umfasst",
@@ -39,8 +39,8 @@
     ],
     "quote": "Ich arbeite seit Jahren in der IT und habe trotzdem zwei Dinge entdeckt, an die ich nicht gedacht hatte. Das verständliche Format macht den Unterschied.",
     "quoteAttrib": "— KMU Operations Manager, früher Tester",
-    "ctaTitle": "Bereit herauszufinden, wie es um Sie steht?",
-    "ctaBody": "Es dauert etwa 5 Minuten. Danach wissen Sie genau, was wichtig ist und was als Nächstes zu tun ist.",
+    "ctaTitle": "Bereit herauszufinden, wie es um dich steht?",
+    "ctaBody": "Es dauert etwa 5 Minuten. Danach weißt du genau, was wichtig ist und was du als Nächstes tun solltest.",
     "ctaBtn": "Kostenlos starten →",
     "footerTagline": "Ein Entscheidungs- und Klarheitswerkzeug, kein Sicherheitsprodukt."
   },
@@ -58,32 +58,32 @@
   },
   "assessment": {
     "metaTitle": "Kostenloser Cyber-Risiko-Check",
-    "metaDesc": "Beantworten Sie 10 verständliche Fragen und erhalten Sie in weniger als 5 Minuten ein klares Bild Ihres Cyber-Risikos.",
-    "pageTitle": "Ihr Cyber-Risiko-Check",
-    "pageSubtitle": "Antworten Sie ehrlich — es gibt keine falschen Antworten, nur ein klareres Bild.",
+    "metaDesc": "Beantworte 10 verständliche Fragen und erhalte in weniger als 5 Minuten ein klares Bild deines Cyber-Risikos.",
+    "pageTitle": "Dein Cyber-Risiko-Check",
+    "pageSubtitle": "Antworte ehrlich — es gibt keine falschen Antworten, nur ein klareres Bild.",
     "questionOf": "Frage {current} von {total}",
     "pctComplete": "{pct}% abgeschlossen",
-    "chooseAnswer": "Wählen Sie Ihre Antwort",
+    "chooseAnswer": "Wähle deine Antwort",
     "seeResults": "Meine Ergebnisse sehen",
     "nextQuestion": "Nächste Frage →"
   },
   "results": {
-    "metaTitle": "Ihre Ergebnisse",
-    "metaDesc": "Ihr personalisierter Cyber-Risiko-Score und empfohlene nächste Schritte.",
-    "pageTitle": "Ihre Ergebnisse",
-    "pageSubtitle": "Hier ist ein klares Bild Ihres Cyber-Risikos — und genau, was Sie dagegen tun können.",
+    "metaTitle": "Deine Ergebnisse",
+    "metaDesc": "Dein personalisierter Cyber-Risiko-Score und empfohlene nächste Schritte.",
+    "pageTitle": "Deine Ergebnisse",
+    "pageSubtitle": "Hier ist ein klares Bild deines Cyber-Risikos — und genau, was du dagegen tun kannst.",
     "overallTitle": "Gesamtrisiko",
     "assessed": "Bewertet am",
-    "narrativeLow": "Ihre Gewohnheiten sind in guter Form. Einige gezielte Verbesserungen werden die verbleibenden Lücken schließen.",
-    "narrativeMedium": "Sie haben eine solide Grundlage, aber es gibt bedeutende Lücken, die Sie bald angehen sollten — bevor ein Vorfall Sie dazu zwingt.",
-    "narrativeHigh": "Es gibt mehrere erhebliche Lücken in Ihrem aktuellen Setup. Die gute Nachricht: Die meisten lassen sich schnell beheben, wenn man sie kennt.",
+    "narrativeLow": "Deine Gewohnheiten sind in guter Form. Mit ein paar gezielten Verbesserungen schließt du die verbleibenden Lücken.",
+    "narrativeMedium": "Du hast eine solide Grundlage, aber es gibt wichtige Lücken, die du bald angehen solltest — bevor ein Vorfall dich dazu zwingt.",
+    "narrativeHigh": "In deinem aktuellen Setup gibt es mehrere erhebliche Lücken. Die gute Nachricht: Die meisten lassen sich schnell beheben, sobald du sie kennst.",
     "breakdownTitle": "Aufschlüsselung nach Bereich",
     "recsTitle": "Was als Nächstes tun",
-    "recsSubtitle": "Dies sind die wirkungsvollsten Maßnahmen für Ihre spezifische Situation — der Aufwand ist für alle gering.",
-    "incidentTitle": "Wenn etwas passiert — tun Sie das zuerst",
-    "incidentSubtitle": "Speichern oder drucken Sie dies. Die meisten Menschen verlieren wertvolle Reaktionszeit, weil sie die Schritte nicht kennen.",
+    "recsSubtitle": "Das sind die wirkungsvollsten Maßnahmen für deine konkrete Situation — der Aufwand ist bei allen gering.",
+    "incidentTitle": "Wenn etwas passiert — tu das zuerst",
+    "incidentSubtitle": "Speichere oder drucke dir das aus. Die meisten Menschen verlieren wertvolle Reaktionszeit, weil sie die Schritte nicht kennen.",
     "businessCta": "Unternehmer oder Manager?",
-    "businessCtaBody": "Finden Sie in 3 kurzen Schritten heraus, welche EU-Cyber-Regeln für Ihr Unternehmen gelten.",
+    "businessCtaBody": "Finde in 3 kurzen Schritten heraus, welche EU-Cyber-Regeln für dein Unternehmen gelten.",
     "businessCtaBtn": "Meine Cyber-Regeln finden →",
     "retake": "Check wiederholen",
     "print": "🖨 Ergebnisse drucken / speichern"
@@ -96,7 +96,7 @@
   },
   "questions": {
     "acc-1": {
-      "text": "Verwenden Sie für jedes wichtige Konto (E-Mail, Banking, Arbeit) ein einzigartiges Passwort?",
+      "text": "Verwendest du für jedes wichtige Konto (E-Mail, Banking, Arbeit) ein einzigartiges Passwort?",
       "hint": "Das Wiederverwenden von Passwörtern ist eine der häufigsten Ursachen für Kontoübernahmen.",
       "options": {
         "acc-1-a": "Ja, immer",
@@ -105,8 +105,8 @@
       }
     },
     "acc-2": {
-      "text": "Haben Sie die Zwei-Faktor-Authentifizierung (2FA) für Ihr E-Mail-Konto aktiviert?",
-      "hint": "E-Mail ist der Generalschlüssel zu all Ihren anderen Konten. 2FA fügt ein entscheidendes zweites Schloss hinzu.",
+      "text": "Hast du die Zwei-Faktor-Authentifizierung (2FA) für dein E-Mail-Konto aktiviert?",
+      "hint": "E-Mail ist der Generalschlüssel zu all deinen anderen Konten. 2FA fügt ein entscheidendes zweites Schloss hinzu.",
       "options": {
         "acc-2-a": "Ja",
         "acc-2-b": "Nicht sicher",
@@ -114,7 +114,7 @@
       }
     },
     "acc-3": {
-      "text": "Verwenden Sie einen Passwort-Manager?",
+      "text": "Verwendest du einen Passwort-Manager?",
       "options": {
         "acc-3-a": "Ja",
         "acc-3-b": "Ich schreibe Passwörter auf / speichere sie in einer Notizen-App",
@@ -122,7 +122,7 @@
       }
     },
     "dev-1": {
-      "text": "Wie aktuell ist die Software auf Ihrem Hauptgerät (Telefon oder Laptop)?",
+      "text": "Wie aktuell ist die Software auf deinem Hauptgerät (Telefon oder Laptop)?",
       "hint": "Die meisten erfolgreichen Angriffe nutzen bekannte Schwachstellen aus, für die bereits Patches verfügbar sind.",
       "options": {
         "dev-1-a": "Automatische Updates sind aktiviert und es ist aktuell",
@@ -131,7 +131,7 @@
       }
     },
     "dev-2": {
-      "text": "Sperren sich Ihre Geräte automatisch nach kurzer Inaktivität?",
+      "text": "Sperren sich deine Geräte automatisch nach kurzer Inaktivität?",
       "options": {
         "dev-2-a": "Ja, mit einer PIN, einem Passwort oder biometrisch",
         "dev-2-b": "Manchmal — nicht konsequent",
@@ -139,7 +139,7 @@
       }
     },
     "dev-3": {
-      "text": "Haben Sie sich jemals mit einem öffentlichen WLAN (Café, Flughafen) ohne VPN verbunden?",
+      "text": "Hast du dich jemals mit einem öffentlichen WLAN (Café, Flughafen) ohne VPN verbunden?",
       "options": {
         "dev-3-a": "Ich meide öffentliches WLAN oder nutze immer ein VPN",
         "dev-3-b": "Gelegentlich für unkritisches Browsen",
@@ -147,8 +147,8 @@
       }
     },
     "bak-1": {
-      "text": "Haben Sie aktuelle Backups Ihrer wichtigsten Dateien (Fotos, Dokumente, Arbeit)?",
-      "hint": "Ransomware und Geräteverlust lassen sich beide durch ein Backup lösen. Ohne eins können Sie alles dauerhaft verlieren.",
+      "text": "Hast du aktuelle Backups deiner wichtigsten Dateien (Fotos, Dokumente, Arbeit)?",
+      "hint": "Ransomware und Geräteverlust lassen sich beide durch ein Backup lösen. Ohne eines kannst du alles dauerhaft verlieren.",
       "options": {
         "bak-1-a": "Ja, automatische Cloud- oder externe Backups",
         "bak-1-b": "Gelegentliche manuelle Kopien",
@@ -156,7 +156,7 @@
       }
     },
     "bak-2": {
-      "text": "Wenn Ihr Telefon heute gestohlen würde, könnten Sie auf Ihre Konten und Daten zugreifen?",
+      "text": "Wenn dein Telefon heute gestohlen würde, könntest du auf deine Konten und Daten zugreifen?",
       "options": {
         "bak-2-a": "Ja, ich bin zuversichtlich, dass ich alles wiederherstellen könnte",
         "bak-2-b": "Teilweise — einiges würde verloren gehen",
@@ -164,7 +164,7 @@
       }
     },
     "beh-1": {
-      "text": "Wie reagieren Sie auf unerwartete E-Mails, die Sie bitten, auf einen Link zu klicken oder Ihre Daten zu bestätigen?",
+      "text": "Wie reagierst du auf unerwartete E-Mails, die dich auffordern, auf einen Link zu klicken oder deine Daten zu bestätigen?",
       "hint": "Phishing ist nach wie vor der häufigste Angriffsweg — auch für Unternehmen.",
       "options": {
         "beh-1-a": "Ich überprüfe den Absender und klicke niemals auf unaufgeforderte Links",
@@ -173,7 +173,7 @@
       }
     },
     "beh-2": {
-      "text": "Wissen Sie, was Sie in den ersten 30 Minuten tun sollen, wenn Sie vermuten, dass Ihr Konto gehackt wurde?",
+      "text": "Weißt du, was du in den ersten 30 Minuten tun solltest, wenn du vermutest, dass dein Konto gehackt wurde?",
       "options": {
         "beh-2-a": "Ja, ich kenne die Schritte genau",
         "beh-2-b": "Ich habe eine grobe Vorstellung",
@@ -183,62 +183,62 @@
   },
   "recommendations": {
     "rec-pw-manager": {
-      "title": "Beginnen Sie mit einem Passwort-Manager",
-      "description": "Apps wie Bitwarden (kostenlos) oder 1Password generieren und speichern eindeutige Passwörter für jedes Konto. Sie müssen sich nur ein Master-Passwort merken."
+      "title": "Starte mit einem Passwort-Manager",
+      "description": "Apps wie Bitwarden (kostenlos) oder 1Password generieren und speichern eindeutige Passwörter für jedes Konto. Du musst dir nur ein Master-Passwort merken."
     },
     "rec-2fa-email": {
-      "title": "2FA für Ihr E-Mail-Konto aktivieren",
-      "description": "Gehen Sie zu Ihren E-Mail-Einstellungen und aktivieren Sie die Zwei-Faktor-Authentifizierung. Verwenden Sie eine App wie Google Authenticator oder Authy — wenn möglich nicht SMS."
+      "title": "Aktiviere 2FA für dein E-Mail-Konto",
+      "description": "Gehe in die Einstellungen deines E-Mail-Kontos und aktiviere die Zwei-Faktor-Authentifizierung. Verwende eine App wie Google Authenticator oder Authy — wenn möglich nicht SMS."
     },
     "rec-updates": {
-      "title": "Automatische Software-Updates aktivieren",
-      "description": "Aktivieren Sie Auto-Updates auf Ihrem Telefon und Laptop. Die einzeln wirksamste Maßnahme, um bekannte Sicherheitslücken zu schließen."
+      "title": "Aktiviere automatische Software-Updates",
+      "description": "Aktiviere Auto-Updates auf deinem Telefon und Laptop. Das ist eine der wirksamsten Maßnahmen, um bekannte Sicherheitslücken zu schließen."
     },
     "rec-screen-lock": {
-      "title": "Gerät nach 1–2 Minuten automatisch sperren",
-      "description": "Ein gesperrter Bildschirm schützt Ihre Daten, wenn Sie Ihr Gerät verlieren. Stellen Sie es jetzt in den Anzeigeeinstellungen Ihres Telefons oder Laptops ein."
+      "title": "Sperre dein Gerät nach 1–2 Minuten automatisch",
+      "description": "Ein gesperrter Bildschirm schützt deine Daten, wenn du dein Gerät verlierst. Stelle das jetzt in den Anzeigeeinstellungen deines Telefons oder Laptops ein."
     },
     "rec-backup": {
-      "title": "Automatische Cloud-Backups einrichten",
-      "description": "Aktivieren Sie iCloud-, Google Drive- oder OneDrive-Backups. Stellen Sie sicher, dass Fotos und Dokumente enthalten sind. Überprüfen Sie, ob das Backup tatsächlich läuft."
+      "title": "Richte automatische Cloud-Backups ein",
+      "description": "Aktiviere iCloud-, Google Drive- oder OneDrive-Backups. Achte darauf, dass Fotos und Dokumente enthalten sind. Prüfe, ob das Backup tatsächlich läuft."
     },
     "rec-recovery-plan": {
-      "title": "Konto-Wiederherstellungsoptionen aufschreiben",
-      "description": "Notieren Sie Ihre 2FA-Backup-Codes, Wiederherstellungs-E-Mail-Adressen und Wiederherstellungsschlüssel. Bewahren Sie diese physisch sicher auf (nicht nur auf Ihrem Telefon)."
+      "title": "Schreibe deine Konto-Wiederherstellungsoptionen auf",
+      "description": "Notiere deine 2FA-Backup-Codes, Wiederherstellungs-E-Mail-Adressen und Wiederherstellungsschlüssel. Bewahre diese physisch sicher auf (nicht nur auf deinem Telefon)."
     },
     "rec-phishing": {
-      "title": "Phishing-E-Mails erkennen lernen",
-      "description": "Überprüfen Sie die tatsächliche E-Mail-Adresse des Absenders (nicht nur den Anzeigenamen). Klicken Sie niemals auf Links in unerwarteten 'dringenden' E-Mails — gehen Sie stattdessen direkt zur Website."
+      "title": "Lerne Phishing-E-Mails zu erkennen",
+      "description": "Überprüfe die tatsächliche E-Mail-Adresse des Absenders (nicht nur den Anzeigenamen). Klicke niemals auf Links in unerwarteten 'dringenden' E-Mails — gehe stattdessen direkt zur Website."
     },
     "rec-incident-plan": {
-      "title": "Ihre ersten 3 Schritte bei einem Hack kennen",
-      "description": "Passwort ändern → aktive Sitzungen widerrufen → E-Mail auf Weiterleitungsregeln prüfen. Schreiben Sie diese auf und bewahren Sie sie auf."
+      "title": "Kenne deine ersten 3 Schritte bei einem Hack",
+      "description": "Passwort ändern → aktive Sitzungen widerrufen → E-Mail auf Weiterleitungsregeln prüfen. Schreibe dir diese auf und bewahre sie auf."
     }
   },
   "incident": {
     "1": {
       "title": "Nicht in Panik geraten — schnell handeln",
-      "description": "Schnelligkeit ist wichtig, aber Fehler in Panik machen die Sache schlimmer. Atmen Sie durch, dann arbeiten Sie diese Schritte durch."
+      "description": "Schnelligkeit ist wichtig, aber Fehler in Panik machen die Sache schlimmer. Atme durch, dann arbeite diese Schritte durch."
     },
     "2": {
       "title": "Passwort sofort ändern",
-      "description": "Gehen Sie direkt zur Website des Dienstes (klicken Sie nicht auf Links in verdächtigen E-Mails). Ändern Sie Ihr Passwort von einem vertrauenswürdigen Gerät aus."
+      "description": "Gehe direkt zur Website des Dienstes (klicke nicht auf Links in verdächtigen E-Mails). Ändere dein Passwort von einem vertrauenswürdigen Gerät aus."
     },
     "3": {
       "title": "Alle anderen Sitzungen abmelden",
-      "description": "Die meisten Dienste haben eine Option 'Von allen Geräten abmelden' in den Sicherheitseinstellungen. Nutzen Sie sie, um jeden Angreifer herauszuwerfen, der bereits eingeloggt ist."
+      "description": "Die meisten Dienste haben eine Option 'Von allen Geräten abmelden' in den Sicherheitseinstellungen. Nutze sie, um jeden Angreifer herauszuwerfen, der bereits eingeloggt ist."
     },
     "4": {
       "title": "E-Mail auf Weiterleitungsregeln prüfen",
-      "description": "Angreifer fügen oft eine Weiterleitungsregel hinzu, um Kopien Ihrer E-Mails zu erhalten. Prüfen Sie Einstellungen → Weiterleitung und löschen Sie Regeln, die Sie nicht erstellt haben."
+      "description": "Angreifer fügen oft eine Weiterleitungsregel hinzu, um Kopien deiner E-Mails zu erhalten. Prüfe Einstellungen → Weiterleitung und lösche Regeln, die du nicht erstellt hast."
     },
     "5": {
       "title": "Konto-Wiederherstellungsoptionen sichern",
-      "description": "Überprüfen Sie, ob Ihre Wiederherstellungs-E-Mail und Telefonnummer noch Ihre eigenen sind. Angreifer ändern diese manchmal, um Sie dauerhaft auszusperren."
+      "description": "Überprüfe, ob deine Wiederherstellungs-E-Mail und Telefonnummer noch deine eigenen sind. Angreifer ändern diese manchmal, um dich dauerhaft auszusperren."
     },
     "6": {
       "title": "Die Personen informieren, die es wissen müssen",
-      "description": "Wenn ein Arbeitskonto betroffen war, informieren Sie sofort Ihren IT-Kontakt oder Vorgesetzten. Wenn persönliche Daten geleakt wurden, erwägen Sie, Ihre Bank zu benachrichtigen."
+      "description": "Wenn ein Arbeitskonto betroffen war, informiere sofort deinen IT-Kontakt oder Vorgesetzten. Wenn persönliche Daten geleakt wurden, erwäge, deine Bank zu benachrichtigen."
     }
   },
   "quiz": {
