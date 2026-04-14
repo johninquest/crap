@@ -68,7 +68,6 @@ export interface Dictionary {
   };
   footer: {
     madeBy: string;
-    disclaimer: string;
     toolsLabel: string;
     checks: {
       assessment: string;
