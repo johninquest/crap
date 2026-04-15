@@ -108,11 +108,38 @@ Risk thresholds: `< 34` → Low · `34–66` → Medium · `≥ 67` → High
 
 ## Deployment
 
+### Vercel / static hosting
+
 The app is fully static (`generateStaticParams` on all routes). Deploy on Vercel or any static host:
 
 ```bash
 npm run build
 # Output: .next/  (Vercel) or export with `output: 'export'` for plain static hosting
+```
+
+### Docker (self-hosted)
+
+The repo includes a multi-stage `Dockerfile` (node:24-alpine, standalone output) and a `docker-compose.yml` pre-configured for Traefik.
+
+> **Note:** `NEXT_PUBLIC_*` environment variables are baked into the JS bundle at **build time**. Set them in your shell before building if you want analytics injected.
+
+**With Docker Compose (Traefik):**
+
+```bash
+# Ensure the external Traefik proxy network exists (one-time setup)
+docker network create proxy
+
+# Optional: export NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+docker compose up -d --build
+```
+
+The container listens on port `3000` internally. The Compose file handles TLS and routing via Traefik labels for `cyberchecklist.app`.
+
+**Without Compose:**
+
+```bash
+docker build -t cybercl .
+docker run -d -p 3000:3000 --name cybercl cybercl
 ```
 
 ## Data Privacy
