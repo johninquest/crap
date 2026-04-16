@@ -43,10 +43,10 @@ export default async function Nis2CheckPage({
       <Header dict={dict.header} lang={lang} langSwitch={dict.common.langSwitch} />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10">
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-[#1F2937] mb-2">
+          <h1 className="text-2xl font-bold text-text mb-2">
             {dict.quiz.nis2.title}
           </h1>
-          <p className="text-[#6B7280]">{dict.quiz.nis2.subtitle}</p>
+          <p className="text-text-muted">{dict.quiz.nis2.subtitle}</p>
         </div>
         <QuizFlow lang={lang} localizedQuiz={localizedQuiz} dict={dict} />
       </main>

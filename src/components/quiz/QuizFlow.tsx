@@ -34,7 +34,6 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
   const { definition, questions } = localizedQuiz;
   const c = dict.quiz.common;
   const quizDict = getQuizSectionDict(localizedQuiz, dict);
-  const accent = definition.accentColor;
 
   const [phase, setPhase] = useState<"intro" | "quiz">("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,24 +83,23 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
 
   if (phase === "intro") {
     return (
-      <div className="bg-white border border-[#E5E7EB] rounded-2xl p-8 space-y-6">
-        <p className="text-[#374151] leading-relaxed">{quizDict.description}</p>
+      <div className="bg-surface border border-border rounded-2xl p-8 space-y-6">
+        <p className="text-text-muted leading-relaxed">{quizDict.description}</p>
         <div className="flex flex-wrap gap-3">
-          <span className="inline-flex items-center gap-1.5 text-sm text-[#6B7280] bg-[#F3F4F6] rounded-full px-3 py-1">
+          <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-surface-muted rounded-full px-3 py-1">
             📋 {quizDict.questionCount}
           </span>
-          <span className="inline-flex items-center gap-1.5 text-sm text-[#6B7280] bg-[#F3F4F6] rounded-full px-3 py-1">
+          <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-surface-muted rounded-full px-3 py-1">
             ⏱ {quizDict.estimatedTime}
           </span>
         </div>
         <button
           onClick={handleStart}
-          className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-          style={{ backgroundColor: accent, outlineColor: accent }}
+          className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white bg-primary hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
         >
           {c.start}
         </button>
-        <p className="text-xs text-center text-[#9CA3AF]">
+        <p className="text-xs text-center text-text-subtle">
           No account required · No personal data collected
         </p>
       </div>
@@ -109,9 +107,6 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
   }
 
   // ── Quiz phase ───────────────────────────────────────────────────────────────
-
-  const borderSelected = accent;
-  const bgSelected = `${accent}15`;
 
   return (
     <div className="space-y-8">
@@ -125,11 +120,11 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
       <div className="space-y-6">
         {/* Question text */}
         <div className="space-y-2">
-          <p className="text-xl font-semibold text-[#1F2937] leading-snug">
+          <p className="text-xl font-semibold text-text leading-snug">
             {question.text}
           </p>
           {question.hint && (
-            <p className="text-sm text-[#6B7280] leading-relaxed">{question.hint}</p>
+            <p className="text-sm text-text-muted leading-relaxed">{question.hint}</p>
           )}
         </div>
 
@@ -141,13 +136,11 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
             return (
               <label
                 key={opt.id}
-                className="flex items-center gap-4 w-full rounded-xl border-2 px-5 py-4 cursor-pointer transition-all"
-                style={
+                className={`flex items-center gap-4 w-full rounded-xl border-2 px-5 py-4 cursor-pointer transition-all ${
                   isSelected
-                    ? { borderColor: borderSelected, backgroundColor: bgSelected }
-                    : undefined
-                }
-                data-state={isSelected ? "selected" : "idle"}
+                    ? "border-primary bg-primary-soft"
+                    : "border-border bg-surface hover:border-primary hover:bg-primary-soft"
+                }`}
               >
                 <input
                   type="radio"
@@ -159,24 +152,15 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
                 />
                 {/* Custom radio indicator */}
                 <span
-                  className="flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors"
-                  style={
-                    isSelected
-                      ? { borderColor: accent }
-                      : { borderColor: "#D1D5DB" }
-                  }
+                  className={`shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+                    isSelected ? "border-primary" : "border-border"
+                  }`}
                 >
                   {isSelected && (
-                    <span
-                      className="w-2.5 h-2.5 rounded-full"
-                      style={{ backgroundColor: accent }}
-                    />
+                    <span className="w-2.5 h-2.5 rounded-full bg-primary" />
                   )}
                 </span>
-                <span
-                  className="text-base font-medium"
-                  style={{ color: isSelected ? "#1F2937" : "#374151" }}
-                >
+                <span className="text-base text-text font-medium">
                   {opt.label}
                 </span>
               </label>
@@ -184,24 +168,11 @@ export function QuizFlow({ lang, localizedQuiz, dict }: QuizFlowProps) {
           })}
         </fieldset>
 
-        {/* Unselected state: subtle border for idle options */}
-        <style>{`
-          label[data-state="idle"] {
-            border-color: #E5E7EB;
-            background-color: white;
-          }
-          label[data-state="idle"]:hover {
-            border-color: ${accent};
-            background-color: ${accent}0D;
-          }
-        `}</style>
-
         {/* Next button */}
         <button
           onClick={handleNext}
           disabled={!selectedOptionId}
-          className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white transition-opacity disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-          style={{ backgroundColor: accent }}
+          className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white bg-primary hover:bg-primary-hover transition-colors disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
         >
           {isLast ? c.seeResults : c.next}
         </button>

@@ -20,7 +20,7 @@ export function Footer({ dict, lang }: FooterProps) {
   const { footer } = dict;
 
   return (
-    <footer className="border-t border-border py-6 text-sm text-[#9CA3AF]">
+    <footer className="border-t border-border py-6 text-sm text-text-subtle">
       <div className="max-w-3xl mx-auto px-4 flex flex-col items-center gap-4">
         <nav aria-label={footer.toolsLabel}>
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">

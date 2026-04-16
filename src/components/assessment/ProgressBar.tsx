@@ -15,13 +15,13 @@ export function ProgressBar({ current, total, labelQuestionOf, labelPctComplete 
 
   return (
     <div className="space-y-1">
-      <div className="flex justify-between items-center text-sm text-[#6B7280]">
+      <div className="flex justify-between items-center text-sm text-text-muted">
         <span>{questionLabel}</span>
         <span>{pctLabel}</span>
       </div>
-      <div className="h-2 bg-[#E5E7EB] rounded-full overflow-hidden">
+      <div className="h-2 bg-border rounded-full overflow-hidden">
         <div
-          className="h-full bg-[#0891B2] rounded-full transition-all duration-500 ease-out"
+          className="h-full bg-primary rounded-full transition-all duration-500 ease-out"
           style={{ width: `${pct}%` }}
         />
       </div>

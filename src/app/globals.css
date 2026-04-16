@@ -4,20 +4,33 @@
   /* Typography */
   --font-sans: var(--font-inter);
 
-  /* Brand palette */
-  --color-bg:           #FFFFFF;
-  --color-text:         #1F2937;
-  --color-text-muted:   #6B7280;
-  --color-border:       #E5E7EB;
-  --color-primary:      #0891B2;
-  --color-primary-dark: #0E7490;
-  --color-primary-light:#E0F2FE;
-  --color-amber:        #F59E0B;
-  --color-amber-light:  #FEF3C7;
-  --color-green:        #10B981;
-  --color-green-light:  #D1FAE5;
-  --color-red:          #EF4444;
-  --color-red-light:    #FEE2E2;
+  /* ── Layout surfaces ─────────────────────────────────────────────── */
+  --color-bg:              #0B132B; /* deep navy page background       */
+  --color-surface:         #1C2541; /* card / panel                    */
+  --color-surface-muted:   #162035; /* section bands / tag pills        */
+  --color-text:            #EAEAEA;
+  --color-text-muted:      #A0AEC0;
+  --color-text-subtle:     #718096; /* hints, fine print               */
+  --color-border:          #2D3A5A;
+
+  /* ── Primary accent – neon cyan ─────────────────────────────────── */
+  --color-primary:         #00E5FF; /* neon cyan                       */
+  --color-primary-hover:   #5BC0BE; /* secondary accent, calmer hover  */
+  --color-primary-soft:    #0E2530; /* dark tinted bg for selections   */
+
+  /* ── Semantic status – reserved for assessment/check results ─────── */
+  --color-green:           #10B981;
+  --color-green-light:     #D1FAE5;
+  --color-green-soft:      #F0FDF4;
+  --color-green-border:    #BBF7D0;
+  --color-green-on:        #065F46;
+  --color-amber:           #F59E0B;
+  --color-amber-light:     #FEF3C7;
+  --color-amber-border:    #FDE68A;
+  --color-amber-on:        #92400E;
+  --color-red:             #EF4444;
+  --color-red-light:       #FEE2E2;
+  --color-red-on:          #991B1B;
 }
 
 * {
@@ -29,8 +42,8 @@ html {
 }
 
 body {
-  background-color: #FFFFFF;
-  color: #1F2937;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: var(--font-inter), system-ui, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -44,7 +57,7 @@ html {
 
 /* Focus ring — accessible, on-brand */
 :focus-visible {
-  outline: 2px solid #0891B2;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
   border-radius: 4px;
 }

@@ -4,7 +4,6 @@ export const AI_CHECK_QUIZ: QuizDefinition = {
   id: "ai-check",
   slug: "ai-check",
   storageKey: "quiz_ai_result",
-  accentColor: "#D97706",
   categories: [
     { id: "data_ip_leaks",  icon: "🔓" },
     { id: "transparency",   icon: "👁️" },

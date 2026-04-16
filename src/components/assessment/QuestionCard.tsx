@@ -28,11 +28,11 @@ export function QuestionCard({
     <div className="space-y-6">
       {/* Question */}
       <div className="space-y-2">
-        <p className="text-xl font-semibold text-[#1F2937] leading-snug">
+        <p className="text-xl font-semibold text-text leading-snug">
           {question.text}
         </p>
         {question.hint && (
-          <p className="text-sm text-[#6B7280] leading-relaxed">{question.hint}</p>
+          <p className="text-sm text-text-muted leading-relaxed">{question.hint}</p>
         )}
       </div>
 
@@ -47,8 +47,8 @@ export function QuestionCard({
               className={`flex items-center gap-4 w-full rounded-xl border-2 px-5 py-4 cursor-pointer transition-all
                 ${
                   isSelected
-                    ? "border-[#0891B2] bg-[#E0F2FE]"
-                    : "border-[#E5E7EB] bg-white hover:border-[#0891B2] hover:bg-[#F0FAFA]"
+                    ? "border-primary bg-primary-soft"
+                    : "border-border bg-surface hover:border-primary hover:bg-primary-soft"
                 }`}
             >
               <input
@@ -68,13 +68,13 @@ export function QuestionCard({
               {/* Custom radio indicator */}
               <span
                 className={`flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors
-                  ${isSelected ? "border-[#0891B2]" : "border-[#D1D5DB]"}`}
+                  ${isSelected ? "border-primary" : "border-border"}`}
               >
                 {isSelected && (
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#0891B2]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-primary" />
                 )}
               </span>
-              <span className="text-base text-[#1F2937] font-medium">{opt.label}</span>
+              <span className="text-base text-text font-medium">{opt.label}</span>
             </label>
           );
         })}

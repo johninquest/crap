@@ -4,7 +4,6 @@ export const GDPR_QUIZ: QuizDefinition = {
   id: "gdpr",
   slug: "gdpr-check",
   storageKey: "quiz_gdpr_result",
-  accentColor: "#7C3AED",
   categories: [
     { id: "data_awareness",  icon: "👁️" },
     { id: "your_rights",     icon: "⚖️" },

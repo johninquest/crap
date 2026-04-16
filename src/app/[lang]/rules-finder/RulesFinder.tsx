@@ -72,22 +72,22 @@ export function RulesFinder({ lang, dict }: RulesFinderProps) {
   if (phase === "intro") {
     return (
       <div className="bg-white border border-border rounded-2xl p-8 space-y-6">
-        <p className="text-[#374151] leading-relaxed">{t.description}</p>
+        <p className="text-text-muted leading-relaxed">{t.description}</p>
         <div className="flex flex-wrap gap-3">
-          <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-[#F3F4F6] rounded-full px-3 py-1">
+          <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-surface-muted rounded-full px-3 py-1">
             📋 {t.questionCount}
           </span>
-          <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-[#F3F4F6] rounded-full px-3 py-1">
+          <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-surface-muted rounded-full px-3 py-1">
             ⏱ {t.estimatedTime}
           </span>
         </div>
         <button
           onClick={handleStart}
-          className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white bg-[#7C3AED] hover:bg-[#6D28D9] transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#7C3AED]"
+          className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white bg-primary hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
         >
           {t.start}
         </button>
-        <p className="text-xs text-center text-[#9CA3AF]">
+        <p className="text-xs text-center text-text-subtle">
           No account required · No personal data collected
         </p>
       </div>
@@ -128,12 +128,11 @@ export function RulesFinder({ lang, dict }: RulesFinderProps) {
             return (
               <label
                 key={opt.value}
-                className="flex items-center gap-4 w-full rounded-xl border-2 px-5 py-4 cursor-pointer transition-all"
-                style={
+                className={`flex items-center gap-4 w-full rounded-xl border-2 px-5 py-4 cursor-pointer transition-all ${
                   isSelected
-                    ? { borderColor: "#7C3AED", backgroundColor: "#7C3AED15" }
-                    : undefined
-                }
+                    ? "border-primary bg-primary-soft"
+                    : "border-border bg-surface hover:border-primary hover:bg-primary-soft"
+                }`}
               >
                 <input
                   type="radio"
@@ -144,14 +143,12 @@ export function RulesFinder({ lang, dict }: RulesFinderProps) {
                   className="sr-only"
                 />
                 <span
-                  className="shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors"
-                  style={isSelected ? { borderColor: "#7C3AED" } : { borderColor: "#D1D5DB" }}
+                  className={`shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+                    isSelected ? "border-primary" : "border-border"
+                  }`}
                 >
                   {isSelected && (
-                    <span
-                      className="w-2.5 h-2.5 rounded-full"
-                      style={{ backgroundColor: "#7C3AED" }}
-                    />
+                    <span className="w-2.5 h-2.5 rounded-full bg-primary" />
                   )}
                 </span>
                 <span className="text-text font-medium">{opt.label}</span>
@@ -164,7 +161,7 @@ export function RulesFinder({ lang, dict }: RulesFinderProps) {
       <button
         onClick={handleNext}
         disabled={!selected}
-        className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white bg-[#7C3AED] hover:bg-[#6D28D9] transition-opacity disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#7C3AED]"
+        className="w-full rounded-xl px-6 py-4 text-base font-semibold text-white bg-primary hover:bg-primary-hover transition-colors disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
       >
         {t.next}
       </button>

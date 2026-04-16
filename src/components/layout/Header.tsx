@@ -12,10 +12,10 @@ export function Header({ dict, lang, langSwitch }: HeaderProps) {
   const otherLang = lang === "en" ? "de" : "en";
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-[#E5E7EB]">
+    <header className="sticky top-0 z-50 bg-surface/90 backdrop-blur border-b border-border">
       <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link href={`/${lang}`} className="text-lg font-bold text-[#1F2937] tracking-tight">
-          {BRAND.namePrefix}<span className="text-[#0891B2]">{BRAND.nameSuffix}</span>
+        <Link href={`/${lang}`} className="text-lg font-bold text-text tracking-tight">
+          {BRAND.namePrefix}<span className="text-primary">{BRAND.nameSuffix}</span>
         </Link>
         <div className="flex items-center gap-3">
           <LanguageSwitcher
@@ -25,7 +25,7 @@ export function Header({ dict, lang, langSwitch }: HeaderProps) {
           />
           <Link
             href={`/${lang}/assessment`}
-            className="text-sm font-semibold text-[#0891B2] hover:text-[#0E7490] transition-colors"
+            className="text-sm font-semibold text-primary hover:text-primary-hover transition-colors"
           >
             {dict.startCheck}
           </Link>

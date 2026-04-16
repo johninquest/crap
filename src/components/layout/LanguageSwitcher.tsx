@@ -19,7 +19,7 @@ export function LanguageSwitcher({ currentLang, otherLang, label }: LanguageSwit
     <Link
       href={newPath}
       onClick={() => trackEvent("language_selected", { from: currentLang, to: otherLang })}
-      className="text-sm font-semibold text-[#6B7280] hover:text-[#1F2937] transition-colors border border-[#E5E7EB] rounded-md px-2 py-1"
+      className="text-sm font-semibold text-text-muted hover:text-text transition-colors border border-border rounded-md px-2 py-1"
     >
       {label}
     </Link>

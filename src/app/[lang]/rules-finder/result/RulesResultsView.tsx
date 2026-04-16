@@ -113,8 +113,8 @@ export function RulesResultsView({ lang, dict }: RulesResultsViewProps) {
         const badgeLabel = rule.applies === "yes" ? t.resultApplies : t.resultMayApply;
         const badgeClass =
           rule.applies === "yes"
-            ? "bg-[#FEF3C7] text-[#92400E]"
-            : "bg-[#F3F4F6] text-[#6B7280]";
+            ? "bg-amber-light text-amber-on"
+            : "bg-surface-muted text-text-muted";
 
         return (
           <section

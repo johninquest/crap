@@ -93,7 +93,7 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
           {result.moduleScores.map((ms) => (
             <div
               key={ms.module}
-              className="bg-white border border-border rounded-xl p-5 space-y-3"
+              className="bg-surface border border-border rounded-xl p-5 space-y-3"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -124,7 +124,7 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
           {result.topRecommendations.map((rec, i) => (
             <li
               key={rec.id}
-              className="flex gap-4 bg-white border border-border rounded-xl p-5"
+              className="flex gap-4 bg-surface border border-border rounded-xl p-5"
             >
               <div className="shrink-0 w-7 h-7 rounded-full bg-primary-light text-primary text-sm font-bold flex items-center justify-center">
                 {i + 1}
@@ -139,16 +139,16 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
       </section>
 
       {/* ── Incident Guidance ─────────────────────────────────────── */}
-      <section className="bg-amber-light border border-[#FDE68A] rounded-2xl p-6 space-y-4">
+      <section className="bg-amber-light border border-amber-border rounded-2xl p-6 space-y-4">
         <div className="flex items-center gap-2">
           <span className="text-xl">🚨</span>
-          <h2 className="text-lg font-semibold text-[#92400E]">{t.incidentTitle}</h2>
+          <h2 className="text-lg font-semibold text-amber-on">{t.incidentTitle}</h2>
         </div>
-        <p className="text-sm text-[#92400E]">{t.incidentSubtitle}</p>
+        <p className="text-sm text-amber-on">{t.incidentSubtitle}</p>
         <ol className="space-y-3">
           {result.incidentGuidance.map((step) => (
             <li key={step.order} className="flex gap-3">
-              <span className="shrink-0 font-bold text-[#92400E] text-sm w-5 text-right">
+              <span className="shrink-0 font-bold text-amber-on text-sm w-5 text-right">
                 {step.order}.
               </span>
               <div>
@@ -161,10 +161,10 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────── */}
-      <section className="bg-[#F0FDF4] border border-[#BBF7D0] rounded-2xl p-6 space-y-4">
+      <section className="bg-green-soft border border-green-border rounded-2xl p-6 space-y-4">
         <div>
-          <p className="font-semibold text-[#166534]">{t.businessCta}</p>
-          <p className="text-sm text-[#166534] mt-1">{t.businessCtaBody}</p>
+          <p className="font-semibold text-green-on">{t.businessCta}</p>
+          <p className="text-sm text-green-on mt-1">{t.businessCtaBody}</p>
         </div>
         <Link href={`/${lang}/rules-finder`}>
           <Button variant="primary">{t.businessCtaBtn}</Button>

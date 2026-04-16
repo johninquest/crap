@@ -4,7 +4,6 @@ export const NIS2_QUIZ: QuizDefinition = {
   id: "nis2",
   slug: "nis2-check",
   storageKey: "quiz_nis2_result",
-  accentColor: "#2563EB",
   categories: [
     { id: "applicability", icon: "🏛️" },
     { id: "systems",       icon: "⚙️" },

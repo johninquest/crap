@@ -27,7 +27,6 @@ export interface QuizDefinition {
   id: QuizId;
   slug: string;
   storageKey: string;
-  accentColor: string;
   categories: QuizCategory[];
   baseQuestions: BaseQuizQuestion[];
 }

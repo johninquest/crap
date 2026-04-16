@@ -1,9 +1,9 @@
 import type { RiskLevel } from "@/lib/assessment/types";
 
 const CONFIG: Record<RiskLevel, { bg: string; text: string; dot: string }> = {
-  low:    { bg: "bg-[#D1FAE5]", text: "text-[#065F46]", dot: "bg-[#10B981]" },
-  medium: { bg: "bg-[#FEF3C7]", text: "text-[#92400E]", dot: "bg-[#F59E0B]" },
-  high:   { bg: "bg-[#FEE2E2]", text: "text-[#991B1B]", dot: "bg-[#EF4444]" },
+  low:    { bg: "bg-green-light",  text: "text-green-on",  dot: "bg-green" },
+  medium: { bg: "bg-amber-light",  text: "text-amber-on",  dot: "bg-amber" },
+  high:   { bg: "bg-red-light",    text: "text-red-on",    dot: "bg-red"   },
 };
 
 interface RiskBadgeProps {

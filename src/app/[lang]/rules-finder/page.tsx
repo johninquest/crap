@@ -37,10 +37,10 @@ export default async function RulesFinderPage({
       <Header dict={dict.header} lang={lang} langSwitch={dict.common.langSwitch} />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10">
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-[#1F2937] mb-2">
+          <h1 className="text-2xl font-bold text-text mb-2">
             {dict.rulesFinder.pageTitle}
           </h1>
-          <p className="text-[#6B7280]">{dict.rulesFinder.pageSubtitle}</p>
+          <p className="text-text-muted">{dict.rulesFinder.pageSubtitle}</p>
         </div>
         <RulesFinder lang={lang} dict={dict} />
       </main>
