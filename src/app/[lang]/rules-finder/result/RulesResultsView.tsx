@@ -88,7 +88,7 @@ export function RulesResultsView({ lang, dict }: RulesResultsViewProps) {
   if (rules.length === 0) {
     return (
       <div className="space-y-8">
-        <section className="bg-white border border-border rounded-2xl p-6 space-y-3">
+        <section className="bg-surface border border-border rounded-2xl p-6 space-y-3">
           <div className="flex items-center gap-3">
             <span className="text-2xl">✅</span>
             <h2 className="text-lg font-semibold text-text">{t.resultNoMatch}</h2>
@@ -119,7 +119,7 @@ export function RulesResultsView({ lang, dict }: RulesResultsViewProps) {
         return (
           <section
             key={rule.key}
-            className="bg-white border border-border rounded-2xl p-6 space-y-4"
+            className="bg-surface border border-border rounded-2xl p-6 space-y-4"
           >
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div className="flex items-center gap-3">

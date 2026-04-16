@@ -71,7 +71,7 @@ export function RulesFinder({ lang, dict }: RulesFinderProps) {
 
   if (phase === "intro") {
     return (
-      <div className="bg-white border border-border rounded-2xl p-8 space-y-6">
+      <div className="bg-surface border border-border rounded-2xl p-8 space-y-6">
         <p className="text-text-muted leading-relaxed">{t.description}</p>
         <div className="flex flex-wrap gap-3">
           <span className="inline-flex items-center gap-1.5 text-sm text-text-muted bg-surface-muted rounded-full px-3 py-1">

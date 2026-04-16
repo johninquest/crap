@@ -67,7 +67,7 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
   return (
     <div className="space-y-10">
       {/* ── Overall Score ──────────────────────────────────────────── */}
-      <section className="bg-white border border-border rounded-2xl p-6 space-y-4">
+      <section className="bg-surface border border-border rounded-2xl p-6 space-y-4">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
             <h2 className="text-lg font-semibold text-text">{t.overallTitle}</h2>
@@ -152,8 +152,8 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
                 {step.order}.
               </span>
               <div>
-                <p className="font-semibold text-text text-sm">{step.title}</p>
-                <p className="text-sm text-text-muted leading-relaxed">{step.description}</p>
+                <p className="font-semibold text-amber-on text-sm">{step.title}</p>
+                <p className="text-sm text-amber-on leading-relaxed">{step.description}</p>
               </div>
             </li>
           ))}
