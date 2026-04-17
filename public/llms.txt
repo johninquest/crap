@@ -1,0 +1,25 @@
+# CyberChecklist
+
+> Free, no-account tools to assess personal and business cyber risk and EU regulatory compliance. Plain language, no jargon, no scare tactics. Available in English and German.
+
+## Tools (English)
+
+- [Free Cyber Risk Assessment](https://cyberchecklist.app/en/assessment): 10-question cyber risk check covering accounts & passwords, devices & software, backups & recovery, and habits & awareness. Results in under 5 minutes.
+- [GDPR Compliance Check](https://cyberchecklist.app/en/gdpr-check): 10-question GDPR data-protection awareness check for individuals and small businesses.
+- [NIS2 Compliance Check](https://cyberchecklist.app/en/nis2-check): 12-question cybersecurity self-assessment for small businesses based on NIS2 and BSI recommendations.
+- [EU AI Act Readiness Check](https://cyberchecklist.app/en/ai-check): 9-question check for small businesses and freelancers covering GenAI risks, EU AI Act compliance, and data protection when using AI tools.
+- [EU Regulation Finder](https://cyberchecklist.app/en/rules-finder): 3-step tool to identify which EU cybersecurity regulations (NIS2, GDPR, EU AI Act) apply to your organisation.
+
+## Tools (Deutsch)
+
+- [Kostenloser Cyber-Risiko-Check](https://cyberchecklist.app/de/assessment): 10 verständliche Fragen zu Konten & Passwörtern, Geräten & Software, Backups & Wiederherstellung sowie Gewohnheiten & Bewusstsein. Ergebnis in unter 5 Minuten.
+- [DSGVO-Datenschutz-Bewusstsein-Check](https://cyberchecklist.app/de/gdpr-check): 10-Fragen-Check zum DSGVO-Datenschutzbewusstsein für Privatpersonen und kleine Unternehmen.
+- [NIS2-Cybersicherheits-Check](https://cyberchecklist.app/de/nis2-check): 12-Fragen-Selbst-Check für kleine Unternehmen, basierend auf NIS2 und BSI-Empfehlungen.
+- [Alltäglicher KI-Reality-Check](https://cyberchecklist.app/de/ai-check): 9-Fragen-Check für kleine Unternehmen und Freiberufler zu GenKI-Risiken, EU-KI-Gesetz-Compliance und Datenschutz beim Einsatz von KI-Tools.
+- [Cyber-Regeln Finder](https://cyberchecklist.app/de/rules-finder): In 3 Schritten herausfinden, welche EU-Cybersicherheitsregeln (NIS2, DSGVO, EU-KI-Gesetz) für Ihr Unternehmen gelten.
+
+## Notes
+
+- All tools are free and require no account or personal data.
+- Results are generated client-side and not stored or transmitted.
+- No installations required. Runs entirely in the browser.
