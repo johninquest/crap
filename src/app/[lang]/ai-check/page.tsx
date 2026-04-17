@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { QuizFlow } from "@/components/quiz/QuizFlow";
 import { getLocalizedQuiz } from "@/lib/quiz/registry";
 import { BRAND } from "@/lib/config";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "de" }];
@@ -24,7 +25,13 @@ export async function generateMetadata({
     openGraph: {
       title: `${dict.quiz.aiCheck.metaTitle} – ${BRAND.name}`,
       description: dict.quiz.aiCheck.metaDesc,
+      type: "website",
+      images: OG_IMAGE,
     },
+    twitter: {
+      card: "summary_large_image",
+    },
+    alternates: buildAlternates(lang, "/ai-check"),
   };
 }
 

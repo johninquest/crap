@@ -20,6 +20,7 @@ export async function generateMetadata({
   return {
     title: `${dict.quiz.nis2.metaTitle} – ${dict.quiz.common.overallTitle} – ${BRAND.name}`,
     description: dict.quiz.nis2.metaDesc,
+    robots: { index: false, follow: false },
   };
 }
 

@@ -5,6 +5,11 @@ import { Header } from "@/components/layout/Header";
 import { AssessmentFlow } from "./AssessmentFlow";
 import { getLocalizedQuestions } from "@/lib/assessment/questions";
 import { BRAND } from "@/lib/config";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
+
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "de" }];
+}
 
 export async function generateMetadata({
   params,
@@ -17,6 +22,16 @@ export async function generateMetadata({
   return {
     title: `${dict.assessment.metaTitle} – ${BRAND.name}`,
     description: dict.assessment.metaDesc,
+    openGraph: {
+      title: `${dict.assessment.metaTitle} – ${BRAND.name}`,
+      description: dict.assessment.metaDesc,
+      type: "website",
+      images: OG_IMAGE,
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+    alternates: buildAlternates(lang, "/assessment"),
   };
 }
 

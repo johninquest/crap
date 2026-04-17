@@ -5,6 +5,7 @@ import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/Button";
 import { BRAND } from "@/lib/config";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
 const PILLAR_ICONS = ["⚡", "🎯", "✅"];
 const MODULE_ICONS = ["🔑", "💻", "☁️", "🧠"];
@@ -18,8 +19,18 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   return {
-    title: `${BRAND.name} – Understand Your Cyber Risk`,
+    title: `${BRAND.name} – ${dict.home.heroTitle1} ${dict.home.heroTitle2}`,
     description: dict.home.heroBody,
+    openGraph: {
+      title: `${BRAND.name} – ${dict.home.heroTitle1} ${dict.home.heroTitle2}`,
+      description: dict.home.heroBody,
+      type: "website",
+      images: OG_IMAGE,
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+    alternates: buildAlternates(lang, ""),
   };
 }
 

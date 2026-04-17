@@ -20,6 +20,7 @@ export async function generateMetadata({
   return {
     title: `${dict.quiz.gdpr.metaTitle} – ${dict.quiz.common.overallTitle} – ${BRAND.name}`,
     description: dict.quiz.gdpr.metaDesc,
+    robots: { index: false, follow: false },
   };
 }
 

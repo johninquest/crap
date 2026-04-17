@@ -5,6 +5,10 @@ import { Header } from "@/components/layout/Header";
 import { RulesResultsView } from "./RulesResultsView";
 import { BRAND } from "@/lib/config";
 
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "de" }];
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -16,6 +20,7 @@ export async function generateMetadata({
   return {
     title: `${dict.rulesFinder.resultMetaTitle} – ${BRAND.name}`,
     description: dict.rulesFinder.resultMetaDesc,
+    robots: { index: false, follow: false },
   };
 }
 

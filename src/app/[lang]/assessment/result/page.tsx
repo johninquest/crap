@@ -5,6 +5,10 @@ import { Header } from "@/components/layout/Header";
 import { ResultsView } from "./ResultsView";
 import { BRAND } from "@/lib/config";
 
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "de" }];
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -16,6 +20,7 @@ export async function generateMetadata({
   return {
     title: `${dict.results.metaTitle} – ${BRAND.name}`,
     description: dict.results.metaDesc,
+    robots: { index: false, follow: false },
   };
 }
 

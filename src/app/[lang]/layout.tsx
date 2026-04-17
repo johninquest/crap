@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import { BRAND } from "@/lib/config";
+import { OG_IMAGE } from "@/lib/seo";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
@@ -27,12 +28,53 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   return {
+    metadataBase: new URL("https://cyberchecklist.app"),
     title: `${BRAND.name} – ${dict.home.heroTitle1} ${dict.home.heroTitle2}`,
     description: dict.home.heroBody,
+    openGraph: {
+      type: "website",
+      siteName: BRAND.name,
+      images: OG_IMAGE,
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
   };
 }
 
+export const viewport: Viewport = {
+  themeColor: "#0B132B",
+};
+
 const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cyberchecklist.app/#organization",
+      name: BRAND.name,
+      url: "https://cyberchecklist.app",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://cyberchecklist.app/og-image.png",
+      },
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://cyberchecklist.app/#webapp",
+      name: BRAND.name,
+      url: "https://cyberchecklist.app",
+      description: BRAND.tagline,
+      applicationCategory: "SecurityApplication",
+      operatingSystem: "Any",
+      inLanguage: ["en", "de"],
+      isAccessibleForFree: true,
+      publisher: { "@id": "https://cyberchecklist.app/#organization" },
+    },
+  ],
+};
 
 export default async function LangLayout({
   children,
@@ -52,6 +94,10 @@ export default async function LangLayout({
           <div className="flex-1 flex flex-col">{children}</div>
           <Footer dict={dict} lang={lang} />
         </PostHogProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
       {GA_ID && (
         <>

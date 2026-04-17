@@ -4,6 +4,7 @@ import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { Header } from "@/components/layout/Header";
 import { RulesFinder } from "./RulesFinder";
 import { BRAND } from "@/lib/config";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "de" }];
@@ -20,6 +21,16 @@ export async function generateMetadata({
   return {
     title: `${dict.rulesFinder.metaTitle} – ${BRAND.name}`,
     description: dict.rulesFinder.metaDesc,
+    openGraph: {
+      title: `${dict.rulesFinder.metaTitle} – ${BRAND.name}`,
+      description: dict.rulesFinder.metaDesc,
+      type: "website",
+      images: OG_IMAGE,
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+    alternates: buildAlternates(lang, "/rules-finder"),
   };
 }
 
