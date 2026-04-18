@@ -1,16 +1,17 @@
 services:
   crap:
-    build: .
+    build:
+      context: .
+      args:
+        # Compose reads these from .env automatically — no changes needed to .dockerignore or .gitignore
+        NEXT_PUBLIC_POSTHOG_KEY: ${NEXT_PUBLIC_POSTHOG_KEY}
+        NEXT_PUBLIC_POSTHOG_HOST: ${NEXT_PUBLIC_POSTHOG_HOST}
+        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID}
     container_name: crap
     restart: unless-stopped
     environment:
       - NODE_ENV=production
       - PORT=3000
-      # Analytics — baked into JS bundle at build time (NEXT_PUBLIC_* vars).
-      # Pass them as build args in CI/CD if you want them injected during docker build.
-      # - NEXT_PUBLIC_GA_MEASUREMENT_ID=
-      # - NEXT_PUBLIC_POSTHOG_KEY=
-      # - NEXT_PUBLIC_POSTHOG_HOST=https://eu.i.posthog.com
     labels:
       - "traefik.enable=true"
 
