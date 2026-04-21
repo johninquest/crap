@@ -35,7 +35,7 @@ export default async function AiCheckResultPage({
 
   return (
     <>
-      <Header dict={dict.header} lang={lang} langSwitch={dict.common.langSwitch} />
+      <Header lang={lang} langSwitch={dict.common.langSwitch} />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-text mb-2">

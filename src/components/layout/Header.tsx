@@ -3,12 +3,11 @@ import { BRAND } from "@/lib/config";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 interface HeaderProps {
-  dict: { startCheck: string };
   lang: string;
   langSwitch: string;
 }
 
-export function Header({ dict, lang, langSwitch }: HeaderProps) {
+export function Header({ lang, langSwitch }: HeaderProps) {
   const otherLang = lang === "en" ? "de" : "en";
 
   return (
@@ -17,19 +16,11 @@ export function Header({ dict, lang, langSwitch }: HeaderProps) {
         <Link href={`/${lang}`} className="text-lg font-bold text-text tracking-tight">
           {BRAND.namePrefix}<span className="text-primary">{BRAND.nameSuffix}</span>
         </Link>
-        <div className="flex items-center gap-3">
-          <LanguageSwitcher
-            currentLang={lang}
-            otherLang={otherLang}
-            label={langSwitch}
-          />
-          <Link
-            href={`/${lang}/assessment`}
-            className="text-sm font-semibold text-primary hover:text-primary-hover transition-colors"
-          >
-            {dict.startCheck}
-          </Link>
-        </div>
+        <LanguageSwitcher
+          currentLang={lang}
+          otherLang={otherLang}
+          label={langSwitch}
+        />
       </div>
     </header>
   );

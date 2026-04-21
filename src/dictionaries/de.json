@@ -5,43 +5,57 @@
     "riskHigh": "Hohes Risiko",
     "langSwitch": "EN"
   },
-  "header": {
-    "startCheck": "Kostenlos starten →"
-  },
+  "header": {},
   "home": {
     "badge": "Kostenlos · Kein Konto nötig · 5 Minuten",
-    "heroTitle1": "Bist du gerade",
-    "heroTitle2": "gefährdet?",
-    "heroBody": "Cyber-Bedrohungen ändern sich schnell. Oft ist unklar, ob deine Gewohnheiten und Geräte noch sicher sind. Verschaffe dir in wenigen Minuten ein klares Bild — ohne Fachjargon und Panikmache.",
-    "heroCta": "Meinen kostenlosen Risiko-Check starten",
+    "heroTitle": "Kenne dein Cyber-Risiko",
+    "heroBody": "Ob Privatperson, die ihr digitales Leben schützen möchte, oder Unternehmen, das EU-Cyber-Vorschriften navigiert — verschaffe dir in wenigen Minuten Klarheit. Kein Fachjargon, keine Panikmache.",
+    "heroCtaIndividuals": "Für Privatpersonen ↓",
+    "heroCtaBusiness": "Für Unternehmen ↓",
     "heroDisclaimer": "Keine persönlichen Daten erfasst. Kein Konto erforderlich.",
-    "pillars": [
-      {
-        "title": "3–5 Minuten",
-        "body": "Zehn verständliche Fragen. Kein Fachjargon, keine Installation nötig."
+    "individualsTitle": "Für Privatpersonen",
+    "individualsSubtitle": "Finde heraus, wie sicher dein digitales Leben wirklich ist.",
+    "businessTitle": "Für Unternehmen",
+    "businessSubtitle": "Verstehe deine EU-Compliance-Pflichten und Sicherheitslage.",
+    "checks": {
+      "assessment": {
+        "title": "Persönlicher Cyber-Risiko-Check",
+        "description": "Finde heraus, ob deine Passwörter, Geräte und Gewohnheiten dich gefährden.",
+        "tooltip": "Deckt Konten & Passwörter, Geräte & Software, Backups und tägliche Gewohnheiten ab. ~10 Fragen, priorisierte Maßnahmenliste.",
+        "time": "~5 Min.",
+        "cta": "Check starten →"
       },
-      {
-        "title": "Klares Ergebnis",
-        "body": "Sieh genau, wo du bei Konten, Geräten, Backups und Gewohnheiten stehst."
+      "gdpr": {
+        "title": "DSGVO-Rechte-Check",
+        "description": "Kennst du deine Rechte rund um deine persönlichen Daten — und nutzt du sie?",
+        "tooltip": "10 Fragen zu Datenbewusstsein, deinen gesetzlichen Rechten, digitalen Gewohnheiten und Reaktion bei Datenpannen. Erfahre genau, welchen Schutz du hast.",
+        "time": "~4 Min.",
+        "cta": "Check starten →"
       },
-      {
-        "title": "Was als Nächstes tun",
-        "body": "Priorisierte Maßnahmen — nur die 3–5 Dinge, die für deine Situation wirklich wichtig sind."
+      "nis2": {
+        "title": "NIS2-Compliance-Check",
+        "description": "Ist dein Unternehmen auf NIS2 vorbereitet? Geschäftsführer haften persönlich.",
+        "tooltip": "Gilt für Unternehmen in kritischen Sektoren. Bußgelder bis zu 10 Mio. € oder 2 % des Jahresumsatzes — mit persönlicher Haftung der Geschäftsführung. 12 Fragen in 6 Bereichen.",
+        "time": "~5 Min.",
+        "cta": "Compliance prüfen →"
+      },
+      "aiCheck": {
+        "title": "EU-KI-Gesetz Bereitschafts-Check",
+        "description": "Nutzt dein Unternehmen KI-Tools? Das EU-KI-Gesetz könnte bereits für dich gelten.",
+        "tooltip": "Gilt für jedes Unternehmen, das KI einsetzt — unabhängig von der Größe. Bußgelder bis zu 35 Mio. € oder 7 % des weltweiten Umsatzes. 9 Fragen zu Daten, Transparenz und Aufsicht.",
+        "time": "~4 Min.",
+        "cta": "Bereitschaft prüfen →"
+      },
+      "rulesFinder": {
+        "title": "EU-Regulierungsfinder",
+        "description": "Nicht sicher, welche EU-Cyber-Regeln für dein Unternehmen gelten? In 3 Fragen herausfinden.",
+        "tooltip": "Beantworte 3 Ja/Nein-Fragen und erfahre sofort, ob NIS2, DSGVO oder das EU-KI-Gesetz für dich gilt — mit direkten Links zu den jeweiligen Checks.",
+        "time": "~2 Min.",
+        "cta": "Meine Regeln finden →"
       }
-    ],
-    "coversTitle": "Was der Check umfasst",
-    "coversSubtitle": "Vier Bereiche, die die überwiegende Mehrheit privater und geschäftlicher Cyber-Vorfälle ausmachen.",
-    "modules": [
-      { "label": "Konten & Passwörter" },
-      { "label": "Geräte & Software" },
-      { "label": "Backups & Wiederherstellung" },
-      { "label": "Gewohnheiten & Bewusstsein" }
-    ],
+    },
     "quote": "Dass Leute gehackt werden, macht mir Angst, aber offizielle Websites sind nur voll mit verwirrendem Fachjargon. Dank diesem kurzen Quiz hat es endlich Klick gemacht. Zum ersten Mal verstehe ich genau, wie ich mich online schützen kann.",
     "quoteAttrib": "— Walther, 71, pensionierter Lehrer",
-    "ctaTitle": "Bereit herauszufinden, wie es um dich steht?",
-    "ctaBody": "Es dauert etwa 5 Minuten. Danach weißt du genau, was wichtig ist und was du als Nächstes tun solltest.",
-    "ctaBtn": "Kostenlos starten →",
     "footerTagline": "Ein Entscheidungs- und Klarheitswerkzeug, kein Sicherheitsprodukt."
   },
   "footer": {

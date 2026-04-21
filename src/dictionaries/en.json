@@ -5,43 +5,57 @@
     "riskHigh": "High Risk",
     "langSwitch": "DE"
   },
-  "header": {
-    "startCheck": "Start Free Check →"
-  },
+  "header": {},
   "home": {
     "badge": "Free · No account needed · 5 minutes",
-    "heroTitle1": "Are you exposed",
-    "heroTitle2": "right now?",
-    "heroBody": "Cyber threats change fast. Most people don't know if their habits and devices are still safe. In a few minutes, get a clear picture — without jargon or scare tactics.",
-    "heroCta": "Start My Free Risk Check",
+    "heroTitle": "Know where you stand on cyber risk",
+    "heroBody": "Whether you're protecting your personal accounts or navigating EU cyber regulations as a business — get a clear picture in minutes. No jargon, no scare tactics.",
+    "heroCtaIndividuals": "For Individuals ↓",
+    "heroCtaBusiness": "For Businesses ↓",
     "heroDisclaimer": "No personal data collected. No account required.",
-    "pillars": [
-      {
-        "title": "3–5 minutes",
-        "body": "Ten plain-language questions. No jargon, no installations required."
+    "individualsTitle": "For Individuals",
+    "individualsSubtitle": "Find out how secure your personal digital life really is.",
+    "businessTitle": "For Businesses",
+    "businessSubtitle": "Understand your EU compliance obligations and security posture.",
+    "checks": {
+      "assessment": {
+        "title": "Personal Cyber Risk Check",
+        "description": "Find out if your passwords, devices, and habits are leaving you exposed.",
+        "tooltip": "Covers accounts & passwords, devices & software, backups, and daily habits. ~10 questions, personalised action list.",
+        "time": "~5 min",
+        "cta": "Take the Check →"
       },
-      {
-        "title": "Clear score",
-        "body": "See exactly where you stand across accounts, devices, backups, and habits."
+      "gdpr": {
+        "title": "GDPR Rights Check",
+        "description": "Do you know your rights around your personal data — and are you exercising them?",
+        "tooltip": "10 questions covering data awareness, your legal rights, digital habits, and breach response. Learn exactly what protection you're entitled to.",
+        "time": "~4 min",
+        "cta": "Take the Check →"
       },
-      {
-        "title": "What to do next",
-        "body": "Prioritised actions — only the 3–5 things that actually matter for your situation."
+      "nis2": {
+        "title": "NIS2 Compliance Check",
+        "description": "Is your business prepared for NIS2? Management can be held personally liable.",
+        "tooltip": "Applies to businesses in critical sectors. Fines up to €10M or 2% of annual revenue — with personal management liability. 12 questions across 6 areas.",
+        "time": "~5 min",
+        "cta": "Check Compliance →"
+      },
+      "aiCheck": {
+        "title": "EU AI Act Readiness Check",
+        "description": "Using AI tools in your business? The EU AI Act may already apply to you.",
+        "tooltip": "Applies to any business using AI, regardless of size. Fines up to €35M or 7% of global turnover. 9 questions on data, transparency, and oversight.",
+        "time": "~4 min",
+        "cta": "Check Readiness →"
+      },
+      "rulesFinder": {
+        "title": "EU Regulation Finder",
+        "description": "Not sure which EU cyber rules apply to your business? Find out in 3 quick questions.",
+        "tooltip": "Answer 3 yes/no questions to discover whether NIS2, GDPR, or the EU AI Act applies — with direct links to the relevant checks.",
+        "time": "~2 min",
+        "cta": "Find My Rules →"
       }
-    ],
-    "coversTitle": "What the check covers",
-    "coversSubtitle": "Four areas that account for the vast majority of personal and business cyber incidents.",
-    "modules": [
-      { "label": "Accounts & Passwords" },
-      { "label": "Devices & Software" },
-      { "label": "Backups & Recovery" },
-      { "label": "Habits & Awareness" }
-    ],
+    },
     "quote": "Hearing about people getting hacked terrifies me, but official safety websites are just pages of confusing jargon. This short quiz finally made it click. For the first time, I understand exactly how to protect myself online.",
     "quoteAttrib": "— Walther, 71, Retired Teacher",
-    "ctaTitle": "Ready to find out where you stand?",
-    "ctaBody": "It takes about 5 minutes. You'll walk away knowing exactly what matters and what to do next.",
-    "ctaBtn": "Start Free Check →",
     "footerTagline": "A decision and clarity tool, not a security product."
   },
   "footer": {

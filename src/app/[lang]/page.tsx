@@ -4,11 +4,19 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/Button";
-import { BRAND } from "@/lib/config";
+import { CheckCard } from "@/components/ui/CheckCard";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
-const PILLAR_ICONS = ["⚡", "🎯", "✅"];
-const MODULE_ICONS = ["🔑", "💻", "☁️", "🧠"];
+const INDIVIDUAL_CHECKS = [
+  { key: "assessment" as const, icon: "🛡️", slug: "assessment" },
+  { key: "gdpr" as const, icon: "⚖️", slug: "gdpr-check" },
+] as const;
+
+const BUSINESS_CHECKS = [
+  { key: "nis2" as const, icon: "🏛️", slug: "nis2-check" },
+  { key: "aiCheck" as const, icon: "🤖", slug: "ai-check" },
+  { key: "rulesFinder" as const, icon: "🧭", slug: "rules-finder" },
+] as const;
 
 export async function generateMetadata({
   params,
@@ -19,10 +27,10 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   return {
-    title: `${BRAND.name} – ${dict.home.heroTitle1} ${dict.home.heroTitle2}`,
+    title: dict.home.heroTitle,
     description: dict.home.heroBody,
     openGraph: {
-      title: `${BRAND.name} – ${dict.home.heroTitle1} ${dict.home.heroTitle2}`,
+      title: dict.home.heroTitle,
       description: dict.home.heroBody,
       type: "website",
       images: OG_IMAGE,
@@ -46,59 +54,95 @@ export default async function Home({
 
   return (
     <>
-      <Header dict={dict.header} lang={lang} langSwitch={dict.common.langSwitch} />
+      <Header lang={lang} langSwitch={dict.common.langSwitch} />
 
       <main className="flex-1">
         {/* ── Hero ─────────────────────────────────────────────────────── */}
-        <section className="max-w-3xl mx-auto px-4 pt-16 pb-12 text-center">
+        <section className="max-w-3xl mx-auto px-4 pt-16 pb-14 text-center">
           <div className="inline-block bg-primary-soft text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
             {t.badge}
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-text leading-tight tracking-tight mb-5">
-            {t.heroTitle1}<br className="hidden sm:block" /> {t.heroTitle2}
+            {t.heroTitle}
           </h1>
           <p className="text-lg text-text-muted max-w-xl mx-auto mb-8 leading-relaxed">
             {t.heroBody}
           </p>
-          <Link href={`/${lang}/assessment`}>
-            <Button size="lg">{t.heroCta}</Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="#individuals">
+              <Button size="lg">{t.heroCtaIndividuals}</Button>
+            </a>
+            <a href="#businesses">
+              <Button size="lg" variant="outline">{t.heroCtaBusiness}</Button>
+            </a>
+          </div>
           <p className="mt-4 text-sm text-text-muted">{t.heroDisclaimer}</p>
         </section>
 
-        {/* ── Pillars ──────────────────────────────────────────────────── */}
-        <section className="bg-surface-muted border-y border-border">
-          <div className="max-w-3xl mx-auto px-4 py-12 grid sm:grid-cols-3 gap-6">
-            {t.pillars.map((p, i) => (
-              <div key={i} className="text-center space-y-2">
-                <div className="text-3xl">{PILLAR_ICONS[i]}</div>
-                <h3 className="font-semibold text-text">{p.title}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{p.body}</p>
-              </div>
-            ))}
+        {/* ── For Individuals ──────────────────────────────────────────── */}
+        <section
+          id="individuals"
+          className="bg-surface-muted border-y border-border scroll-mt-16"
+        >
+          <div className="max-w-3xl mx-auto px-4 py-12">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold text-text mb-2">
+                {t.individualsTitle}
+              </h2>
+              <p className="text-text-muted">{t.individualsSubtitle}</p>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {INDIVIDUAL_CHECKS.map(({ key, icon, slug }) => {
+                const c = t.checks[key];
+                return (
+                  <CheckCard
+                    key={key}
+                    icon={icon}
+                    title={c.title}
+                    description={c.description}
+                    tooltip={c.tooltip}
+                    time={c.time}
+                    cta={c.cta}
+                    href={`/${lang}/${slug}`}
+                  />
+                );
+              })}
+            </div>
           </div>
         </section>
 
-        {/* ── What We Cover ──────────────────────────────────────────── */}
-        <section className="max-w-3xl mx-auto px-4 py-14">
-          <h2 className="text-2xl font-bold text-text mb-2 text-center">
-            {t.coversTitle}
-          </h2>
-          <p className="text-center text-text-muted mb-8">{t.coversSubtitle}</p>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {t.modules.map((m, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-4 bg-surface border border-border rounded-xl px-5 py-4"
-              >
-                <span className="text-2xl">{MODULE_ICONS[i]}</span>
-                <span className="font-medium text-text">{m.label}</span>
-              </div>
-            ))}
+        {/* ── For Businesses ───────────────────────────────────────────── */}
+        <section id="businesses" className="scroll-mt-16">
+          <div className="max-w-3xl mx-auto px-4 py-12">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold text-text mb-2">
+                {t.businessTitle}
+              </h2>
+              <p className="text-text-muted">{t.businessSubtitle}</p>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {BUSINESS_CHECKS.map(({ key, icon, slug }, i) => {
+                const c = t.checks[key];
+                const isLast = i === BUSINESS_CHECKS.length - 1;
+                return (
+                  <CheckCard
+                    key={key}
+                    icon={icon}
+                    title={c.title}
+                    description={c.description}
+                    tooltip={c.tooltip}
+                    time={c.time}
+                    cta={c.cta}
+                    href={`/${lang}/${slug}`}
+                    className={isLast ? "sm:col-span-2" : ""}
+                  />
+                );
+              })}
+            </div>
           </div>
         </section>
 
-        {/* ── Social Proof ─────────────────────────────────────────────── */}
+        {/* ── Testimonial ──────────────────────────────────────────────── */}
         <section className="bg-surface-muted border-y border-border">
           <div className="max-w-2xl mx-auto px-4 py-12 text-center">
             <blockquote className="text-xl font-medium text-text leading-relaxed mb-4">
@@ -107,18 +151,7 @@ export default async function Home({
             <cite className="text-sm text-text-muted not-italic">{t.quoteAttrib}</cite>
           </div>
         </section>
-
-        {/* ── Final CTA ────────────────────────────────────────────────── */}
-        <section className="max-w-3xl mx-auto px-4 py-16 text-center">
-          <h2 className="text-2xl font-bold text-text mb-3">{t.ctaTitle}</h2>
-          <p className="text-text-muted mb-8">{t.ctaBody}</p>
-          <Link href={`/${lang}/assessment`}>
-            <Button size="lg">{t.ctaBtn}</Button>
-          </Link>
-        </section>
       </main>
-
-
     </>
   );
 }

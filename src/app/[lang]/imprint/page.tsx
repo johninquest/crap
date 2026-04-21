@@ -43,7 +43,7 @@ export default async function ImprintPage({
 
   return (
     <>
-      <Header dict={dict.header} lang={lang} langSwitch={dict.common.langSwitch} />
+      <Header lang={lang} langSwitch={dict.common.langSwitch} />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10">
         <h1 className="text-2xl font-bold text-text mb-8">{imprint.pageTitle}</h1>
         <div className="space-y-6">

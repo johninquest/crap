@@ -29,7 +29,7 @@ export async function generateMetadata({
   const dict = await getDictionary(lang as Locale);
   return {
     metadataBase: new URL("https://cyberchecklist.app"),
-    title: `${BRAND.name} – ${dict.home.heroTitle1} ${dict.home.heroTitle2}`,
+    title: `${BRAND.name} – ${dict.home.heroTitle}`,
     description: dict.home.heroBody,
     openGraph: {
       type: "website",
@@ -88,7 +88,7 @@ export default async function LangLayout({
   const dict = await getDictionary(lang as Locale);
 
   return (
-    <html lang={lang} className={`${inter.variable} h-full antialiased`}>
+    <html lang={lang} className={`${inter.variable} h-full antialiased scroll-smooth`}>
       <body className="min-h-full flex flex-col">
         <PostHogProvider>
           <div className="flex-1 flex flex-col">{children}</div>

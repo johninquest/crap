@@ -70,6 +70,14 @@ export interface LegalPageDict {
   sections: LegalSection[];
 }
 
+export interface CheckEntry {
+  title: string;
+  description: string;
+  tooltip: string;
+  time: string;
+  cta: string;
+}
+
 export interface Dictionary {
   common: {
     riskLow: string;
@@ -77,9 +85,7 @@ export interface Dictionary {
     riskHigh: string;
     langSwitch: string;
   };
-  header: {
-    startCheck: string;
-  };
+  header: Record<string, never>;
   footer: {
     madeBy: string;
     toolsLabel: string;
@@ -97,20 +103,24 @@ export interface Dictionary {
   };
   home: {
     badge: string;
-    heroTitle1: string;
-    heroTitle2: string;
+    heroTitle: string;
     heroBody: string;
-    heroCta: string;
+    heroCtaIndividuals: string;
+    heroCtaBusiness: string;
     heroDisclaimer: string;
-    pillars: Array<{ title: string; body: string }>;
-    coversTitle: string;
-    coversSubtitle: string;
-    modules: Array<{ label: string }>;
+    individualsTitle: string;
+    individualsSubtitle: string;
+    businessTitle: string;
+    businessSubtitle: string;
+    checks: {
+      assessment: CheckEntry;
+      gdpr: CheckEntry;
+      nis2: CheckEntry;
+      aiCheck: CheckEntry;
+      rulesFinder: CheckEntry;
+    };
     quote: string;
     quoteAttrib: string;
-    ctaTitle: string;
-    ctaBody: string;
-    ctaBtn: string;
     footerTagline: string;
   };
   assessment: {
