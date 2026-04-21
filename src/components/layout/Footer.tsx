@@ -37,6 +37,15 @@ export function Footer({ dict, lang }: FooterProps) {
           </ul>
         </nav>
 
+        <nav aria-label="Legal" className="flex gap-x-4 text-xs">
+          <Link href={`/${lang}/privacy`} className="hover:text-primary transition-colors">
+            {footer.legal.privacy}
+          </Link>
+          <Link href={`/${lang}/imprint`} className="hover:text-primary transition-colors">
+            {footer.legal.imprint}
+          </Link>
+        </nav>
+
         <p className="text-xs">
           © {year}{" "}
           <span className="font-medium text-text-muted">

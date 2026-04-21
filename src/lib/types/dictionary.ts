@@ -56,6 +56,20 @@ export interface IncidentDict {
   description: string;
 }
 
+export interface LegalSection {
+  heading: string;
+  body: string;
+}
+
+export interface LegalPageDict {
+  metaTitle: string;
+  metaDesc: string;
+  pageTitle: string;
+  lastUpdated?: string;
+  intro?: string;
+  sections: LegalSection[];
+}
+
 export interface Dictionary {
   common: {
     riskLow: string;
@@ -75,6 +89,10 @@ export interface Dictionary {
       nis2Check: string;
       aiCheck: string;
       rulesFinder: string;
+    };
+    legal: {
+      privacy: string;
+      imprint: string;
     };
   };
   home: {
@@ -136,6 +154,10 @@ export interface Dictionary {
     nis2: QuizSectionDict;
     gdpr: QuizSectionDict;
     aiCheck: QuizSectionDict;
+  };
+  legal: {
+    privacy: LegalPageDict;
+    imprint: LegalPageDict;
   };
   rulesFinder: {
     metaTitle: string;

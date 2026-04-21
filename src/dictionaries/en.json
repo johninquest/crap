@@ -53,6 +53,10 @@
       "nis2Check": "NIS2 Compliance Check",
       "aiCheck": "EU AI Act Readiness Check",
       "rulesFinder": "EU Regulation Finder"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "imprint": "Imprint"
     }
   },
   "assessment": {
@@ -586,6 +590,60 @@
         "summary": "The world\u2019s first comprehensive AI law. It classifies AI systems by risk level and sets obligations for providers, deployers, and users \u2014 especially for high-risk AI applications.",
         "ctaLabel": "Start AI Check"
       }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "metaDesc": "How CyberChecklist processes your data — minimal, transparent, and GDPR-compliant.",
+      "pageTitle": "Privacy Policy",
+      "lastUpdated": "Last updated: April 2026",
+      "intro": "We process only the minimum data necessary to operate this service. No accounts. No quiz answers stored. All assessment logic runs in your browser.",
+      "sections": [
+        {
+          "heading": "1. Controller",
+          "body": "[OPERATOR_NAME], [ADDRESS_LINE], [POSTAL_CODE CITY], [COUNTRY]. Email: [CONTACT_EMAIL]"
+        },
+        {
+          "heading": "2. Data We Process",
+          "body": "Server logs (IP address, browser type, access timestamp) retained for up to 30 days for security and stability. Anonymised usage analytics via PostHog to understand how the service is used (pages visited, quiz completions). No quiz answers or personal data from assessments are transmitted or stored."
+        },
+        {
+          "heading": "3. Legal Basis",
+          "body": "Art. 6(1)(f) GDPR — legitimate interest in operating and improving a secure, functional service. You may object to analytics processing at any time (see §5)."
+        },
+        {
+          "heading": "4. Data Transfers",
+          "body": "Usage analytics are processed by PostHog, Inc. (US). Transfers are covered by EU Standard Contractual Clauses (Art. 46(2)(c) GDPR)."
+        },
+        {
+          "heading": "5. Your Rights",
+          "body": "Under GDPR you have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), portability (Art. 20), and to object (Art. 21). To exercise these rights, contact [CONTACT_EMAIL]. You may also lodge a complaint with your local supervisory authority."
+        },
+        {
+          "heading": "6. No Automated Decisions",
+          "body": "We do not use automated decision-making or profiling with legal or similarly significant effects (Art. 22 GDPR)."
+        }
+      ]
+    },
+    "imprint": {
+      "metaTitle": "Imprint",
+      "metaDesc": "Legal information and responsible party for CyberChecklist.",
+      "pageTitle": "Imprint",
+      "sections": [
+        {
+          "heading": "Service Provider",
+          "body": "[OPERATOR_NAME]\n[ADDRESS_LINE]\n[POSTAL_CODE CITY]\n[COUNTRY]"
+        },
+        {
+          "heading": "Contact",
+          "body": "Email: [CONTACT_EMAIL]"
+        },
+        {
+          "heading": "Responsible for Content",
+          "body": "[OPERATOR_NAME]"
+        }
+      ]
     }
   }
 }
