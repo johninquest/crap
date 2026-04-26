@@ -41,7 +41,7 @@
         "cta": "Check Compliance →"
       },
       "aiCheck": {
-        "title": "EU AI Act Readiness Check",
+        "title": "EU AI Act Compliance Check",
         "description": "Using AI tools in your business? The EU AI Act may already apply to you.",
         "tooltip": "Applies to any business using AI, regardless of size. Fines up to €35M or 7% of global turnover. 9 questions on data, transparency, and oversight.",
         "time": "~4 min",
@@ -66,7 +66,7 @@
       "assessment": "Free Cyber Risk Assessment",
       "gdprCheck": "GDPR Compliance Check",
       "nis2Check": "NIS2 Compliance Check",
-      "aiCheck": "EU AI Act Readiness Check",
+      "aiCheck": "EU AI Act Compliance Check",
       "rulesFinder": "EU Regulation Finder"
     },
     "legal": {
@@ -463,9 +463,9 @@
       }
     },
     "aiCheck": {
-      "metaTitle": "AI Reality Check",
+      "metaTitle": "EU AI Act Compliance Check",
       "metaDesc": "A free 9-question self-assessment for small businesses and freelancers on GenAI risks, EU AI Act compliance, and data privacy when using AI tools.",
-      "title": "Everyday AI Reality Check",
+      "title": "EU AI Act Compliance Check",
       "subtitle": "Are you using AI tools safely — and in line with the EU AI Act?",
       "description": "With the EU AI Act fully enforced in 2026, many small businesses are inadvertently exposing themselves to legal and operational risks through everyday GenAI use. This check covers four areas: data leakage, transparency obligations, high-risk AI use cases, and human oversight. It takes about 4–5 minutes.",
       "estimatedTime": "4–5 minutes",

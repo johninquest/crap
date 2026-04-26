@@ -41,8 +41,8 @@
         "cta": "Compliance prüfen →"
       },
       "aiCheck": {
-        "title": "EU-KI-Gesetz Bereitschafts-Check",
-        "description": "Nutzt dein Unternehmen KI-Tools? Das EU-KI-Gesetz könnte bereits für dich gelten.",
+        "title": "KI-Verordnung Compliance-Check",
+        "description": "Nutzt dein Unternehmen KI-Tools? Die KI-Verordnung könnte bereits für dich gelten.",
         "tooltip": "Gilt für jedes Unternehmen, das KI einsetzt — unabhängig von der Größe. Bußgelder bis zu 35 Mio. € oder 7 % des weltweiten Umsatzes. 9 Fragen zu Daten, Transparenz und Aufsicht.",
         "time": "~4 Min.",
         "cta": "Bereitschaft prüfen →"
@@ -50,7 +50,7 @@
       "rulesFinder": {
         "title": "EU-Regulierungsfinder",
         "description": "Nicht sicher, welche EU-Cyber-Regeln für dein Unternehmen gelten? In 3 Fragen herausfinden.",
-        "tooltip": "Beantworte 3 Ja/Nein-Fragen und erfahre sofort, ob NIS2, DSGVO oder das EU-KI-Gesetz für dich gilt — mit direkten Links zu den jeweiligen Checks.",
+        "tooltip": "Beantworte 3 Ja/Nein-Fragen und erfahre sofort, ob NIS2, DSGVO oder die KI-Verordnung für dich gilt — mit direkten Links zu den jeweiligen Checks.",
         "time": "~2 Min.",
         "cta": "Meine Regeln finden →"
       }
@@ -66,7 +66,7 @@
       "assessment": "Kostenloser Cyber-Risiko-Check",
       "gdprCheck": "DSGVO-Compliance-Check",
       "nis2Check": "NIS2-Compliance-Check",
-      "aiCheck": "EU-KI-Gesetz Bereitschafts-Check",
+      "aiCheck": "KI-Verordnung Compliance-Check",
       "rulesFinder": "EU-Regulierungsfinder"
     },
     "legal": {
@@ -463,11 +463,11 @@
       }
     },
     "aiCheck": {
-      "metaTitle": "Alltäglicher KI-Reality-Check",
-      "metaDesc": "Ein kostenloser Selbst-Check mit 9 Fragen für kleine Unternehmen und Freiberufler zu GenKI-Risiken, EU-KI-Gesetz-Compliance und Datenschutz beim Einsatz von KI-Tools.",
-      "title": "Alltäglicher KI-Reality-Check",
-      "subtitle": "Setzen Sie KI-Tools sicher ein — und im Einklang mit dem EU-KI-Gesetz?",
-      "description": "Mit der vollständigen Durchsetzung des EU-KI-Gesetzes im Jahr 2026 setzen sich viele kleine Unternehmen unwissentlich durch den alltäglichen Einsatz von GenKI-Tools rechtlichen und operativen Risiken aus. Dieser Check deckt vier Bereiche ab: Datenlecks, Transparenzpflichten, hochriskante KI-Anwendungsfälle und menschliche Aufsicht. Er dauert etwa 4–5 Minuten.",
+      "metaTitle": "KI-Verordnung Compliance-Check",
+      "metaDesc": "Ein kostenloser Selbst-Check mit 9 Fragen für kleine Unternehmen und Freiberufler zu GenAI-Risiken, KI-Verordnung-Compliance und Datenschutz beim Einsatz von KI-Tools.",
+      "title": "KI-Verordnung Compliance-Check",
+      "subtitle": "Setzen Sie KI-Tools sicher ein — und im Einklang mit der KI-Verordnung der EU?",
+      "description": "Mit der vollständigen Durchsetzung der KI-Verordnung im Jahr 2026 setzen sich viele kleine Unternehmen unwissentlich durch den alltäglichen Einsatz von GenAI-Tools rechtlichen und operativen Risiken aus. Dieser Check deckt vier Bereiche ab: Datenlecks, Transparenzpflichten, hochriskante KI-Anwendungsfälle und menschliche Aufsicht. Er dauert etwa 4–5 Minuten.",
       "estimatedTime": "4–5 Minuten",
       "questionCount": "9 Fragen",
       "categories": {
@@ -491,27 +491,27 @@
         },
         "ai-4": {
           "text": "Informieren Sie Kunden klar, wenn sie rein KI-generierte Inhalte lesen — wie automatisierte Support-E-Mails, Marketingtext oder Chatbot-Antworten?",
-          "hint": "Art. 50 des EU-KI-Gesetzes verlangt Transparenz, wenn Verbraucher mit KI-generiertem Output interagieren. Die Implementierung klarer 'KI-generiert'-Labels ist zunehmend eine gesetzliche Anforderung, nicht nur gute Praxis."
+          "hint": "Art. 50 der KI-Verordnung verlangt Transparenz, wenn Verbraucher mit KI-generiertem Output interagieren. Die Implementierung klarer 'KI-generiert'-Labels ist zunehmend eine gesetzliche Anforderung, nicht nur gute Praxis."
         },
         "ai-5": {
           "text": "Wenn Sie einen KI-Chatbot für den Kundenservice einsetzen, ist es für den Nutzer unmittelbar offensichtlich, dass er nicht mit einem Menschen spricht?",
-          "hint": "Ein KI-System darf nie behaupten, ein Mensch zu sein, wenn es direkt gefragt wird. Selbst subtile Täuschung — etwa durch Verwendung eines realistischen menschlichen Namens ohne Offenlegung — kann gegen das EU-KI-Gesetz verstoßen."
+          "hint": "Ein KI-System darf nie behaupten, ein Mensch zu sein, wenn es direkt gefragt wird. Selbst subtile Täuschung — etwa durch Verwendung eines realistischen menschlichen Namens ohne Offenlegung — kann gegen die KI-Verordnung verstoßen."
         },
         "ai-6": {
           "text": "Sind Sie sicher, dass Ihr Unternehmen KI NICHT zur Vorauswahl von Bewerbungen, zur Bewertung der Mitarbeiterleistung oder bei Einstellungsentscheidungen einsetzt?",
-          "hint": "Der KI-Einsatz in HR und Recruiting wird in Anhang III des EU-KI-Gesetzes als 'Hochrisiko' eingestuft. Er erfordert strikte Compliance, Bias-Auditing, detaillierte Dokumentation und menschliche Aufsicht — nicht optional."
+          "hint": "Der KI-Einsatz in HR und Recruiting wird in Anhang III der KI-Verordnung als 'Hochrisiko' eingestuft. Er erfordert strikte Compliance, Bias-Auditing, detaillierte Dokumentation und menschliche Aufsicht — nicht optional."
         },
         "ai-7": {
           "text": "Vermeidet Ihr Unternehmen den Einsatz von KI für automatisierte Entscheidungen, die den Zugang eines Kunden zu Dienstleistungen, Krediten oder Versicherungen erheblich beeinflussen?",
-          "hint": "Automatisierte Entscheidungsfindung, die Einzelpersonen wesentlich betrifft, ist sowohl durch Art. 22 DSGVO als auch durch das EU-KI-Gesetz geregelt. Betroffene müssen Zugang zu einem menschlichen Überprüfungsprozess haben."
+          "hint": "Automatisierte Entscheidungsfindung, die Einzelpersonen wesentlich betrifft, ist sowohl durch Art. 22 DSGVO als auch durch die KI-Verordnung geregelt. Betroffene müssen Zugang zu einem menschlichen Überprüfungsprozess haben."
         },
         "ai-8": {
           "text": "Haben Sie einen Prozess, der erfordert, dass ein Mensch KI-generierte technische, rechtliche oder finanzielle Empfehlungen überprüft, bevor sie an einen Kunden gesendet werden?",
-          "hint": "Art. 14 des EU-KI-Gesetzes verlangt 'Human in the Loop'-Aufsicht für hochriskante KI-Ausgaben. KI-Halluzinationen — selbstbewusst formulierte, aber vollständig falsche Informationen — sind ein reales und dokumentiertes Risiko."
+          "hint": "Art. 14 der KI-Verordnung verlangt 'Human in the Loop'-Aufsicht für hochriskante KI-Ausgaben. KI-Halluzinationen — selbstbewusst formulierte, aber vollständig falsche Informationen — sind ein reales und dokumentiertes Risiko."
         },
         "ai-9": {
           "text": "Wissen Sie, wer in Ihrem Unternehmen rechtlich verantwortlich wäre, wenn ein von Ihnen eingesetztes KI-Tool diskriminierende oder erfundene Ausgaben produzierte, die einem Kunden schadeten?",
-          "hint": "Gemäß dem EU-KI-Gesetz ist der 'Betreiber' — also das Unternehmen, das ein KI-System verwendet — für dessen Ausgaben verantwortlich, auch wenn Sie die KI nicht selbst entwickelt haben."
+          "hint": "Gemäß der KI-Verordnung ist der 'Betreiber' — also das Unternehmen, das ein KI-System verwendet — für dessen Ausgaben verantwortlich, auch wenn Sie die KI nicht selbst entwickelt haben."
         }
       },
       "results": {
@@ -520,7 +520,7 @@
           "actions": [
             "Überprüfen Sie Ihre KI-Nutzungsrichtlinie vierteljährlich — Vorschriften und Tools ändern sich schnell",
             "Dokumentieren Sie, welche KI-Tools Sie verwenden, warum und wie Ausgaben überprüft werden — dies kann für Compliance-Audits erforderlich sein",
-            "Verfolgen Sie die Durchsetzungsleitlinien des EU-KI-Gesetzes Ihrer nationalen Behörde"
+            "Verfolgen Sie die Durchsetzungsleitlinien der KI-Verordnung Ihrer nationalen Behörde"
           ]
         },
         "medium": {
@@ -530,17 +530,17 @@
             "Prüfen Sie, welche KI-Tools Ihr Team tatsächlich verwendet — fragen Sie direkt und prüfen Sie bei Bedarf installierte Apps",
             "Überprüfen Sie Ihre KI-Tool-Abonnements: Sind Opt-outs für Modelltraining in bezahlten Tarifen aktiviert?",
             "Fügen Sie sichtbare 'KI-generiert'-Labels zu automatisierten E-Mails, Inhalten oder Chatbot-Schnittstellen hinzu",
-            "Prüfen Sie, ob aktuelle KI-Anwendungsfälle in die Hochrisiko-Kategorie des EU-KI-Gesetzes fallen"
+            "Prüfen Sie, ob aktuelle KI-Anwendungsfälle in die Hochrisiko-Kategorie der KI-Verordnung fallen"
           ]
         },
         "high": {
-          "narrative": "Ihr Unternehmen ist wahrscheinlich realen rechtlichen und operativen KI-Risiken unter DSGVO und EU-KI-Gesetz ausgesetzt. Sofortige Maßnahmen sind erforderlich, um Datenlecks zu verhindern, konformen KI-Einsatz sicherzustellen und angemessene Aufsicht zu etablieren.",
+          "narrative": "Ihr Unternehmen ist wahrscheinlich realen rechtlichen und operativen KI-Risiken unter DSGVO und KI-Verordnung ausgesetzt. Sofortige Maßnahmen sind erforderlich, um Datenlecks zu verhindern, konformen KI-Einsatz sicherzustellen und angemessene Aufsicht zu etablieren.",
           "actions": [
             "Weisen Sie alle Mitarbeitenden sofort an: keine Kundendaten, Mitarbeiterdaten oder Unternehmens-IP in öffentliche KI-Chatbots ohne ausdrückliche Genehmigung",
             "Prüfen Sie alle KI-Tool-Abonnements — stellen Sie fest, ob sie Modelle mit Ihren Daten trainieren, und deaktivieren Sie dies wo möglich",
             "Stoppen Sie jeden KI-gestützten Einstellungsprozess, jede HR-Bewertung oder automatisierte Kundenentscheidung bis zur rechtlichen Beratung",
             "Implementieren Sie einen obligatorischen menschlichen Überprüfungsschritt für jeglichen KI-generierten Inhalt, der an Kunden gesendet wird",
-            "Konsultieren Sie einen Rechts- oder Compliance-Berater zur EU-KI-Gesetz-Hochrisiko-Einstufung und Art. 22 DSGVO für Ihre spezifischen Anwendungsfälle"
+            "Konsultieren Sie einen Rechts- oder Compliance-Berater zur Hochrisiko-Einstufung gemäß KI-Verordnung und Art. 22 DSGVO für Ihre spezifischen Anwendungsfälle"
           ]
         }
       }

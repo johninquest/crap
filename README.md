@@ -9,7 +9,7 @@ A multilingual (EN/DE) web platform offering free, plain-language self-assessmen
 | **Personal Cyber Risk Check** | `/[lang]/risk-check` | Individuals | 10 | General best practice |
 | **NIS2 Cyber Security Check** | `/[lang]/nis2-check` | SMEs | 12 | NIS2 Directive, BSI |
 | **GDPR Privacy Awareness Check** | `/[lang]/gdpr-check` | Individuals | 10 | GDPR |
-| **Everyday AI Reality Check** | `/[lang]/ai-check` | SMEs / freelancers | 9 | EU AI Act, GDPR Art. 22 |
+| **EU AI Act Compliance Check** | `/[lang]/ai-check` | SMEs / freelancers | 9 | EU AI Act, GDPR Art. 22 |
 
 Each check:
 - Produces a scored result with category breakdown and tailored action items
@@ -45,7 +45,7 @@ src/
 │       │   └── result/ResultsView.tsx
 │       ├── nis2-check/               # NIS2 Cyber Security Check
 │       ├── gdpr-check/               # GDPR Privacy Awareness Check
-│       └── ai-check/                 # Everyday AI Reality Check
+│       └── ai-check/                 # EU AI Act Compliance Check
 ├── components/
 │   ├── assessment/                   # QuestionCard, ProgressBar
 │   ├── quiz/                         # QuizFlow, QuizResultsView (generic engine)
