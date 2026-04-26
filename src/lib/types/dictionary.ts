@@ -84,6 +84,7 @@ export interface Dictionary {
     riskMedium: string;
     riskHigh: string;
     langSwitch: string;
+    navCta: string;
   };
   header: Record<string, never>;
   footer: {

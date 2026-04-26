@@ -43,7 +43,7 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
   useEffect(() => {
     const stored = sessionStorage.getItem(BRAND.storageKey);
     if (!stored) {
-      router.replace(`/${lang}/assessment`);
+      router.replace(`/${lang}/risk-check`);
       return;
     }
     const parsed = JSON.parse(stored) as AssessmentResult;

@@ -8,7 +8,7 @@ interface FooterProps {
 }
 
 const CHECKS: Array<{ key: keyof Dictionary["footer"]["checks"]; href: string }> = [
-  { key: "assessment",  href: "assessment" },
+  { key: "assessment",  href: "risk-check" },
   { key: "gdprCheck",   href: "gdpr-check" },
   { key: "nis2Check",   href: "nis2-check" },
   { key: "aiCheck",     href: "ai-check" },

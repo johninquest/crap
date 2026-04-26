@@ -8,7 +8,7 @@ import { CheckCard } from "@/components/ui/CheckCard";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
 const INDIVIDUAL_CHECKS = [
-  { key: "assessment" as const, icon: "🛡️", slug: "assessment" },
+  { key: "assessment" as const, icon: "🛡️", slug: "risk-check" },
   { key: "gdpr" as const, icon: "⚖️", slug: "gdpr-check" },
 ] as const;
 
@@ -54,7 +54,11 @@ export default async function Home({
 
   return (
     <>
-      <Header lang={lang} langSwitch={dict.common.langSwitch} />
+      <Header
+        lang={lang}
+        langSwitch={dict.common.langSwitch}
+        cta={{ label: dict.common.navCta, href: `/${lang}/risk-check` }}
+      />
 
       <main className="flex-1">
         {/* ── Hero ─────────────────────────────────────────────────────── */}

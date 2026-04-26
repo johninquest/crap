@@ -3,7 +3,8 @@
     "riskLow": "Low Risk",
     "riskMedium": "Medium Risk",
     "riskHigh": "High Risk",
-    "langSwitch": "DE"
+    "langSwitch": "DE",
+    "navCta": "Free Risk Check"
   },
   "header": {},
   "home": {

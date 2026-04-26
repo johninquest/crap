@@ -45,7 +45,7 @@ export function AssessmentFlow({ lang, localizedQuestions, dict }: AssessmentFlo
       const result = calculateResult(answers, dict);
       sessionStorage.setItem(BRAND.storageKey, JSON.stringify(result));
       trackEvent("assessment_completed", { lang });
-      router.push(`/${lang}/assessment/result`);
+      router.push(`/${lang}/risk-check/result`);
     } else {
       setCurrentIndex((i) => i + 1);
       const nextQ = localizedQuestions[currentIndex + 1];

@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE = "https://cyberchecklist.app";
 const LOCALES = ["en", "de"] as const;
 const TOOL_PATHS = [
-  "/assessment",
+  "/risk-check",
   "/gdpr-check",
   "/nis2-check",
   "/ai-check",
