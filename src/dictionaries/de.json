@@ -48,11 +48,11 @@
         "cta": "Bereitschaft prüfen →"
       },
       "rulesFinder": {
-        "title": "EU-Regulierungsfinder",
+        "title": "EU-Regeln-Finder",
         "description": "Nicht sicher, welche EU-Cyber-Regeln für dein Unternehmen gelten? In 3 Fragen herausfinden.",
         "tooltip": "Beantworte 3 Ja/Nein-Fragen und erfahre sofort, ob NIS2, DSGVO oder die KI-Verordnung für dich gilt — mit direkten Links zu den jeweiligen Checks.",
         "time": "~2 Min.",
-        "cta": "Meine Regeln finden →"
+        "cta": "Welche Regeln gelten? →"
       }
     },
     "quote": "Dass Leute gehackt werden, macht mir Angst, aber offizielle Websites sind nur voll mit verwirrendem Fachjargon. Dank diesem kurzen Quiz hat es endlich Klick gemacht. Zum ersten Mal verstehe ich genau, wie ich mich online schützen kann.",
@@ -67,7 +67,7 @@
       "gdprCheck": "DSGVO-Compliance-Check",
       "nis2Check": "NIS2-Compliance-Check",
       "aiCheck": "KI-Verordnung Compliance-Check",
-      "rulesFinder": "EU-Regulierungsfinder"
+      "rulesFinder": "EU-Regeln-Finder"
     },
     "legal": {
       "privacy": "Datenschutz",

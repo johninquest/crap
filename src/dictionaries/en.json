@@ -48,11 +48,11 @@
         "cta": "Check Readiness →"
       },
       "rulesFinder": {
-        "title": "EU Regulation Finder",
+        "title": "EU Rules Finder",
         "description": "Not sure which EU cyber rules apply to your business? Find out in 3 quick questions.",
         "tooltip": "Answer 3 yes/no questions to discover whether NIS2, GDPR, or the EU AI Act applies — with direct links to the relevant checks.",
         "time": "~2 min",
-        "cta": "Find My Rules →"
+        "cta": "Which Rules Apply? →"
       }
     },
     "quote": "Hearing about people getting hacked terrifies me, but official safety websites are just pages of confusing jargon. This short quiz finally made it click. For the first time, I understand exactly how to protect myself online.",
@@ -67,7 +67,7 @@
       "gdprCheck": "GDPR Compliance Check",
       "nis2Check": "NIS2 Compliance Check",
       "aiCheck": "EU AI Act Compliance Check",
-      "rulesFinder": "EU Regulation Finder"
+      "rulesFinder": "EU Rules Finder"
     },
     "legal": {
       "privacy": "Privacy Policy",
