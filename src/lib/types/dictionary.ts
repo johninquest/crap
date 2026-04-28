@@ -96,6 +96,7 @@ export interface Dictionary {
       nis2Check: string;
       aiCheck: string;
       rulesFinder: string;
+      insuranceReadinessCheck: string;
     };
     legal: {
       privacy: string;
@@ -119,6 +120,7 @@ export interface Dictionary {
       nis2: CheckEntry;
       aiCheck: CheckEntry;
       rulesFinder: CheckEntry;
+      insuranceReadiness: CheckEntry;
     };
     quote: string;
     quoteAttrib: string;
@@ -165,6 +167,7 @@ export interface Dictionary {
     nis2: QuizSectionDict;
     gdpr: QuizSectionDict;
     aiCheck: QuizSectionDict;
+    insuranceReadiness: QuizSectionDict;
   };
   legal: {
     privacy: LegalPageDict;

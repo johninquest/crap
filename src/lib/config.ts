@@ -10,7 +10,8 @@ export const BRAND = {
 } as const;
 
 export const QUIZ_STORAGE_KEYS = {
-  nis2:       "quiz_nis2_result",
-  gdpr:       "quiz_gdpr_result",
-  "ai-check": "quiz_ai_result",
+  nis2:                  "quiz_nis2_result",
+  gdpr:                  "quiz_gdpr_result",
+  "ai-check":            "quiz_ai_result",
+  "insurance-readiness": "quiz_insurance_readiness_result",
 } as const;

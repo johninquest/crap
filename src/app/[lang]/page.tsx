@@ -13,9 +13,10 @@ const INDIVIDUAL_CHECKS = [
 ] as const;
 
 const BUSINESS_CHECKS = [
-  { key: "nis2" as const, icon: "🏛️", slug: "nis2-check" },
-  { key: "aiCheck" as const, icon: "🤖", slug: "ai-check" },
-  { key: "rulesFinder" as const, icon: "🧭", slug: "rules-finder" },
+  { key: "nis2" as const,               icon: "🏛️", slug: "nis2-check" },
+  { key: "aiCheck" as const,            icon: "🤖", slug: "ai-check" },
+  { key: "insuranceReadiness" as const, icon: "🔐", slug: "insurance-readiness-check" },
+  { key: "rulesFinder" as const,        icon: "🧭", slug: "rules-finder" },
 ] as const;
 
 export async function generateMetadata({
@@ -138,7 +139,7 @@ export default async function Home({
                     time={c.time}
                     cta={c.cta}
                     href={`/${lang}/${slug}`}
-                    className={isLast ? "sm:col-span-2" : ""}
+                    className={isLast && BUSINESS_CHECKS.length % 2 !== 0 ? "sm:col-span-2" : ""}
                   />
                 );
               })}

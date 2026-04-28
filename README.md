@@ -10,6 +10,7 @@ A multilingual (EN/DE) web platform offering free, plain-language self-assessmen
 | **NIS2 Cyber Security Check** | `/[lang]/nis2-check` | SMEs | 12 | NIS2 Directive, BSI |
 | **GDPR Privacy Awareness Check** | `/[lang]/gdpr-check` | Individuals | 10 | GDPR |
 | **EU AI Act Compliance Check** | `/[lang]/ai-check` | SMEs / freelancers | 9 | EU AI Act, GDPR Art. 22 |
+| **Cyber Insurance Readiness Check** | `/[lang]/insurance-readiness-check` | SMEs | 10 | Cyber insurance underwriting practice |
 
 Each check:
 - Produces a scored result with category breakdown and tailored action items
@@ -45,7 +46,8 @@ src/
 │       │   └── result/ResultsView.tsx
 │       ├── nis2-check/               # NIS2 Cyber Security Check
 │       ├── gdpr-check/               # GDPR Privacy Awareness Check
-│       └── ai-check/                 # EU AI Act Compliance Check
+        ├── ai-check/                 # EU AI Act Compliance Check
+        └── insurance-readiness-check/ # Cyber Insurance Readiness Check
 ├── components/
 │   ├── assessment/                   # QuestionCard, ProgressBar
 │   ├── quiz/                         # QuizFlow, QuizResultsView (generic engine)
@@ -60,13 +62,14 @@ src/
     │   ├── types.ts
     │   ├── questions.ts
     │   └── scoring.ts
-    ├── quiz/                         # Generic quiz engine (NIS2 / GDPR / AI)
-    │   ├── types.ts
-    │   ├── scoring.ts
-    │   ├── registry.ts               # Quiz lookup + i18n merge
-    │   ├── nis2.ts
-    │   ├── gdpr.ts
-    │   └── ai-check.ts
+    ├── quiz/                         # Generic quiz engine (NIS2 / GDPR / AI / Insurance)
+        ├── types.ts
+        ├── scoring.ts
+        ├── registry.ts               # Quiz lookup + i18n merge
+        ├── nis2.ts
+        ├── gdpr.ts
+        ├── ai-check.ts
+        └── insurance-readiness.ts
     └── types/
         └── dictionary.ts             # Strict TypeScript interface for all i18n keys
 ```

@@ -53,6 +53,13 @@
         "tooltip": "Beantworte 3 Ja/Nein-Fragen und erfahre sofort, ob NIS2, DSGVO oder die KI-Verordnung für dich gilt — mit direkten Links zu den jeweiligen Checks.",
         "time": "~2 Min.",
         "cta": "Welche Regeln gelten? →"
+      },
+      "insuranceReadiness": {
+        "title": "Cyber-Versicherungsreife-Check",
+        "description": "Sehen Sie, wie Ihr Unternehmen im Vergleich zu dem abschneidet, was Cyber-Versicherer tatsächlich suchen — bevor Sie einen Antrag stellen.",
+        "tooltip": "Deckt MFA, Endgeräteschutz, Backups, E-Mail-Sicherheit und Vorfallsreaktion ab. 10 Fragen in den 5 Bereichen, die Versicherer beim Underwriting prüfen.",
+        "time": "~4 Min.",
+        "cta": "Bereitschaft prüfen →"
       }
     },
     "quote": "Dass Leute gehackt werden, macht mir Angst, aber offizielle Websites sind nur voll mit verwirrendem Fachjargon. Dank diesem kurzen Quiz hat es endlich Klick gemacht. Zum ersten Mal verstehe ich genau, wie ich mich online schützen kann.",
@@ -67,7 +74,8 @@
       "gdprCheck": "DSGVO-Compliance-Check",
       "nis2Check": "NIS2-Compliance-Check",
       "aiCheck": "KI-Verordnung Compliance-Check",
-      "rulesFinder": "EU-Regeln-Finder"
+      "rulesFinder": "EU-Regeln-Finder",
+      "insuranceReadinessCheck": "Cyber-Versicherungsreife-Check"
     },
     "legal": {
       "privacy": "Datenschutz",
@@ -541,6 +549,96 @@
             "Stoppen Sie jeden KI-gestützten Einstellungsprozess, jede HR-Bewertung oder automatisierte Kundenentscheidung bis zur rechtlichen Beratung",
             "Implementieren Sie einen obligatorischen menschlichen Überprüfungsschritt für jeglichen KI-generierten Inhalt, der an Kunden gesendet wird",
             "Konsultieren Sie einen Rechts- oder Compliance-Berater zur Hochrisiko-Einstufung gemäß KI-Verordnung und Art. 22 DSGVO für Ihre spezifischen Anwendungsfälle"
+          ]
+        }
+      }
+    },
+    "insuranceReadiness": {
+      "metaTitle": "Cyber-Versicherungsreife-Check",
+      "metaDesc": "Ein kostenloser Selbst-Check mit 10 Fragen, um zu sehen, wie gut Ihr Unternehmen auf eine Cyber-Versicherung vorbereitet ist — und was vor dem Antrag verbessert werden sollte.",
+      "title": "Cyber-Versicherungsreife-Check",
+      "subtitle": "Erfahren Sie, wie gut Ihr Unternehmen auf eine Cyber-Versicherung vorbereitet ist — und worauf Versicherer achten.",
+      "description": "Eine Cyber-Versicherung zu erhalten wird für Unternehmen ohne die richtigen Sicherheitskontrollen immer schwieriger und teurer. Dieser Check führt Sie durch die zehn Bereiche, die Versicherer und MGAs beim Underwriting systematisch prüfen. Er dauert etwa 4–5 Minuten und zeigt Ihnen, worauf Sie sich vor dem Antrag konzentrieren sollten.",
+      "estimatedTime": "4–5 Minuten",
+      "questionCount": "10 Fragen",
+      "categories": {
+        "access_identity":       "Zugang & Identität",
+        "endpoint_network":      "Endgeräte & Netzwerk",
+        "backup_recovery":       "Backup & Wiederherstellung",
+        "email_awareness":       "E-Mail & Mitarbeitersensibilisierung",
+        "incident_preparedness": "Vorfallsbereitschaft"
+      },
+      "questions": {
+        "ins-1": {
+          "text": "Ist Multi-Faktor-Authentifizierung (MFA) für alle Geschäfts-E-Mail-Konten und jeden Fernzugriff auf Ihre Systeme vorgeschrieben?",
+          "hint": "MFA ist die wirkungsvollste Einzelmaßnahme für Cyber-Versicherer. Viele lehnen Deckung ab oder erheben erhebliche Prämienzuschläge, wenn MFA für E-Mail und Fernzugriff fehlt — sie blockiert die Mehrheit der anmeldedatenbasierten Angriffe."
+        },
+        "ins-2": {
+          "text": "Ist der Zugang zu sensiblen Systemen und Daten auf Mitarbeitende beschränkt, die ihn für ihre Tätigkeit tatsächlich benötigen?",
+          "hint": "Das Prinzip der minimalen Rechtevergabe begrenzt, wie weit ein Angreifer im Netzwerk vordringen kann. Underwriter sehen dies als Nachweis, dass ein einzelnes kompromittiertes Konto nicht sofort alles offenlegt."
+        },
+        "ins-3": {
+          "text": "Läuft Endpoint Detection and Response (EDR) — oder zumindest ein aktives Antivirusprogramm — auf jedem Geschäftsgerät, einschließlich remote genutzter Laptops?",
+          "hint": "Ein einziges ungeschütztes Gerät ist ein häufiger Ransomware-Einstiegspunkt. Versicherer erwarten den Schutz aller Endpunkte — Remote- und privat genutzte Dienstgeräte stellen ein erhebliches Risiko dar."
+        },
+        "ins-4": {
+          "text": "Werden kritische Sicherheitspatches innerhalb eines definierten Zeitraums eingespielt — zum Beispiel innerhalb von 30 Tagen nach Veröffentlichung einer hochkritischen Schwachstelle?",
+          "hint": "Die Mehrzahl der Ransomware-Angriffe nutzt bekannte Schwachstellen aus, für die bereits öffentlich verfügbare Patches existieren. Ein formales Patch-Fenster ist eine grundlegende Hygienemaßnahme, die Versicherer beim Underwriting prüfen."
+        },
+        "ins-5": {
+          "text": "Werden automatisierte Backups wichtiger Geschäftsdaten regelmäßig durchgeführt, mit mindestens einer Kopie offline oder in einer isolierten Umgebung?",
+          "hint": "Ransomware verschlüsselt alles, was sie erreichen kann — auch netzwerkgebundene Backups. Eine offline oder unveränderliche Backup-Kopie ist der Unterschied zwischen einem behebbaren Vorfall und einer Katastrophe. Versicherer setzen dies voraus."
+        },
+        "ins-6": {
+          "text": "Haben Sie getestet, ob Ihre Backups tatsächlich wiederhergestellt werden können — durch einen echten Wiederherstellungstest in den letzten 12 Monaten?",
+          "hint": "Ungetestete Backups scheitern häufig genau dann, wenn man sie am dringendsten braucht. Versicherer und Schadensregulierer fragen dies nach einem Schadensfall direkt ab. Ein dokumentierter Wiederherstellungstest belegt, dass Ihr Notfallplan real ist."
+        },
+        "ins-7": {
+          "text": "Haben Sie E-Mail-Sicherheitskontrollen in Betrieb — wie Spam- und Phishing-Filter sowie E-Mail-Authentifizierungseinträge (DMARC, DKIM, SPF)?",
+          "hint": "Über 90 % der Cybervorfälle beginnen mit einer Phishing-E-Mail. DMARC, DKIM und SPF verhindern zudem, dass Angreifer Ihre Domain imitieren, um Ihre Kunden oder Lieferanten anzugreifen — ein eigenständiges Haftungsrisiko."
+        },
+        "ins-8": {
+          "text": "Haben Ihre Mitarbeitenden in den letzten 12 Monaten an einem Sicherheitsbewusstseinstraining oder einer Phishing-Simulation teilgenommen?",
+          "hint": "Menschliches Versagen ist nach wie vor die häufigste Ursache von Sicherheitsverletzungen. Dokumentiertes, wiederkehrendes Training nutzen viele Versicherer zur Risikoabgrenzung — einige gewähren Prämienrabatte für nachweisbare Awareness-Programme."
+        },
+        "ins-9": {
+          "text": "Haben Sie einen dokumentierten Incident-Response-Plan, der namentlich festhält, wen Sie im Falle eines Cybervorfalls kontaktieren — intern, Ihren IT-Dienstleister und Ihren Versicherer?",
+          "hint": "Verzögerte, chaotische Vorfallsreaktion verschlechtert Ergebnisse und Kosten regelmäßig. Versicherer wollen sehen, dass Sie keine Panikreaktionen treffen. Selbst ein einseitiger Plan mit den wichtigsten Kontakten ist deutlich besser als keiner."
+        },
+        "ins-10": {
+          "text": "Sind Ihnen die gesetzlichen Meldefristen bekannt, die für Ihr Unternehmen bei einem Datenschutzverstoß gelten — zum Beispiel 72 Stunden unter der DSGVO oder 24 Stunden unter NIS2?",
+          "hint": "Das Verpassen einer regulatorischen Meldefrist fügt zu den Schadenkosten noch Bußgelder hinzu — und kann die Schadensregulierung durch die Versicherung erschweren. Kenntnis Ihrer Meldepflichten ist der Ausgangspunkt für den richtigen Umgang mit Behörden und Versicherer."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Ihre Sicherheitskontrollen sind in guter Verfassung. Sie sind gut aufgestellt, um Cyber-Versicherer mit Zuversicht anzusprechen, und qualifizieren sich wahrscheinlich für wettbewerbsfähige Konditionen. Jetzt geht es darum, das Vorhandene zu dokumentieren und aktuell zu halten.",
+          "actions": [
+            "Dokumentieren Sie Ihre Kontrollen klar — Versicherer fordern beim Underwriting oft schriftliche Nachweise, und deren Bereithalten spart Zeit",
+            "Überprüfen Sie Ihre Deckungssummen anhand realistischer Schadenskosten für ein Unternehmen Ihrer Größe",
+            "Arbeiten Sie mit einem auf Cyber spezialisierten Versicherungsmakler oder MGA zusammen, um Policenbedingungen zu vergleichen, nicht nur Prämien",
+            "Planen Sie eine jährliche Überprüfung Ihrer Kontrollen — Versicherer erwarten, dass der Sicherheitsstatus gehalten wird, nicht nur zum Abschluss erklärt",
+            "Testen Sie Ihren Backup-Wiederherstellungsprozess, falls noch nicht kürzlich geschehen — dies ist eine häufige Lücke, auch in gut aufgestellten Unternehmen"
+          ]
+        },
+        "medium": {
+          "narrative": "Sie haben grundlegende Kontrollen eingerichtet, aber es bestehen noch wesentliche Lücken. Diese vor dem Versicherungsantrag zu schließen führt wahrscheinlich zu besseren Konditionen, weniger Ausschlüssen und einem reibungsloseren Underwriting-Prozess.",
+          "actions": [
+            "Aktivieren Sie MFA für alle Geschäfts-E-Mail-Konten und Fernzugriffe — dies ist eine harte Anforderung der meisten Versicherer",
+            "Richten Sie automatisierte Backups ein oder überprüfen Sie diese, einschließlich mindestens einer Offline-Kopie, und testen Sie eine Wiederherstellung",
+            "Implementieren oder überprüfen Sie E-Mail-Sicherheitskontrollen: Spam-Filter, DMARC, DKIM und SPF",
+            "Führen Sie eine Phishing-Simulation oder ein grundlegendes Sicherheits-Awareness-Training mit Ihrem Team durch",
+            "Erstellen Sie einen einseitigen Incident-Response-Plan, der die ersten Ansprechpartner benennt: IT-Dienstleister, Versicherer und ggf. Rechts- oder PR-Kontakte"
+          ]
+        },
+        "high": {
+          "narrative": "Ihr aktueller Sicherheitsstatus würde es schwierig machen, eine Cyber-Versicherung zu erhalten — oder sehr teuer, sie zu halten. Versicherer und MGAs zeichnen auf Basis des Risikos — und die hier identifizierten Lücken stellen reale Exponierung dar. Investitionen in Kernkontrollen werden sowohl Ihr Risiko als auch Ihre Prämie spürbar verbessern.",
+          "actions": [
+            "Aktivieren Sie MFA sofort für alle Geschäfts-E-Mails und Fernzugriffe — ohne dies werden die meisten Versicherer keine Konditionen anbieten",
+            "Starten Sie automatisierte, getestete Backups mit einer Offline-Kopie — eine Ransomware-Wiederherstellung ist ohne diese kaum möglich",
+            "Installieren Sie EDR oder aktives Antivirusprogramm auf jedem Geschäftsgerät, auch Remote- und privat genutzten Dienstgeräten",
+            "Sensibilisieren Sie alle Mitarbeitenden für Phishing und Datenhandhabung — selbst eine 30-minütige Schulung wird von Versicherern als positives Kontrollmerkmal gewertet",
+            "Konsultieren Sie vor dem Antrag einen auf Cyber spezialisierten Makler — er kann beraten, welche Versicherer bei Ihrem aktuellen Status Konditionen anbieten und was mit der größten Prämienauswirkung zuerst zu verbessern ist"
           ]
         }
       }

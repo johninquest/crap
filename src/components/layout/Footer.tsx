@@ -8,11 +8,12 @@ interface FooterProps {
 }
 
 const CHECKS: Array<{ key: keyof Dictionary["footer"]["checks"]; href: string }> = [
-  { key: "assessment",  href: "risk-check" },
-  { key: "gdprCheck",   href: "gdpr-check" },
-  { key: "nis2Check",   href: "nis2-check" },
-  { key: "aiCheck",     href: "ai-check" },
-  { key: "rulesFinder", href: "rules-finder" },
+  { key: "assessment",              href: "risk-check" },
+  { key: "gdprCheck",               href: "gdpr-check" },
+  { key: "nis2Check",               href: "nis2-check" },
+  { key: "aiCheck",                 href: "ai-check" },
+  { key: "insuranceReadinessCheck", href: "insurance-readiness-check" },
+  { key: "rulesFinder",             href: "rules-finder" },
 ];
 
 export function Footer({ dict, lang }: FooterProps) {

@@ -7,6 +7,7 @@ const TOOL_PATHS = [
   "/gdpr-check",
   "/nis2-check",
   "/ai-check",
+  "/insurance-readiness-check",
   "/rules-finder",
 ] as const;
 

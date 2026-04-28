@@ -14,9 +14,10 @@ import { trackEvent } from "@/lib/analytics";
 function getQuizSectionDict(localizedQuiz: LocalizedQuiz, dict: Dictionary) {
   const id = localizedQuiz.definition.id;
   const map = {
-    nis2:        dict.quiz.nis2,
-    gdpr:        dict.quiz.gdpr,
-    "ai-check":  dict.quiz.aiCheck,
+    nis2:                  dict.quiz.nis2,
+    gdpr:                  dict.quiz.gdpr,
+    "ai-check":            dict.quiz.aiCheck,
+    "insurance-readiness": dict.quiz.insuranceReadiness,
   } as const;
   return map[id];
 }

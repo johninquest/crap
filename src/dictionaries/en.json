@@ -53,6 +53,13 @@
         "tooltip": "Answer 3 yes/no questions to discover whether NIS2, GDPR, or the EU AI Act applies — with direct links to the relevant checks.",
         "time": "~2 min",
         "cta": "Which Rules Apply? →"
+      },
+      "insuranceReadiness": {
+        "title": "Cyber Insurance Readiness Check",
+        "description": "See how your business stacks up against what cyber insurers actually look for — before you apply.",
+        "tooltip": "Covers MFA, endpoint protection, backups, email security, and incident response. 10 questions across the 5 areas insurers examine during underwriting.",
+        "time": "~4 min",
+        "cta": "Check Readiness →"
       }
     },
     "quote": "Hearing about people getting hacked terrifies me, but official safety websites are just pages of confusing jargon. This short quiz finally made it click. For the first time, I understand exactly how to protect myself online.",
@@ -67,7 +74,8 @@
       "gdprCheck": "GDPR Compliance Check",
       "nis2Check": "NIS2 Compliance Check",
       "aiCheck": "EU AI Act Compliance Check",
-      "rulesFinder": "EU Rules Finder"
+      "rulesFinder": "EU Rules Finder",
+      "insuranceReadinessCheck": "Cyber Insurance Readiness Check"
     },
     "legal": {
       "privacy": "Privacy Policy",
@@ -541,6 +549,96 @@
             "Halt any AI-assisted hiring, HR evaluation, or automated customer decisions until you have legal guidance",
             "Implement a mandatory human review step for any AI-generated content sent to clients",
             "Consult a legal or compliance advisor on EU AI Act High-Risk classification and GDPR Article 22 for your specific use cases"
+          ]
+        }
+      }
+    },
+    "insuranceReadiness": {
+      "metaTitle": "Cyber Insurance Readiness Check",
+      "metaDesc": "A free 10-question self-assessment to find out how prepared your business is for cyber insurance — and what to fix before you apply.",
+      "title": "Cyber Insurance Readiness Check",
+      "subtitle": "Find out how prepared your business is for cyber insurance — and what insurers will be looking for.",
+      "description": "Getting cyber insurance is becoming harder and more expensive for businesses without the right controls. This check walks you through the ten areas insurers and MGAs consistently examine when underwriting a policy. It takes about 4–5 minutes and shows you where to focus before you apply.",
+      "estimatedTime": "4–5 minutes",
+      "questionCount": "10 questions",
+      "categories": {
+        "access_identity":       "Access & Identity",
+        "endpoint_network":      "Endpoint & Network",
+        "backup_recovery":       "Backup & Recovery",
+        "email_awareness":       "Email & Staff Awareness",
+        "incident_preparedness": "Incident Preparedness"
+      },
+      "questions": {
+        "ins-1": {
+          "text": "Is multi-factor authentication (MFA) required for all business email accounts and any remote access to your systems?",
+          "hint": "MFA is the single most influential control for cyber insurers. Many will decline coverage or apply significant premium loading if MFA is absent on email and remote access — it blocks the majority of credential-based attacks."
+        },
+        "ins-2": {
+          "text": "Is access to sensitive systems and data limited to only the employees who genuinely need it for their role?",
+          "hint": "Least-privilege access limits how far an attacker can move once inside your network. Underwriters look for this as evidence that a single compromised account won't immediately expose everything."
+        },
+        "ins-3": {
+          "text": "Is endpoint detection and response (EDR) software — or at minimum active antivirus — running on every business device, including laptops used remotely?",
+          "hint": "A single unprotected device is a common ransomware entry point. Insurers expect coverage of all endpoints — remote and personally-owned devices used for work are a major exposure."
+        },
+        "ins-4": {
+          "text": "Are critical security patches applied to your systems and software within a defined timeframe — for example within 30 days of a high-severity release?",
+          "hint": "The majority of ransomware attacks exploit known vulnerabilities that already have publicly available patches. A formal patching window is a basic hygiene control that insurers verify during underwriting."
+        },
+        "ins-5": {
+          "text": "Are automated backups of critical business data performed regularly, with at least one copy stored offline or in an isolated environment?",
+          "hint": "Ransomware encrypts everything it can reach — including network-connected backups. An offline or immutable backup copy is the difference between a recoverable incident and a catastrophic one. Insurers require this."
+        },
+        "ins-6": {
+          "text": "Have you tested whether your backups can actually be restored — with a real restore exercise carried out in the past 12 months?",
+          "hint": "Untested backups frequently fail at the moment they are needed most. Insurers and loss adjusters ask this question directly after a claim. A documented restore test is evidence your recovery plan is real, not theoretical."
+        },
+        "ins-7": {
+          "text": "Do you have email security controls in place — such as spam and phishing filters, and email authentication records (DMARC, DKIM, SPF)?",
+          "hint": "Over 90% of cyber incidents start with a phishing email. DMARC, DKIM, and SPF also prevent attackers from impersonating your domain to target your customers or suppliers — a liability risk in its own right."
+        },
+        "ins-8": {
+          "text": "Have your employees completed security awareness training or a phishing simulation exercise in the past 12 months?",
+          "hint": "Human error remains the leading cause of breaches. Documented, recurring training is a factor many insurers use to differentiate risk — and some offer premium discounts for demonstrable awareness programmes."
+        },
+        "ins-9": {
+          "text": "Do you have a documented incident response plan that names who to contact — internally, your IT provider, and your insurer — in the event of a cyber incident?",
+          "hint": "Delayed, chaotic incident response consistently worsens breach outcomes and cost. Insurers want to see that you won't make panicked decisions. Even a one-page plan with key contacts is significantly better than none."
+        },
+        "ins-10": {
+          "text": "Are you aware of the legal notification deadlines that apply to your business in the event of a breach — such as 72 hours under GDPR or 24 hours under NIS2?",
+          "hint": "Missing a regulatory notification deadline adds regulatory fines on top of breach costs — and can complicate your insurance claim. Knowing your reporting obligations is the starting point for staying on the right side of both regulators and your insurer."
+        }
+      },
+      "results": {
+        "low": {
+          "narrative": "Your security controls are in good shape. You are well-positioned to approach cyber insurers with confidence and are likely to qualify for competitive terms. The focus now is on documenting what you have and keeping it current.",
+          "actions": [
+            "Document your controls clearly — insurers often ask for written evidence during underwriting, and having it ready saves time",
+            "Review your coverage limits against realistic breach costs for a business your size",
+            "Work with a specialist cyber insurance broker or MGA to compare policy terms, not just premiums",
+            "Schedule an annual review of your controls — insurers expect posture to be maintained, not just stated at inception",
+            "Test your backup restore process if you haven't done so recently — this is a common gap even in well-prepared businesses"
+          ]
+        },
+        "medium": {
+          "narrative": "You have foundational controls in place, but meaningful gaps remain. Addressing these before applying for coverage is likely to result in better terms, fewer exclusions, and a smoother underwriting process.",
+          "actions": [
+            "Enable MFA on all business email accounts and remote access — this is a hard requirement for most insurers",
+            "Set up or verify that automated backups include at least one offline or isolated copy, then test a restore",
+            "Implement or review email security controls: spam filters, DMARC, DKIM, and SPF records",
+            "Run a phishing simulation or basic security awareness session with your team",
+            "Draft a one-page incident response plan naming who to call first: IT provider, insurer, and any legal or PR contacts"
+          ]
+        },
+        "high": {
+          "narrative": "Your current security posture would make cyber insurance difficult to obtain or very expensive to carry. Insurers and MGAs underwrite based on risk — and the gaps identified here represent real exposure. Investing in core controls first will make a material difference to both your risk and your premium.",
+          "actions": [
+            "Enable MFA immediately across all business email and remote access — without this, most insurers will not offer terms",
+            "Start automated, tested backups with an offline copy — ransomware recovery without this is rarely possible",
+            "Deploy EDR or active antivirus on every business device, including remote and personally-owned devices used for work",
+            "Brief all staff on phishing and data handling — even a 30-minute session is tracked as a positive control by insurers",
+            "Consult a specialist cyber broker before applying — they can advise which carriers will offer terms at your current posture and what to fix first for the greatest premium impact"
           ]
         }
       }

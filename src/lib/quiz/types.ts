@@ -2,7 +2,7 @@
 
 import type { RiskLevel } from "@/lib/assessment/types";
 
-export type QuizId = "nis2" | "gdpr" | "ai-check";
+export type QuizId = "nis2" | "gdpr" | "ai-check" | "insurance-readiness";
 
 // ── Data model (language-independent) ───────────────────────────────────────
 

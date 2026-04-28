@@ -2,12 +2,14 @@ import type { QuizDefinition, QuizId, LocalizedQuiz, QuizQuestion } from "./type
 import { NIS2_QUIZ } from "./nis2";
 import { GDPR_QUIZ } from "./gdpr";
 import { AI_CHECK_QUIZ } from "./ai-check";
+import { INSURANCE_READINESS_QUIZ } from "./insurance-readiness";
 import type { Dictionary } from "@/lib/types/dictionary";
 
 const QUIZ_REGISTRY: Record<QuizId, QuizDefinition> = {
-  nis2:        NIS2_QUIZ,
-  gdpr:        GDPR_QUIZ,
-  "ai-check":  AI_CHECK_QUIZ,
+  nis2:                  NIS2_QUIZ,
+  gdpr:                  GDPR_QUIZ,
+  "ai-check":            AI_CHECK_QUIZ,
+  "insurance-readiness": INSURANCE_READINESS_QUIZ,
 };
 
 /** Returns the quiz definition for a given quiz ID. */
@@ -18,9 +20,10 @@ export function getQuizDefinition(quizId: QuizId): QuizDefinition {
 /** Maps a QuizId to the corresponding dictionary key. */
 function quizDictSection(quizId: QuizId, dict: Dictionary) {
   const map = {
-    nis2:        dict.quiz.nis2,
-    gdpr:        dict.quiz.gdpr,
-    "ai-check":  dict.quiz.aiCheck,
+    nis2:                  dict.quiz.nis2,
+    gdpr:                  dict.quiz.gdpr,
+    "ai-check":            dict.quiz.aiCheck,
+    "insurance-readiness": dict.quiz.insuranceReadiness,
   } as const;
   return map[quizId];
 }
