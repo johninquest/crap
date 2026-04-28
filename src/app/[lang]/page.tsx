@@ -13,10 +13,10 @@ const INDIVIDUAL_CHECKS = [
 ] as const;
 
 const BUSINESS_CHECKS = [
+  { key: "rulesFinder" as const,        icon: "🧭", slug: "rules-finder" },
   { key: "nis2" as const,               icon: "🏛️", slug: "nis2-check" },
   { key: "aiCheck" as const,            icon: "🤖", slug: "ai-check" },
   { key: "insuranceReadiness" as const, icon: "🔐", slug: "insurance-readiness-check" },
-  { key: "rulesFinder" as const,        icon: "🧭", slug: "rules-finder" },
 ] as const;
 
 export async function generateMetadata({

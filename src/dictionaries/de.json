@@ -42,7 +42,7 @@
       },
       "aiCheck": {
         "title": "KI-Verordnung Compliance-Check",
-        "description": "Nutzt dein Unternehmen KI-Tools? Die KI-Verordnung könnte bereits für dich gelten.",
+        "description": "Nutzt dein Unternehmen KI-Tools? Die KI-Verordnung der EU könnte bereits für dich gelten.",
         "tooltip": "Gilt für jedes Unternehmen, das KI einsetzt — unabhängig von der Größe. Bußgelder bis zu 35 Mio. € oder 7 % des weltweiten Umsatzes. 9 Fragen zu Daten, Transparenz und Aufsicht.",
         "time": "~4 Min.",
         "cta": "Bereitschaft prüfen →"

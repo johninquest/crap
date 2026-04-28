@@ -21,7 +21,7 @@ export function Header({ lang, langSwitch, cta }: HeaderProps) {
         <div className="flex items-center gap-3">
           {cta && (
             <Link href={cta.href}>
-              <Button size="sm">{cta.label}</Button>
+              <Button size="sm" className="text-xs sm:text-sm">{cta.label}</Button>
             </Link>
           )}
           <LanguageSwitcher
