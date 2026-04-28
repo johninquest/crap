@@ -629,7 +629,7 @@
         },
         {
           "heading": "4. Data Transfers",
-          "body": "Usage analytics are processed by PostHog, Inc. (US). Transfers are covered by EU Standard Contractual Clauses (Art. 46(2)(c) GDPR)."
+          "body": "Usage analytics are processed by PostHog, Inc. Data is stored exclusively within the EU on AWS infrastructure in Frankfurt, Germany. No data is transferred outside the EU."
         },
         {
           "heading": "5. Your Rights",

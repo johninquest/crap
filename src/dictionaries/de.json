@@ -629,7 +629,7 @@
         },
         {
           "heading": "4. Datenübertragungen",
-          "body": "Nutzungsanalysen werden von PostHog, Inc. (USA) verarbeitet. Die Übertragung erfolgt auf Grundlage von EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO)."
+          "body": "Nutzungsanalysen werden von PostHog, Inc. verarbeitet. Die Daten werden ausschließlich innerhalb der EU auf AWS-Infrastruktur in Frankfurt am Main gespeichert. Es findet keine Übermittlung in Drittländer statt."
         },
         {
           "heading": "5. Ihre Rechte",

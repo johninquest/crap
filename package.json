@@ -1,6 +1,6 @@
 {
   "name": "crap",
-  "version": "0.4.26",
+  "version": "0.4.28",
   "private": true,
   "scripts": {
     "dev": "next dev",
