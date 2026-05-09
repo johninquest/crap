@@ -147,15 +147,15 @@ export default async function Home({
           </div>
         </section>
 
-        {/* ── Testimonial ──────────────────────────────────────────────── */}
-        <section className="bg-surface-muted border-y border-border">
+        {/* ── Testimonial (hidden – may move to a dedicated testimonials page) ── */}
+        {/* <section className="bg-surface-muted border-y border-border">
           <div className="max-w-2xl mx-auto px-4 py-12 text-center">
             <blockquote className="text-xl font-medium text-text leading-relaxed mb-4">
               &ldquo;{t.quote}&rdquo;
             </blockquote>
             <cite className="text-sm text-text-muted not-italic">{t.quoteAttrib}</cite>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );
