@@ -13,10 +13,10 @@
   --color-text-subtle:     #9CA3AF; /* hints, fine print               */
   --color-border:          #E5E7EB;
 
-  /* ── Primary accent – deep pine ─────────────────────────────────── */
-  --color-primary:         #1B4332; /* deep pine                       */
-  --color-primary-hover:   #14532D; /* darker pine hover               */
-  --color-primary-soft:    #F0FDF4; /* very light green selection bg   */
+  /* ── Primary accent – malachite ─────────────────────────────────── */
+  --color-primary:         #134E4A; /* malachite                       */
+  --color-primary-hover:   #0F3D3A; /* darker malachite hover          */
+  --color-primary-soft:    #F0FDFA; /* very light teal selection bg    */
 
   /* ── Semantic status – reserved for assessment/check results ─────── */
   --color-green:           #10B981;
