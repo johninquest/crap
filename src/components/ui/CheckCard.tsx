@@ -29,7 +29,7 @@ export function CheckCard({
   const tooltipId = useId();
 
   return (
-    <div className={`relative bg-surface border border-border rounded-2xl p-6 flex flex-col gap-4 hover:border-primary/40 transition-colors min-w-0 ${className}`}>
+    <div className={`relative bg-surface border border-border rounded-2xl p-6 flex flex-col gap-4 hover:border-primary/40 transition-colors shadow-sm min-w-0 ${className}`}>
       {/* Info button */}
       <div className="absolute top-4 right-4">
         <button

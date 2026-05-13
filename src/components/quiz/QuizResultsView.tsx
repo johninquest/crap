@@ -73,7 +73,7 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
   return (
     <div className="space-y-10 quiz-result-content">
       {/* ── Overall Score ──────────────────────────────────────────────── */}
-      <section className="bg-surface border border-border rounded-2xl p-6 space-y-4">
+      <section className="bg-surface border border-border rounded-2xl p-6 space-y-4 shadow-sm">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
             <h2 className="text-lg font-semibold text-text">{c.overallTitle}</h2>
@@ -99,7 +99,7 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
           {result.categoryScores.map((cs) => (
             <div
               key={cs.categoryId}
-              className="bg-surface border border-border rounded-xl p-5 space-y-3"
+              className="bg-surface border border-border rounded-xl p-5 space-y-3 shadow-sm"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -127,7 +127,7 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
           {resultLevel.actions.map((action, i) => (
             <li
               key={i}
-              className="flex gap-4 bg-surface border border-border rounded-xl p-5"
+              className="flex gap-4 bg-surface border border-border rounded-xl p-5 shadow-sm"
             >
               <div className="shrink-0 w-7 h-7 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center">
                 {i + 1}
