@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import { BRAND } from "@/lib/config";
@@ -9,8 +9,8 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
 import { PostHogProvider } from "@/components/providers/PostHogProvider";
 
-const inter = Inter({
-  variable: "--font-inter",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
 });
@@ -88,7 +88,7 @@ export default async function LangLayout({
   const dict = await getDictionary(lang as Locale);
 
   return (
-    <html lang={lang} className={`${inter.variable} h-full antialiased scroll-smooth`}>
+    <html lang={lang} className={`${outfit.variable} h-full antialiased scroll-smooth`}>
       <body className="min-h-full flex flex-col">
         <PostHogProvider>
           <div className="flex-1 flex flex-col">{children}</div>
