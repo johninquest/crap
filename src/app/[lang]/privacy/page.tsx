@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { Header } from "@/components/layout/Header";
 import { BRAND } from "@/lib/config";
+import { applyLegalContact } from "@/lib/legalContact";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -59,7 +60,7 @@ export default async function PrivacyPage({
                 {section.heading}
               </h2>
               <p className="text-text-muted text-sm whitespace-pre-line">
-                {section.body}
+                {applyLegalContact(section.body)}
               </p>
             </section>
           ))}
