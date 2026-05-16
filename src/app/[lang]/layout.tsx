@@ -88,7 +88,7 @@ export default async function LangLayout({
   const dict = await getDictionary(lang as Locale);
 
   return (
-    <html lang={lang} className={`${outfit.variable} h-full antialiased scroll-smooth`}>
+    <html lang={lang} data-scroll-behavior="smooth">
       <body className="min-h-full flex flex-col">
         <PostHogProvider>
           <div className="flex-1 flex flex-col">{children}</div>

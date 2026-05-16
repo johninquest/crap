@@ -38,6 +38,7 @@ interface ResultsViewProps {
 export function ResultsView({ lang, dict }: ResultsViewProps) {
   const router = useRouter();
   const [result, setResult] = useState<AssessmentResult | null>(null);
+  const [generating, setGenerating] = useState(false);
   const t = dict.results;
 
   useEffect(() => {
@@ -50,6 +51,28 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
     setResult(parsed);
     trackEvent("result_viewed", { lang, risk_level: parsed.overallRiskLevel });
   }, [router, lang]);
+
+  async function handleDownloadPDF() {
+    if (!result) return;
+    setGenerating(true);
+    try {
+      const { pdf } = await import("@react-pdf/renderer");
+      const { CertificatePDFDocumentRisk } = await import("@/components/quiz/CertificatePDFDocumentRisk");
+      const blob = await pdf(
+        <CertificatePDFDocumentRisk lang={lang} dict={dict} result={result} />
+      ).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "risk-check-security-report.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } finally {
+      setGenerating(false);
+    }
+  }
 
   if (!result) return null;
 
@@ -176,8 +199,8 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
           <Link href={`/${lang}/assessment`}>
             <Button variant="outline">{t.retake}</Button>
           </Link>
-          <Button onClick={() => window.print()} variant="ghost">
-            {t.print}
+          <Button onClick={handleDownloadPDF} variant="ghost" disabled={generating}>
+            {generating ? "…" : t.print}
           </Button>
         </div>
       </section>

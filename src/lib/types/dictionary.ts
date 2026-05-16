@@ -44,6 +44,11 @@ export interface QuizCommonDict {
   optionYes: string;
   optionPartly: string;
   optionNo: string;
+  certificateTitle: string;
+  issuedOn: string;
+  findings: string;
+  printActions: string;
+  disclaimer: string;
 }
 
 export interface RecommendationDict {
@@ -157,6 +162,11 @@ export interface Dictionary {
     businessCtaBtn: string;
     retake: string;
     print: string;
+    certificateTitle: string;
+    issuedOn: string;
+    findings: string;
+    printActions: string;
+    disclaimer: string;
   };
   modules: Record<string, string>;
   questions: Record<string, QuestionDict>;

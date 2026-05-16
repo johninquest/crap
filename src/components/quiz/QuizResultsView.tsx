@@ -46,6 +46,7 @@ interface QuizResultsViewProps {
 export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
   const router = useRouter();
   const [result, setResult] = useState<QuizResult | null>(null);
+  const [generating, setGenerating] = useState(false);
   const definition = getQuizDefinition(quizId);
   const quizDict = getQuizSectionDict(quizId, dict);
   const c = dict.quiz.common;
@@ -61,6 +62,28 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
     trackEvent(`${quizId}_result_viewed`, { lang, risk_level: parsed.overallRiskLevel });
   }, [router, lang, definition, quizId]);
 
+  async function handleDownloadPDF() {
+    if (!result) return;
+    setGenerating(true);
+    try {
+      const { pdf } = await import("@react-pdf/renderer");
+      const { CertificatePDFDocument } = await import("@/components/quiz/CertificatePDFDocument");
+      const blob = await pdf(
+        <CertificatePDFDocument lang={lang} quizId={quizId} dict={dict} result={result} />
+      ).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${quizId}-security-report.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } finally {
+      setGenerating(false);
+    }
+  }
+
   if (!result) return null;
 
   const formattedDate = new Date(result.completedAt).toLocaleDateString(
@@ -71,7 +94,7 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
   const resultLevel = quizDict.results[result.overallRiskLevel];
 
   return (
-    <div className="space-y-10 quiz-result-content">
+    <div className="space-y-10">
       {/* ── Overall Score ──────────────────────────────────────────────── */}
       <section className="bg-surface border border-border rounded-2xl p-6 space-y-4 shadow-sm">
         <div className="flex items-start justify-between gap-4 flex-wrap">
@@ -143,8 +166,8 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
         <Link href={`/${lang}/${definition.slug}`}>
           <Button variant="outline">{c.retake}</Button>
         </Link>
-        <Button onClick={() => window.print()} variant="ghost">
-          {c.print}
+        <Button onClick={handleDownloadPDF} variant="ghost" disabled={generating}>
+          {generating ? "…" : c.print}
         </Button>
       </section>
     </div>

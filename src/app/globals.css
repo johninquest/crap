@@ -62,20 +62,16 @@ html {
   border-radius: 4px;
 }
 
-/* ── Print styles: clean score document ────────────────────────────────────── */
+/* ── Print styles: certificate layout ──────────────────────────────────────── */
 @media print {
-  /* Hide navigation and chrome */
+  /* Hide navigation and screen-only chrome */
   header,
   .no-print {
     display: none !important;
   }
 
-  /* Reset layout for print */
-  html,
-  body {
-    background: #fff !important;
-    color: #000 !important;
-    font-size: 12pt;
+  @page {
+    margin: 1cm 1.5cm;
   }
 
   main {
@@ -84,35 +80,8 @@ html {
     margin: 0 !important;
   }
 
-  /* Ensure content renders fully */
-  .quiz-result-content {
-    display: block !important;
-  }
-
-  /* Remove shadows and transitions */
   * {
     box-shadow: none !important;
     transition: none !important;
-  }
-
-  /* Page breaks */
-  section {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  /* Ensure borders show on print */
-  .border,
-  [class*="border-"] {
-    border-color: #ccc !important;
-  }
-
-  /* Buttons: hide all CTAs except the content */
-  button {
-    display: none !important;
-  }
-
-  a[href] {
-    display: none !important;
   }
 }

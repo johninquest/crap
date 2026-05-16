@@ -112,7 +112,13 @@
     "businessCtaBody": "Finde in 3 kurzen Schritten heraus, welche EU-Cyber-Regeln für dein Unternehmen gelten.",
     "businessCtaBtn": "Meine Cyber-Regeln finden →",
     "retake": "Check wiederholen",
-    "print": "🖨 Ergebnisse drucken / speichern"
+    "print": "PDF herunterladen",
+    "completedOn": "Bewertet am",
+    "certificateTitle": "Cyber-Sicherheits-Bewertungsbericht",
+    "issuedOn": "Ausgestellt am",
+    "findings": "Bewertungsergebnisse",
+    "printActions": "Empfohlene Maßnahmen",
+    "disclaimer": "Dieser Bericht basiert auf selbst eingetragenen Antworten und stellt keine professionelle Sicherheitsberatung dar."
   },
   "modules": {
     "accounts": "Konten & Passwörter",
@@ -276,14 +282,19 @@
       "pctComplete": "{pct}% abgeschlossen",
       "chooseAnswer": "Antwort auswählen",
       "retake": "Wiederholen",
-      "print": "🖨 Ergebnis drucken / speichern",
+      "print": "PDF herunterladen",
       "completedOn": "Bewertet am",
       "overallTitle": "Gesamtergebnis",
       "breakdownTitle": "Auswertung nach Bereich",
       "whatNext": "Was als Nächstes tun",
       "optionYes": "Ja",
       "optionPartly": "Teilweise / Verbesserungsbedarf",
-      "optionNo": "Nein"
+      "optionNo": "Nein",
+      "certificateTitle": "Cyber-Sicherheits-Bewertungsbericht",
+      "issuedOn": "Ausgestellt am",
+      "findings": "Bewertungsergebnisse",
+      "printActions": "Empfohlene Maßnahmen",
+      "disclaimer": "Dieser Bericht basiert auf selbst eingetragenen Antworten und stellt keine professionelle Sicherheitsberatung dar."
     },
     "nis2": {
       "metaTitle": "NIS2-Cybersicherheits-Check",
@@ -534,7 +545,7 @@
         "medium": {
           "narrative": "Sie nutzen KI-Tools, haben aber möglicherweise keine ausreichenden Schutzmaßnahmen eingerichtet. Shadow-KI-Datenlecks und fehlende Transparenzoffenlegungen sind die häufigsten — und am leichtesten behebbaren — Risiken in dieser Phase.",
           "actions": [
-            "Schreiben und verteilen Sie eine einfache KI-Nutzungsrichtlinie, die definiert, welche Daten Mitarbeitende nicht mit öffentlichen KI-Tools teilen dürfen",
+            "Schreiben und verteilen Sie eine einfache KI-Nutzungsrichtlinie, die definiert, welche Daten Mitarbeitenden nicht mit öffentlichen KI-Tools teilen dürfen",
             "Prüfen Sie, welche KI-Tools Ihr Team tatsächlich verwendet — fragen Sie direkt und prüfen Sie bei Bedarf installierte Apps",
             "Überprüfen Sie Ihre KI-Tool-Abonnements: Sind Opt-outs für Modelltraining in bezahlten Tarifen aktiviert?",
             "Fügen Sie sichtbare 'KI-generiert'-Labels zu automatisierten E-Mails, Inhalten oder Chatbot-Schnittstellen hinzu",

@@ -112,7 +112,13 @@
     "businessCtaBody": "Find out which EU cyber rules apply to your company in 3 quick steps.",
     "businessCtaBtn": "Find My Cyber Rules →",
     "retake": "Retake Assessment",
-    "print": "🖨 Print / Save Results"
+    "print": "Download PDF",
+    "completedOn": "Assessed on",
+    "certificateTitle": "Cyber Security Assessment Report",
+    "issuedOn": "Issued on",
+    "findings": "Assessment Findings",
+    "printActions": "Recommended Actions",
+    "disclaimer": "This report is based on self-reported answers and does not constitute professional security advice."
   },
   "modules": {
     "accounts": "Accounts & Passwords",
@@ -276,14 +282,19 @@
       "pctComplete": "{pct}% complete",
       "chooseAnswer": "Choose your answer",
       "retake": "Retake",
-      "print": "🖨 Print / Save Results",
+      "print": "Download PDF",
       "completedOn": "Assessed on",
       "overallTitle": "Overall Result",
       "breakdownTitle": "Breakdown by area",
       "whatNext": "What to do next",
       "optionYes": "Yes",
       "optionPartly": "Partly / Needs work",
-      "optionNo": "No"
+      "optionNo": "No",
+      "certificateTitle": "Cyber Security Assessment Report",
+      "issuedOn": "Issued on",
+      "findings": "Assessment Findings",
+      "printActions": "Recommended Actions",
+      "disclaimer": "This report is based on self-reported answers and does not constitute professional security advice."
     },
     "nis2": {
       "metaTitle": "NIS2 Cyber Security Check",
