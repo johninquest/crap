@@ -710,7 +710,7 @@
       "metaTitle": "Privacy Policy",
       "metaDesc": "How CyberChecklist processes your data — minimal, transparent, and GDPR-compliant.",
       "pageTitle": "Privacy Policy",
-      "lastUpdated": "Last updated: April 2026",
+      "lastUpdated": "Last updated: May 2026",
       "intro": "We process only the minimum data necessary to operate this service. No accounts. No quiz answers stored. All assessment logic runs in your browser.",
       "sections": [
         {
@@ -743,6 +743,7 @@
       "metaTitle": "Imprint",
       "metaDesc": "Legal information and responsible party for CyberChecklist.",
       "pageTitle": "Imprint",
+      "intro": "CyberChecklist is a product of [OPERATOR_NAME].",
       "sections": [
         {
           "heading": "Service Provider",

@@ -47,6 +47,11 @@ export default async function ImprintPage({
       <Header lang={lang} langSwitch={dict.common.langSwitch} />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10">
         <h1 className="text-2xl font-bold text-text mb-8">{imprint.pageTitle}</h1>
+        {imprint.intro && (
+          <p className="text-text-muted text-sm mb-8">
+            {applyLegalContact(imprint.intro)}
+          </p>
+        )}
         <div className="space-y-6">
           {imprint.sections.map((section) => (
             <section key={section.heading}>

@@ -710,7 +710,7 @@
       "metaTitle": "Datenschutzerklärung",
       "metaDesc": "Wie CyberChecklist Ihre Daten verarbeitet — minimal, transparent und DSGVO-konform.",
       "pageTitle": "Datenschutzerklärung",
-      "lastUpdated": "Stand: April 2026",
+      "lastUpdated": "Stand: Mai 2026",
       "intro": "Wir verarbeiten nur die Daten, die für den Betrieb dieses Dienstes unbedingt erforderlich sind. Keine Konten. Keine gespeicherten Check-Antworten. Alle Auswertungen finden im Browser statt.",
       "sections": [
         {
@@ -743,6 +743,7 @@
       "metaTitle": "Impressum",
       "metaDesc": "Gesetzliche Pflichtangaben und verantwortliche Person für CyberChecklist.",
       "pageTitle": "Impressum",
+      "intro": "CyberChecklist ist ein Produkt von [OPERATOR_NAME].",
       "sections": [
         {
           "heading": "Angaben gemäß § 5 TMG",

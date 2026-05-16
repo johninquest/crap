@@ -108,6 +108,23 @@ Risk thresholds: `< 34` → Low · `34–66` → Medium · `≥ 67` → High
 | Variable | Required | Description |
 |---|---|---|
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | No | Google Analytics 4 Measurement ID |
+| `LEGAL_OPERATOR_NAME` | Yes (for legal pages) | Legal entity or operator name shown on Imprint and Privacy pages |
+| `LEGAL_ADDRESS_LINE` | Yes (for legal pages) | Street and house number for legal disclosures |
+| `LEGAL_POSTAL_CODE_CITY` | Yes (for legal pages) | Postal code and city line for legal disclosures |
+| `LEGAL_COUNTRY` | Yes (for legal pages) | Country for legal disclosures |
+| `LEGAL_CONTACT_EMAIL` | Yes (for legal pages) | Contact email shown on Imprint and Privacy pages |
+
+Example `.env.local` for this project setup (JohnX Labs):
+
+```bash
+NEXT_PUBLIC_GA_MEASUREMENT_ID=
+
+LEGAL_OPERATOR_NAME="JohnX Labs"
+LEGAL_ADDRESS_LINE="<street and number>"
+LEGAL_POSTAL_CODE_CITY="<postal code> <city>"
+LEGAL_COUNTRY="Germany"
+LEGAL_CONTACT_EMAIL="<contact@johnxlabs.example>"
+```
 
 ## Deployment
 
