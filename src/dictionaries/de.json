@@ -569,7 +569,7 @@
       "metaDesc": "Ein kostenloser Selbst-Check mit 10 Fragen, um zu sehen, wie gut Ihr Unternehmen auf eine Cyber-Versicherung vorbereitet ist — und was vor dem Antrag verbessert werden sollte.",
       "title": "Cyber-Versicherungsreife-Check",
       "subtitle": "Erfahren Sie, wie gut Ihr Unternehmen auf eine Cyber-Versicherung vorbereitet ist — und worauf Versicherer achten.",
-      "description": "Eine Cyber-Versicherung zu erhalten wird für Unternehmen ohne die richtigen Sicherheitskontrollen immer schwieriger und teurer. Dieser Check führt Sie durch die zehn Bereiche, die Versicherer und MGAs beim Underwriting systematisch prüfen. Er dauert etwa 4–5 Minuten und zeigt Ihnen, worauf Sie sich vor dem Antrag konzentrieren sollten.",
+      "description": "Eine Cyber-Versicherung zu erhalten wird für Unternehmen ohne die richtigen Sicherheitskontrollen immer schwieriger und teurer. Dieser Check führt Sie durch die zehn Bereiche, die Versicherer und Versicherungsmakler bei der Risikobewertung (Underwriting) systematisch prüfen. Er dauert etwa 4–5 Minuten und zeigt Ihnen, worauf Sie sich vor dem Antrag konzentrieren sollten.",
       "estimatedTime": "4–5 Minuten",
       "questionCount": "10 Fragen",
       "categories": {
@@ -643,7 +643,7 @@
           ]
         },
         "high": {
-          "narrative": "Ihr aktueller Sicherheitsstatus würde es schwierig machen, eine Cyber-Versicherung zu erhalten — oder sehr teuer, sie zu halten. Versicherer und MGAs zeichnen auf Basis des Risikos — und die hier identifizierten Lücken stellen reale Exponierung dar. Investitionen in Kernkontrollen werden sowohl Ihr Risiko als auch Ihre Prämie spürbar verbessern.",
+          "narrative": "Ihr aktueller Sicherheitsstatus würde es schwierig machen, eine Cyber-Versicherung zu erhalten — oder sehr teuer, sie zu halten. Versicherer und Versicherungsmakler zeichnen auf Basis des Risikos — und die hier identifizierten Lücken stellen reale Exponierung dar. Investitionen in Kernkontrollen werden sowohl Ihr Risiko als auch Ihre Prämie spürbar verbessern.",
           "actions": [
             "Aktivieren Sie MFA sofort für alle Geschäfts-E-Mails und Fernzugriffe — ohne dies werden die meisten Versicherer keine Konditionen anbieten",
             "Starten Sie automatisierte, getestete Backups mit einer Offline-Kopie — eine Ransomware-Wiederherstellung ist ohne diese kaum möglich",
