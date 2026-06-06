@@ -166,7 +166,7 @@ export function QuizResultsView({ lang, quizId, dict }: QuizResultsViewProps) {
         <Link href={`/${lang}/${definition.slug}`}>
           <Button variant="outline">{c.retake}</Button>
         </Link>
-        <Button onClick={handleDownloadPDF} variant="ghost" disabled={generating}>
+            <Button onClick={handleDownloadPDF} variant="primary" disabled={generating}>
           {generating ? "…" : c.print}
         </Button>
       </section>

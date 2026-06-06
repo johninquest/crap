@@ -199,7 +199,7 @@ export function ResultsView({ lang, dict }: ResultsViewProps) {
           <Link href={`/${lang}/assessment`}>
             <Button variant="outline">{t.retake}</Button>
           </Link>
-          <Button onClick={handleDownloadPDF} variant="ghost" disabled={generating}>
+          <Button onClick={handleDownloadPDF} variant="primary" disabled={generating}>
             {generating ? "…" : t.print}
           </Button>
         </div>
