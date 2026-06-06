@@ -726,7 +726,7 @@
       "sections": [
         {
           "heading": "1. Verantwortlicher",
-          "body": "[OPERATOR_NAME] • [OPERATOR_URL]"
+          "body": "[OPERATOR_NAME]"
         },
         {
           "heading": "2. Verarbeitete Daten",
