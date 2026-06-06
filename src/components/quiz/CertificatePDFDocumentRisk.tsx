@@ -149,8 +149,8 @@ export function CertificatePDFDocumentRisk({ lang, dict, result }: Props) {
           {/* Header: brand left, date right */}
           <View style={s.header}>
             <View>
-              <Text style={s.brandName}>{BRAND.name.toUpperCase()}</Text>
-              <Text style={s.brandUrl}>cyberchecklist.app</Text>
+              <Text style={s.brandName}>{BRAND.name}</Text>
+              {/* <Text style={s.brandUrl}>cyberchecklist.app</Text> */}
             </View>
             <View>
               <Text style={s.dateLabel}>{t.issuedOn.toUpperCase()}</Text>
