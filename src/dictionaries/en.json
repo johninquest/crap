@@ -721,12 +721,12 @@
       "metaTitle": "Privacy Policy",
       "metaDesc": "How CyberChecklist processes your data — minimal, transparent, and GDPR-compliant.",
       "pageTitle": "Privacy Policy",
-      "lastUpdated": "Last updated: May 2026",
+      "lastUpdated": "Last updated: June 2026",
       "intro": "We process only the minimum data necessary to operate this service. No accounts. No quiz answers stored. All assessment logic runs in your browser.",
       "sections": [
         {
-          "heading": "1. Controller",
-          "body": "[OPERATOR_NAME], [ADDRESS_LINE], [POSTAL_CODE CITY], [COUNTRY]. Email: [CONTACT_EMAIL]"
+          "heading": "1. Data Controller (App Provider)",
+          "body": "[OPERATOR_NAME] - [OPERATOR_URL]"
         },
         {
           "heading": "2. Data We Process",

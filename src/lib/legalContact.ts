@@ -1,5 +1,6 @@
 const LEGAL_CONTACT = {
   operatorName: (process.env.LEGAL_OPERATOR_NAME ?? "").trim(),
+  operatorUrl: (process.env.LEGAL_OPERATOR_URL ?? "").trim(),
   addressLine: (process.env.LEGAL_ADDRESS_LINE ?? "").trim(),
   postalCodeCity: (process.env.LEGAL_POSTAL_CODE_CITY ?? "").trim(),
   country: (process.env.LEGAL_COUNTRY ?? "").trim(),
@@ -46,6 +47,7 @@ export function applyLegalContact(text: string): string {
 
   return text
     .replace(/\[OPERATOR_NAME\]/g, LEGAL_CONTACT.operatorName || "[OPERATOR_NAME]")
+    .replace(/\[OPERATOR_URL\]/g, LEGAL_CONTACT.operatorUrl || "[OPERATOR_URL]")
     .replace(/\[ADDRESS_LINE\]/g, LEGAL_CONTACT.addressLine || "[ADDRESS_LINE]")
     .replace(/\[ADRESSZEILE\]/g, LEGAL_CONTACT.addressLine || "[ADRESSZEILE]")
     .replace(/\[POSTAL_CODE CITY\]/g, LEGAL_CONTACT.postalCodeCity || "[POSTAL_CODE CITY]")
