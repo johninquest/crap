@@ -6,17 +6,17 @@ services:
         # Compose reads these from .env automatically — no changes needed to .dockerignore or .gitignore
         NEXT_PUBLIC_POSTHOG_KEY: ${NEXT_PUBLIC_POSTHOG_KEY}
         NEXT_PUBLIC_POSTHOG_HOST: ${NEXT_PUBLIC_POSTHOG_HOST}
-        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID}
+        # NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID}
+        LEGAL_OPERATOR_NAME: ${LEGAL_OPERATOR_NAME}
+        LEGAL_ADDRESS_LINE: ${LEGAL_ADDRESS_LINE}
+        LEGAL_POSTAL_CODE_CITY: ${LEGAL_POSTAL_CODE_CITY}
+        LEGAL_COUNTRY: ${LEGAL_COUNTRY}
+        LEGAL_CONTACT_EMAIL: ${LEGAL_CONTACT_EMAIL}
     container_name: crap
     restart: unless-stopped
     environment:
       - NODE_ENV=production
       - PORT=3000
-      - LEGAL_OPERATOR_NAME=${LEGAL_OPERATOR_NAME}
-      - LEGAL_ADDRESS_LINE=${LEGAL_ADDRESS_LINE}
-      - LEGAL_POSTAL_CODE_CITY=${LEGAL_POSTAL_CODE_CITY}
-      - LEGAL_COUNTRY=${LEGAL_COUNTRY}
-      - LEGAL_CONTACT_EMAIL=${LEGAL_CONTACT_EMAIL}
     labels:
       - "traefik.enable=true"
 
