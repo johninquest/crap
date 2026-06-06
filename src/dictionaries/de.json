@@ -726,7 +726,7 @@
       "sections": [
         {
           "heading": "1. Verantwortlicher",
-          "body": "[OPERATOR_NAME], [ADRESSZEILE], [PLZ ORT], [LAND]. E-Mail: [CONTACT_EMAIL]"
+          "body": "[OPERATOR_NAME] • [OPERATOR_URL]"
         },
         {
           "heading": "2. Verarbeitete Daten",
