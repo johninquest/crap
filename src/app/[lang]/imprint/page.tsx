@@ -6,6 +6,41 @@ import { BRAND } from "@/lib/config";
 import { applyLegalContact } from "@/lib/legalContact";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
+const URL_REGEX = /(https?:\/\/[^\s]+)/g;
+
+function renderTextWithExternalLinks(text: string) {
+  const lines = text.split("\n");
+
+  return lines.map((line, lineIndex) => {
+    const segments = line.split(URL_REGEX);
+
+    return (
+      <>
+        {segments.map((segment, segmentIndex) => {
+          if (/^https?:\/\//.test(segment)) {
+            return (
+              <a
+                key={`link-${lineIndex}-${segmentIndex}`}
+                href={segment}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-current underline-offset-2"
+              >
+                {segment}
+              </a>
+            );
+          }
+
+          return (
+            <span key={`text-${lineIndex}-${segmentIndex}`}>{segment}</span>
+          );
+        })}
+        {lineIndex < lines.length - 1 && <br />}
+      </>
+    );
+  });
+}
+
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "de" }];
 }
@@ -53,16 +88,20 @@ export default async function ImprintPage({
           </p>
         )}
         <div className="space-y-6">
-          {imprint.sections.map((section) => (
-            <section key={section.heading}>
+          {imprint.sections.map((section) => {
+            const body = applyLegalContact(section.body);
+
+            return (
+              <section key={section.heading}>
               <h2 className="text-base font-semibold text-text mb-1">
                 {section.heading}
               </h2>
-              <p className="text-text-muted text-sm whitespace-pre-line">
-                {applyLegalContact(section.body)}
+              <p className="text-text-muted text-sm">
+                {renderTextWithExternalLinks(body)}
               </p>
-            </section>
-          ))}
+              </section>
+            );
+          })}
         </div>
       </main>
     </>

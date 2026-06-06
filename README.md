@@ -113,6 +113,9 @@ Risk thresholds: `< 34` → Low · `34–66` → Medium · `≥ 67` → High
 | `LEGAL_POSTAL_CODE_CITY` | Yes (for legal pages) | Postal code and city line for legal disclosures |
 | `LEGAL_COUNTRY` | Yes (for legal pages) | Country for legal disclosures |
 | `LEGAL_CONTACT_EMAIL` | Yes (for legal pages) | Contact email shown on Imprint and Privacy pages |
+| `LEGAL_VAT_ID` | Yes (for imprint tax details) | VAT ID shown on the Imprint page |
+| `LEGAL_REGISTER_COURT` | No | Local court for commercial register line on Imprint |
+| `LEGAL_REGISTER_NUMBER` | No | Commercial register number line on Imprint |
 
 Example `.env.local` for this project setup (JohnX Labs):
 
@@ -124,6 +127,9 @@ LEGAL_ADDRESS_LINE="<street and number>"
 LEGAL_POSTAL_CODE_CITY="<postal code> <city>"
 LEGAL_COUNTRY="Germany"
 LEGAL_CONTACT_EMAIL="<contact@johnxlabs.example>"
+LEGAL_VAT_ID="DE123456789"
+LEGAL_REGISTER_COURT=""
+LEGAL_REGISTER_NUMBER=""
 ```
 
 ## Deployment

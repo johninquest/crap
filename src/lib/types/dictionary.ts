@@ -73,6 +73,7 @@ export interface LegalPageDict {
   lastUpdated?: string;
   intro?: string;
   sections: LegalSection[];
+  archivedSections?: LegalSection[];
 }
 
 export interface CheckEntry {

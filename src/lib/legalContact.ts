@@ -4,6 +4,9 @@ const LEGAL_CONTACT = {
   postalCodeCity: (process.env.LEGAL_POSTAL_CODE_CITY ?? "").trim(),
   country: (process.env.LEGAL_COUNTRY ?? "").trim(),
   contactEmail: (process.env.LEGAL_CONTACT_EMAIL ?? "").trim(),
+  vatId: (process.env.LEGAL_VAT_ID ?? "").trim(),
+  registerCourt: (process.env.LEGAL_REGISTER_COURT ?? "").trim(),
+  registerNumber: (process.env.LEGAL_REGISTER_NUMBER ?? "").trim(),
 };
 
 let hasWarnedMissingLegalContact = false;
@@ -17,6 +20,7 @@ function warnMissingLegalContactVars() {
   if (!LEGAL_CONTACT.postalCodeCity) missingVars.push("LEGAL_POSTAL_CODE_CITY");
   if (!LEGAL_CONTACT.country) missingVars.push("LEGAL_COUNTRY");
   if (!LEGAL_CONTACT.contactEmail) missingVars.push("LEGAL_CONTACT_EMAIL");
+  if (!LEGAL_CONTACT.vatId) missingVars.push("LEGAL_VAT_ID");
 
   if (missingVars.length > 0) {
     console.warn(
@@ -31,6 +35,15 @@ function warnMissingLegalContactVars() {
 export function applyLegalContact(text: string): string {
   warnMissingLegalContactVars();
 
+  const hasRegisterData =
+    LEGAL_CONTACT.registerCourt.length > 0 && LEGAL_CONTACT.registerNumber.length > 0;
+  const registerInfoDe = hasRegisterData
+    ? `Handelsregister: Amtsgericht ${LEGAL_CONTACT.registerCourt}, HRB ${LEGAL_CONTACT.registerNumber}`
+    : "";
+  const registerInfoEn = hasRegisterData
+    ? `Commercial Register: Local Court ${LEGAL_CONTACT.registerCourt}, HRB ${LEGAL_CONTACT.registerNumber}`
+    : "";
+
   return text
     .replace(/\[OPERATOR_NAME\]/g, LEGAL_CONTACT.operatorName || "[OPERATOR_NAME]")
     .replace(/\[ADDRESS_LINE\]/g, LEGAL_CONTACT.addressLine || "[ADDRESS_LINE]")
@@ -39,5 +52,8 @@ export function applyLegalContact(text: string): string {
     .replace(/\[PLZ ORT\]/g, LEGAL_CONTACT.postalCodeCity || "[PLZ ORT]")
     .replace(/\[COUNTRY\]/g, LEGAL_CONTACT.country || "[COUNTRY]")
     .replace(/\[LAND\]/g, LEGAL_CONTACT.country || "[LAND]")
-    .replace(/\[CONTACT_EMAIL\]/g, LEGAL_CONTACT.contactEmail || "[CONTACT_EMAIL]");
+    .replace(/\[CONTACT_EMAIL\]/g, LEGAL_CONTACT.contactEmail || "[CONTACT_EMAIL]")
+    .replace(/\[VAT_ID\]/g, LEGAL_CONTACT.vatId || "[VAT_ID]")
+    .replace(/\[REGISTER_INFO_DE\]/g, registerInfoDe)
+    .replace(/\[REGISTER_INFO_EN\]/g, registerInfoEn);
 }
