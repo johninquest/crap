@@ -38,10 +38,15 @@ export function Footer({ dict, lang }: FooterProps) {
           </ul>
         </nav>
 
-        <nav aria-label="Legal" className="flex gap-x-4 text-xs">
+        <nav aria-label="Navigation" className="flex gap-x-4 text-xs">
+          <Link href={`/${lang}/blog`} className="hover:text-primary transition-colors">
+            Blog
+          </Link>
+          <span className="text-border">|</span>
           <Link href={`/${lang}/privacy`} className="hover:text-primary transition-colors">
             {footer.legal.privacy}
           </Link>
+          <span className="text-border">|</span>
           <Link href={`/${lang}/imprint`} className="hover:text-primary transition-colors">
             {footer.legal.imprint}
           </Link>

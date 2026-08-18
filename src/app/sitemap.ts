@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllPosts } from "@/lib/blog";
 
 const BASE = "https://cyberchecklist.app";
 const LOCALES = ["en", "de"] as const;
@@ -9,10 +10,12 @@ const TOOL_PATHS = [
   "/ai-check",
   "/insurance-readiness-check",
   "/rules-finder",
+  "/blog",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
+  const posts = getAllPosts();
 
   for (const locale of LOCALES) {
     entries.push({
@@ -27,7 +30,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE}/${locale}${path}`,
         lastModified: new Date(),
         changeFrequency: "monthly",
-        priority: 0.8,
+        priority: path === "/blog" ? 0.8 : 0.8,
+      });
+    }
+
+    for (const post of posts) {
+      entries.push({
+        url: `${BASE}/${locale}/blog/${post.slug}`,
+        lastModified: new Date(post.lastModified || post.date),
+        changeFrequency: "monthly",
+        priority: 0.7,
       });
     }
   }

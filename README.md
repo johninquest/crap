@@ -37,26 +37,33 @@ npm run lint    # ESLint
 ## Project Structure
 
 ```
+content/
+└── blog/                             # Markdown articles with YAML frontmatter
 src/
 ├── app/
 │   └── [lang]/
 │       ├── page.tsx                  # Landing page
+│       ├── blog/                     # Blog listing and post details
+│       │   ├── page.tsx              # Blog index
+│       │   └── [slug]/page.tsx       # Blog post detail
 │       ├── risk-check/               # Personal Cyber Risk Check
 │       │   ├── AssessmentFlow.tsx
 │       │   └── result/ResultsView.tsx
 │       ├── nis2-check/               # NIS2 Cyber Security Check
 │       ├── gdpr-check/               # GDPR Privacy Awareness Check
-        ├── ai-check/                 # EU AI Act Compliance Check
-        └── insurance-readiness-check/ # Cyber Insurance Readiness Check
+│       ├── ai-check/                 # EU AI Act Compliance Check
+│       └── insurance-readiness-check/ # Cyber Insurance Readiness Check
 ├── components/
+│   ├── blog/                         # PostCard, KeyTakeaways, BlogCTA, Breadcrumbs
 │   ├── assessment/                   # QuestionCard, ProgressBar
 │   ├── quiz/                         # QuizFlow, QuizResultsView (generic engine)
-│   ├── layout/                       # Header, LanguageSwitcher
+│   ├── layout/                       # Header, LanguageSwitcher, Footer
 │   └── ui/                           # Button, RiskBadge
 ├── dictionaries/
-│   ├── en.json                       # English copy for all checks
+│   ├── en.json                       # English copy for all checks and blog
 │   └── de.json                       # German translations
 └── lib/
+    ├── blog.ts                       # Blog markdown parser, frontmatter, read time
     ├── config.ts
     ├── assessment/                   # Original personal check engine
     │   ├── types.ts

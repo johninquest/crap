@@ -806,5 +806,25 @@
         }
       ]
     }
+  },
+  "blog": {
+    "metaTitle": "Cybersicherheit & EU-Compliance Einblicke",
+    "metaDesc": "Praxisnahe Leitfäden, verständliche Analysen und regulatorische Einblicke zu NIS2, DSGVO, KI-Verordnung und Cyber-Risikomanagement für KMU.",
+    "pageTitle": "Cybersicherheit & Compliance Blog",
+    "pageSubtitle": "Verständliche, praxistaugliche Leitfäden zu EU-Cybervorschriften und Best Practices. Ohne Fachchinesisch.",
+    "readMore": "Vollständigen Artikel lesen →",
+    "readingTime": "Min. Lesezeit",
+    "publishedOn": "Veröffentlicht",
+    "updatedOn": "Aktualisiert",
+    "keyTakeaways": "Kernpunkte (Key Takeaways)",
+    "backToBlog": "← Zurück zur Übersicht",
+    "relatedCheckTitle": "Jetzt Bereitschaft prüfen",
+    "relatedCheckDesc": "Machen Sie einen kostenlosen 5-Minuten-Check, um die Aufstellung Ihres Unternehmens gegenüber diesen Anforderungen zu prüfen.",
+    "relatedCheckBtn": "Kostenlosen Check starten →",
+    "emptyMessage": "Noch keine Artikel veröffentlicht. Schauen Sie bald wieder vorbei.",
+    "breadcrumbs": {
+      "home": "Startseite",
+      "blog": "Blog"
+    }
   }
 }

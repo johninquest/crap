@@ -215,4 +215,24 @@ export interface Dictionary {
       aiAct: { name: string; summary: string; ctaLabel: string };
     };
   };
+  blog: {
+    metaTitle: string;
+    metaDesc: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    readMore: string;
+    readingTime: string;
+    publishedOn: string;
+    updatedOn: string;
+    keyTakeaways: string;
+    backToBlog: string;
+    relatedCheckTitle: string;
+    relatedCheckDesc: string;
+    relatedCheckBtn: string;
+    emptyMessage: string;
+    breadcrumbs: {
+      home: string;
+      blog: string;
+    };
+  };
 }

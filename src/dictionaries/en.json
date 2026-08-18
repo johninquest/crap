@@ -806,5 +806,25 @@
         }
       ]
     }
+  },
+  "blog": {
+    "metaTitle": "Cybersecurity & EU Compliance Insights",
+    "metaDesc": "Practical guides, plain-language analysis, and regulatory breakdowns covering NIS2, GDPR, the EU AI Act, and cyber risk management for SMEs.",
+    "pageTitle": "Cybersecurity & Compliance Blog",
+    "pageSubtitle": "Clear, practical guides to EU cyber regulations, risk management, and best practices. No jargon, no fluff.",
+    "readMore": "Read full article →",
+    "readingTime": "min read",
+    "publishedOn": "Published",
+    "updatedOn": "Updated",
+    "keyTakeaways": "Key Takeaways",
+    "backToBlog": "← Back to all articles",
+    "relatedCheckTitle": "Check your readiness now",
+    "relatedCheckDesc": "Take a 5-minute interactive check to assess your organization's posture against these requirements.",
+    "relatedCheckBtn": "Start Free Check →",
+    "emptyMessage": "No articles published yet. Please check back soon.",
+    "breadcrumbs": {
+      "home": "Home",
+      "blog": "Blog"
+    }
   }
 }

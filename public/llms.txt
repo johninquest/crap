@@ -20,6 +20,22 @@
 - [Cyber-Versicherungsreife-Check](https://cyberchecklist.app/de/insurance-readiness-check): 10-Fragen-Selbst-Check zu den Kontrollen, die Cyber-Versicherer beim Underwriting prüfen — MFA, Endgeräteschutz, Backups, E-Mail-Sicherheit und Vorfallsbereitschaft.
 - [EU-Regeln-Finder](https://cyberchecklist.app/de/rules-finder): In 3 Schritten herausfinden, welche EU-Cybersicherheitsregeln (NIS2, DSGVO, KI-Verordnung) für Ihr Unternehmen gelten.
 
+## Guides & Articles (English)
+
+- [Cybersecurity & Compliance Blog](https://cyberchecklist.app/en/blog): Plain-language guides and analysis on EU cyber regulations, NIS2, GDPR, AI Act, and risk management.
+- [Why Smart People Get Hacked: The Habits That Leave Us Exposed](https://cyberchecklist.app/en/blog/personal-cyber-risk-habits): Behavioral insights on personal digital safety, password habits, recognizing panic-driven phishing, and simple 3-step recovery.
+- [What Cyber Insurers Actually Look for Before Writing a Policy](https://cyberchecklist.app/en/blog/what-cyber-insurers-look-for): The 5 critical controls underwriters examine (MFA, air-gapped backups, EDR, patch windows, incident response) and how SMEs avoid rejected applications.
+- [NIS2 Directive Explained: A Pragmatic Guide for SMEs](https://cyberchecklist.app/en/blog/nis2-compliance-guide-smes): Scope, key Article 21 requirements, 24-hour reporting timelines, and personal management liability under NIS2.
+- [EU AI Act for Small Businesses: What Counts as High Risk?](https://cyberchecklist.app/en/blog/eu-ai-act-overview): Risk tiers, high-risk workplace and customer triggers, deployer vs provider obligations, and transparency rules.
+
+## Guides & Artikel (Deutsch)
+
+- [Cybersicherheits- & Compliance-Blog](https://cyberchecklist.app/de/blog): Verständliche Leitfäden und Analysen zu EU-Cyberregulierungen, NIS2, DSGVO, KI-Verordnung und Risikomanagement.
+- [Warum kluge Menschen gehackt werden: Gewohnheiten, die uns gefährden](https://cyberchecklist.app/de/blog/personal-cyber-risk-habits): Verhaltensmuster bei persönlicher Sicherheit, Passwortgewohnheiten, Phishing unter Zeitdruck und 3-Schritte-Notfallplan.
+- [Worauf Cyber-Versicherer vor Vertragsabschluss wirklich achten](https://cyberchecklist.app/de/blog/what-cyber-insurers-look-for): Die 5 zentralen Kontrollen der Underwriter (MFA, isolierte Backups, EDR, Patch-Fristen, Vorfallsbereitschaft) und wie KMU Ablehnungen vermeiden.
+- [NIS2-Richtlinie erklärt: Ein pragmatischer Leitfaden für KMU](https://cyberchecklist.app/de/blog/nis2-compliance-guide-smes): Anwendungsbereich, Artikel 21 Maßnahmen, 24-Stunden-Meldefristen und persönliche Geschäftsführerhaftung.
+- [EU-KI-Verordnung für kleine Unternehmen: Was gilt als Hochrisiko?](https://cyberchecklist.app/de/blog/eu-ai-act-overview): Risikoklassen, Hochrisiko-Kriterien, Pflichten für Betreiber und Transparenzanforderungen.
+
 ## Notes
 
 - All tools are free and require no account or personal data.
